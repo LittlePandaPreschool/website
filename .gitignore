@@ -1,0 +1,17 @@
+# SvelteKit
+.svelte-kit/
+build/
+
+# Node
+node_modules/
+.env
+.env.*
+!.env.example
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
