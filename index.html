@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Panda - Kind Hearts & Brilliant Minds</title>
+    <!-- This script includes Tailwind CSS into the project -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* We can add a custom, friendly font here later */
+        body {
+            font-family: 'sans-serif'; 
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-amber-50">
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden pt-16" style="background-image: url('https://images.pexels.com/photos/8613319/pexels-photo-8613319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
+        <!-- Background Image/Video (Placeholder) -->
+        <!-- We'll use a soft, warm image here. For now, it's a gentle gradient. -->
+        
+        
+        <!-- Overlay to ensure text is readable -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 p-8 max-w-3xl mx-auto">
+            <div id="panda-animation" style="width: 150px; height: 150px; margin: auto;"></div>
+            <h1 class="hero-headline">
+                Kind Hearts, Brilliant Minds.
+            </h1>
+            <p class="hero-subheadline">
+                Your Child's Journey Starts Here. Join Our Priority Waitlist.
+            </p>
+            <a href="admissions.html" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Enroll Now
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <!-- Mandarin Immersion Section -->
+            <section class="mb-16 immersion-section">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Mandarin Immersion Program</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">We believe that young children are experts in acquiring languages. Our immersion program is integrated throughout the day, promoting early language development in a rich, natural, and engaging Mandarin environment.</p>
+                
+                    <div class="mt-16">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-8">A Place Built on Trust and Cuteness</h3>
+                        <div class="flex flex-wrap -mx-4 items-center">
+                            <!-- Testimonial 1 -->
+                            <div class="w-full md:w-1/3 px-4 mb-8">
+                                <div class="pattern-card">
+                                    <p class="text-gray-600 mb-4 italic">"The staff at Little Panda are incredibly kind and attentive. Our daughter has blossomed since she started here. We couldn't be happier with the care she receives!"</p>
+                                    <p class="text-gray-800 font-bold">- Sarah J.</p>
+                                </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="w-full md:w-1/3 px-4 mb-8">
+                                <img src="https://images.pexels.com/photos/8422142/pexels-photo-8422142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Child playing" class="rounded-2xl shadow-lg">
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="w-full md:w-1/3 px-4 mb-8">
+                                <div class="pattern-card">
+                                    <p class="text-gray-600 mb-4 italic">"Seeing the genuine smiles and hearing the laughter when I drop off my son is the best part of my day. It's a wonderful, nurturing environment."</p>
+                                    <p class="text-gray-800 font-bold">- Michael B.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Campuses Section -->
+            <section class="py-20 bg-amber-50 angled-divider-inverse">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-12">Our Campuses</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Granada Campus -->
+                        <div class="flex flex-col">
+                            <img src="https://images.pexels.com/photos/8612980/pexels-photo-8612980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Child learning" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                            <div class="pattern-card flex-grow">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Granada Campus</h3>
+                                <p class="text-gray-600 mb-4">18 months - 6 years old</p>
+                                <p class="text-gray-600">205 Granada Ave, San Francisco, CA, 94112</p>
+                            </div>
+                        </div>
+                        <!-- Children's Campus at SF State -->
+                        <div class="flex flex-col">
+                            <img src="https://images.pexels.com/photos/8535193/pexels-photo-8535193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Children playing" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                            <div class="pattern-card flex-grow">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Children's Campus at SF State</h3>
+                                <p class="text-gray-600 mb-4">3 months - 6 years old</p>
+                                <p class="text-gray-600">1600 Holloway Ave, San Francisco, CA 94132</p>
+                            </div>
+                        </div>
+                        <!-- Ocean Avenue Campus -->
+                        <div class="flex flex-col">
+                            <img src="https://images.pexels.com/photos/7105593/pexels-photo-7105593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Child with blocks" class="rounded-lg shadow-lg mb-4 h-64 object-cover">
+                            <div class="pattern-card flex-grow">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Ocean Avenue Campus</h3>
+                                <p class="text-gray-600 font-bold">Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Daily Schedule Section -->
+            <section class="py-20 bg-amber-50">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">A Day at Little Panda</h2>
+                    <div class="relative">
+                        <div class="timeline">
+                            <!-- Arrival -->
+                            <div class="timeline-container left hidden-anim activity-arrival">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-sun mr-2"></i>9:00 - 9:30 AM: Arrival and Morning Meeting</h3>
+                                        <p>学生到达和早会</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Snack Time -->
+                            <div class="timeline-container right hidden-anim activity-snack">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-cookie-bite mr-2"></i>9:30 - 10:00 AM: Snack Time</h3>
+                                        <p>点心时间</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project -->
+                            <div class="timeline-container left hidden-anim activity-project">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-paint-brush mr-2"></i>10:00 - 10:30 AM: Project</h3>
+                                        <p>项目活动</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outdoor Exploration -->
+                            <div class="timeline-container right hidden-anim activity-outdoor">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-tree mr-2"></i>10:30 - 11:30 AM: Outdoor Exploration</h3>
+                                        <p>户外活动</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Lunch -->
+                            <div class="timeline-container left hidden-anim activity-lunch">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-utensils mr-2"></i>11:30 AM - 12:30 PM: Lunch</h3>
+                                        <p>午餐</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Story Time -->
+                            <div class="timeline-container right hidden-anim activity-storytime">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-book-open mr-2"></i>12:30 - 1:00 PM: Story Time/Fine motor/Dramatic Play</h3>
+                                        <p>故事/小手肌肉/扮演游戏</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nap Time -->
+                            <div class="timeline-container left hidden-anim activity-nap">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-bed mr-2"></i>1:00 - 2:30 PM: Nap Time</h3>
+                                        <p>午睡时间</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Snack -->
+                            <div class="timeline-container right hidden-anim activity-snack">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-cookie-bite mr-2"></i>2:30 - 3:00 PM: Snack</h3>
+                                        <p>点心</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Departure -->
+                            <div class="timeline-container left hidden-anim activity-departure">
+                                <div class="content">
+                                    <div>
+                                        <h3 class="text-xl font-bold"><i class="fas fa-flag-checkered mr-2"></i>3:00 - 3:30 PM: Departure</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Secure Your Spot on the Waitlist!</h2>
+            <div class="max-w-lg mx-auto">
+                <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <input type="text" name="Parent's Name" placeholder="Parent's Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="Email Address" placeholder="Email Address" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" name="Phone Number" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" name="Child's DOB" placeholder="Child's Date of Birth (or Age in Months)" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div class="mb-6">
+                        <textarea name="Message" placeholder="Your Message/Questions" rows="5" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        Join Waitlist / Contact Us
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('panda-animation'), // the div ID
+            renderer: 'svg', // svg for best quality
+            loop: true,
+            autoplay: true,
+            path: 'assets/Lazy Panda.json' // Path to your animation file
+        });
+
+        const pandaAnimation = lottie.loadAnimation({
+            container: document.getElementById('panda-timeline-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'assets/Panda sleeping waiting lottie animation.json'
+        });
+
+        const movingPandaAnimation = lottie.loadAnimation({
+            container: document.getElementById('moving-panda-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'assets/Lazy Panda.json'
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible-anim');
+                } else {
+                    entry.target.classList.remove('visible-anim');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden-anim');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
