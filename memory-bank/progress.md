@@ -1,7 +1,7 @@
 # Progress: Admissions Page Redesign Complete
 
-## Current Status: Admissions Page Redesign Complete
-The admissions page has been completely redesigned with a more interactive and visually consistent layout. The "Extended Care" and "Our Growth Tiers" sections now use a reusable `InfoCard` component with a green background, white text, and hover effects. All known bugs, including the PostCSS errors, have been resolved.
+## Current Status: Dynamic Image Loading Implemented
+The `DynamicHero.svelte` and `+page.svelte` components have been updated to dynamically load images from the `/static/img/hero/` and `/static/img/gallery/` directories, respectively. This change eliminates the need for hardcoded image paths and makes the components more maintainable. All known bugs, including the PostCSS errors, have been resolved.
 
 ## What's Left to Build
 *   **Commit Changes:** The recent design changes and bug fixes need to be committed to a new Git branch.

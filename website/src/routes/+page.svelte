@@ -36,7 +36,8 @@
     }
   ];
 
-  const allGalleryImages = Array.from({ length: 26 }, (_, i) => `/img/gallery-${i + 1}.png`);
+  const galleryImageModules = import.meta.glob('/static/img/gallery/*.{png,jpg,jpeg,gif,webp}');
+  const allGalleryImages = Object.keys(galleryImageModules).map(path => path.replace('/static', ''));
 </script>
 
 <DynamicHero />

@@ -3,7 +3,8 @@
   import { fade } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
 
-  const allImages = Array.from({ length: 26 }, (_, i) => `/img/gallery-${i + 1}.png`);
+  const imageModules = import.meta.glob('/static/img/hero/*.{png,jpg,jpeg,gif,webp}');
+  const allImages = Object.keys(imageModules).map(path => path.replace('/static', ''));
 
   let currentImageIndex = 0;
   let interval: NodeJS.Timeout;

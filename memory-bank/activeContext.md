@@ -4,6 +4,9 @@
 The project is in the final stages of a comprehensive redesign. The immediate focus is on polishing the UI, ensuring all functionality is working correctly, and preparing for a smooth deployment.
 
 ## Recent Changes
+- **Dynamic Image Loading:**
+    - Updated the `DynamicHero.svelte` component to dynamically load all images from the `/static/img/hero/` directory using Vite's `import.meta.glob` feature.
+    - Updated the `+page.svelte` file to dynamically load all images from the `/static/img/gallery/` directory and pass them to the `ImageCarousel` component.
 - **Dynamic Hero Section:**
     - Created a new `PhotoWallHero.svelte` component to replace the static hero image with a dynamic, engaging photo wall.
     - The photo wall features a masonry-style grid of images that are in constant, subtle motion with a seamless vertical scroll.
