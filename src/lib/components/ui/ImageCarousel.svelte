@@ -1,25 +1,57 @@
 <script lang="ts">
-  export let images: { default: string; small: string; medium: string }[];
+	import { onMount } from 'svelte';
 
-  const numColumns = 4;
-  const columns = Array.from({ length: numColumns }, () => []);
-  const base = Math.floor(images.length / numColumns);
-  const remainder = images.length % numColumns;
+	type Image = { default: string; small: string; medium: string };
+	export let images: Image[];
 
-  let imageIndex = 0;
-  for (let i = 0; i < numColumns; i++) {
-    const numImages = base + (i < remainder ? 1 : 0);
-    for (let j = 0; j < numImages; j++) {
-      columns[i].push(images[imageIndex]);
-      imageIndex++;
-    }
-  }
+	let numColumns = 4;
+	let columns: Image[][] = [];
+
+	function calculateColumns(cols: number) {
+		const newColumns: Image[][] = Array.from({ length: cols }, () => []);
+		const base = Math.floor(images.length / cols);
+		const remainder = images.length % cols;
+
+		let imageIndex = 0;
+		for (let i = 0; i < cols; i++) {
+			const numImages = base + (i < remainder ? 1 : 0);
+			for (let j = 0; j < numImages; j++) {
+				if (images[imageIndex]) {
+					newColumns[i].push(images[imageIndex]);
+					imageIndex++;
+				}
+			}
+		}
+		return newColumns;
+	}
+
+	// for SSR
+	columns = calculateColumns(numColumns);
+
+	onMount(() => {
+		const handleResize = () => {
+			const newNumColumns = window.innerWidth < 768 ? 2 : 4;
+			if (newNumColumns !== numColumns) {
+				numColumns = newNumColumns;
+				columns = calculateColumns(numColumns);
+			}
+		};
+
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	});
 </script>
 
 <div class="carousel-container h-[1000px]">
   <div class="carousel-track" style="width: 100%;">
     {#each columns as column, i}
-      <div class="carousel-column {i % 2 === 0 ? 'up' : 'down'}">
+      <div
+        class="carousel-column {i % 2 === 0 ? 'up' : 'down'}"
+        style="flex-basis: {100 / numColumns}%"
+      >
         {#each column as image, j}
           <div class="carousel-slide">
             <img
@@ -63,7 +95,6 @@
     flex-direction: column;
     height: 200%; /* Double height for seamless loop */
     flex-shrink: 0;
-    flex-basis: 25%;
     padding: 0 0.5rem;
   }
 
