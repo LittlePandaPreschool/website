@@ -9,19 +9,9 @@
 
 	function calculateColumns(cols: number) {
 		const newColumns: Image[][] = Array.from({ length: cols }, () => []);
-		const base = Math.floor(images.length / cols);
-		const remainder = images.length % cols;
-
-		let imageIndex = 0;
-		for (let i = 0; i < cols; i++) {
-			const numImages = base + (i < remainder ? 1 : 0);
-			for (let j = 0; j < numImages; j++) {
-				if (images[imageIndex]) {
-					newColumns[i].push(images[imageIndex]);
-					imageIndex++;
-				}
-			}
-		}
+		images.forEach((image, index) => {
+			newColumns[index % cols].push(image);
+		});
 		return newColumns;
 	}
 
