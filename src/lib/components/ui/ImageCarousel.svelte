@@ -18,6 +18,10 @@
 	// for SSR
 	columns = calculateColumns(numColumns);
 
+  $: if (images) {
+    columns = calculateColumns(numColumns);
+  }
+
 	onMount(() => {
 		const handleResize = () => {
 			const newNumColumns = window.innerWidth < 768 ? 2 : 4;
@@ -96,6 +100,7 @@
 
   .carousel-column.down {
     animation-direction: reverse;
+    transform: translateY(-50%);
   }
 
   .carousel-slide {
