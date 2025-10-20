@@ -24,7 +24,7 @@
 
 	onMount(() => {
 		const handleResize = () => {
-			const newNumColumns = window.innerWidth < 768 ? 2 : 4;
+			const newNumColumns = window.innerWidth < 768 ? 1 : 4;
 			if (newNumColumns !== numColumns) {
 				numColumns = newNumColumns;
 				columns = calculateColumns(numColumns);
