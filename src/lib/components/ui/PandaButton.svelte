@@ -7,11 +7,12 @@
   class:selected
   on:click
 >
-  <div class="paw-main"></div>
+  <div class="paw-main">
+    <span class="text"><slot /></span>
+  </div>
   <div class="toe toe-1"></div>
   <div class="toe toe-2"></div>
   <div class="toe toe-3"></div>
-  <span class="text"><slot /></span>
 </button>
 
 <style>
@@ -36,6 +37,9 @@
     bottom: 10px;
     left: 30px;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .toe {
     position: absolute;
@@ -58,13 +62,10 @@
     left: 112.5px;
   }
   .text {
-    position: absolute;
-    bottom: 29.0px;
-    left: 58%;
-    transform: translateX(-50%);
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
+    text-align: center;
   }
   .selected .paw-main,
   .selected .toe {
@@ -72,5 +73,37 @@
   }
   .selected .text {
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .panda-button {
+      width: 120px;
+      height: 100px;
+    }
+    .paw-main {
+      width: 60px;
+      height: 50px;
+      bottom: 5px;
+      left: 20px;
+    }
+    .toe {
+      width: 20px;
+      height: 20px;
+    }
+    .toe-1 {
+      top: 20px;
+      left: 25px;
+    }
+    .toe-2 {
+      top: 10px;
+      left: 50px;
+    }
+    .toe-3 {
+      top: 20px;
+      left: 75px;
+    }
+    .text {
+      font-size: 0.8rem;
+    }
   }
 </style>
