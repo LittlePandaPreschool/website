@@ -57,7 +57,7 @@
             <img
               src={image.medium}
               srcset={`${image.small} 640w, ${image.medium} 1280w`}
-              alt="Gallery image {i * 4 + j + 1}"
+              alt="Gallery image {i * numColumns + j + 1}"
               class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110"
               loading="lazy"
             />
@@ -68,7 +68,7 @@
             <img
               src={image.medium}
               srcset={`${image.small} 640w, ${image.medium} 1280w`}
-              alt="Gallery image {i * 4 + j + 1}"
+              alt="Gallery image {i * numColumns + j + 1}"
               class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110"
               loading="lazy"
             />
@@ -88,6 +88,7 @@
   .carousel-track {
     display: flex;
     height: 100%;
+    max-width: 100%;
   }
 
   .carousel-column {
@@ -96,6 +97,7 @@
     height: 200%; /* Double height for seamless loop */
     flex-shrink: 0;
     padding: 0 0.5rem;
+    box-sizing: border-box;
   }
 
   .carousel-column {
