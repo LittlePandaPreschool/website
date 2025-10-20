@@ -48,6 +48,10 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
 - **Pricing Button and Image Carousel Adjustments:**
     - Adjusted the positioning of the text within the paw-shaped pricing buttons on the admissions page to ensure it is properly centered.
     - Extended the height of the image carousel on the main page to fill the empty space at the bottom of the section.
+- **Image Carousel Refactor:**
+    - Refactored the `ImageCarousel.svelte` component to be responsive.
+    - On mobile devices, the carousel now displays a single-column stack of wider, rectangular images.
+    - On desktop devices, the carousel displays a 4-column grid with bi-directional scrolling.
 
 ## Next Steps
 1.  **Commit Changes:** Create a new Git branch and commit all the recent design changes and bug fixes.
