@@ -1,38 +1,56 @@
-# sv
+# Little Panda Preschool Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the official website for Little Panda Preschool, a childcare center focused on nurturing potential and fostering growth in a vibrant, modern, and engaging online environment.
 
-## Creating a project
+## Project Overview
 
-If you're seeing this, you've probably already done this step. Congrats!
+The Little Panda website is a key component of our viral enrollment pipeline, designed to attract and engage local parents with infants and toddlers. The site was redesigned with a "potential, nurture, and plant for the future" theme, migrating from a static HTML site to a modern SvelteKit application to improve maintainability, performance, and user experience.
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Tech Stack & Architecture
 
-# create a new project in my-app
-npx sv create my-app
-```
+The website is built with a mobile-first approach using the following technologies:
 
-## Developing
+*   **Framework:** [SvelteKit](https://kit.svelte.dev/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Animations:** [Lottie](https://lottiefiles.com/) for vector animations and Svelte actions/transitions for UI animations.
+*   **Deployment & Forms:** [Netlify](https://www.netlify.com/)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+The site follows a component-based architecture with a master layout that includes a reusable header and footer. The content is designed to be easily updatable, with data for careers and locations externalized into simple data structures.
 
-```sh
-npm run dev
+### Folder Structure
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The `src/` directory is organized as follows:
 
-## Building
+*   `lib/`: This directory contains the core reusable code for the application.
+    *   `actions/`: Svelte actions for adding custom functionality to elements.
+    *   `components/`: Reusable Svelte components, organized by their function (e.g., `layout`, `home`, `ui`).
+    *   `data/`: Externalized data for careers, locations, and other dynamic content.
+*   `routes/`: This directory contains the pages and API routes for the application. Each subdirectory represents a route in the URL.
+*   `app.css`: The global stylesheet for the application.
+*   `app.html`: The main HTML template for the application.
 
-To create a production version of your app:
+## Getting Started
 
-```sh
-npm run build
-```
+To run the project locally, follow these steps:
 
-You can preview the production build with `npm run preview`.
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd website
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deployment
+
+The website is continuously deployed to [Netlify](https://www.netlify.com/). Any changes pushed to the `main` branch will automatically trigger a new build and deployment.
