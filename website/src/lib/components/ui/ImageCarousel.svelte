@@ -1,45 +1,53 @@
 <script lang="ts">
-  export let images: string[];
+  export let images: { default: string; small: string; medium: string }[];
+
+  const numColumns = 4;
+  const columns = Array.from({ length: numColumns }, () => []);
+  const base = Math.floor(images.length / numColumns);
+  const remainder = images.length % numColumns;
+
+  let imageIndex = 0;
+  for (let i = 0; i < numColumns; i++) {
+    const numImages = base + (i < remainder ? 1 : 0);
+    for (let j = 0; j < numImages; j++) {
+      columns[i].push(images[imageIndex]);
+      imageIndex++;
+    }
+  }
 </script>
 
 <div class="carousel-container h-[1000px]">
-  <div class="carousel-track">
-    <div class="carousel-column up">
-      {#each images.slice(0, 7) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-      {#each images.slice(0, 7) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-    </div>
-    <div class="carousel-column up">
-      {#each images.slice(7, 14) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-      {#each images.slice(7, 14) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-    </div>
-    <div class="carousel-column down">
-      {#each images.slice(14, 21) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-      {#each images.slice(14, 21) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-    </div>
-    <div class="carousel-column down">
-      {#each images.slice(21, 26) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-      {#each images.slice(21, 26) as src, i}
-        <div class="carousel-slide"><img {src} alt="Gallery image {i + 1}" class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110" /></div>
-      {/each}
-    </div>
+  <div class="carousel-track" style="width: 100%;">
+    {#each columns as column, i}
+      <div class="carousel-column {i % 2 === 0 ? 'up' : 'down'}">
+        {#each column as image, j}
+          <div class="carousel-slide">
+            <img
+              src={image.medium}
+              srcset={`${image.small} 640w, ${image.medium} 1280w`}
+              alt="Gallery image {i * 4 + j + 1}"
+              class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110"
+              loading="lazy"
+            />
+          </div>
+        {/each}
+        {#each column as image, j}
+          <div class="carousel-slide">
+            <img
+              src={image.medium}
+              srcset={`${image.small} 640w, ${image.medium} 1280w`}
+              alt="Gallery image {i * 4 + j + 1}"
+              class="carousel-image transition-all duration-300 transform hover:scale-105 hover:brightness-110"
+              loading="lazy"
+            />
+          </div>
+        {/each}
+      </div>
+    {/each}
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   .carousel-container {
     overflow: hidden;
     width: 100%;
@@ -54,16 +62,17 @@
     display: flex;
     flex-direction: column;
     height: 200%; /* Double height for seamless loop */
-    width: 25%;
+    flex-shrink: 0;
+    flex-basis: 25%;
     padding: 0 0.5rem;
   }
 
-  .carousel-column.up {
-    animation: scroll-up 90s linear infinite;
+  .carousel-column {
+    animation: scroll 90s linear infinite;
   }
 
   .carousel-column.down {
-    animation: scroll-down 90s linear infinite;
+    animation-direction: reverse;
   }
 
   .carousel-slide {
@@ -77,21 +86,12 @@
     border-radius: 0.5rem;
   }
 
-  @keyframes scroll-up {
+  @keyframes scroll {
     0% {
       transform: translateY(0);
     }
     100% {
       transform: translateY(-50%);
-    }
-  }
-
-  @keyframes scroll-down {
-    0% {
-      transform: translateY(-50%);
-    }
-    100% {
-      transform: translateY(0);
     }
   }
 </style>

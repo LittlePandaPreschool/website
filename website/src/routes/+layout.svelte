@@ -1,12 +1,20 @@
 <script>
+  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import "../app.css";
 import Header from "$lib/components/layout/Header.svelte";
 import Footer from "$lib/components/layout/Footer.svelte";
+
+onMount(() => {
+  if (!window.customElements.get('lottie-player')) {
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+    document.head.appendChild(script);
+  }
+});
 </script>
 
 <svelte:head>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">

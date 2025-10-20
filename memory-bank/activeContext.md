@@ -4,6 +4,10 @@
 The project is in the final stages of a comprehensive redesign. The immediate focus is on polishing the UI, ensuring all functionality is working correctly, and preparing for a smooth deployment.
 
 ## Recent Changes
+- **Image Optimization:**
+    - Implemented lazy loading on the `ImageCarousel.svelte` component to improve performance.
+    - Created multiple sizes of each image in the `hero` and `gallery` directories.
+    - Updated the `DynamicHero.svelte` and `ImageCarousel.svelte` components to use responsive images with `image-set` and `srcset`, respectively.
 - **Dynamic Image Loading:**
     - Updated the `DynamicHero.svelte` component to dynamically load all images from the `/static/img/hero/` directory using Vite's `import.meta.glob` feature.
     - Updated the `+page.svelte` file to dynamically load all images from the `/static/img/gallery/` directory and pass them to the `ImageCarousel` component.
@@ -36,6 +40,7 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Externalized the careers page data to `src/lib/data/careers.ts`.
     - Removed the redundant `website/srcr/` directory.
 - **Bug Fixes:**
+    - Fixed a layout issue in the `ImageCarousel.svelte` component by dynamically distributing images across the four columns, ensuring a balanced and visually appealing layout.
     - Resolved recurring PostCSS errors in `Timeline.svelte` and `PandaButton.svelte` by removing the `lang="postcss"` attribute from the `<style>` tags.
     - Addressed an accessibility warning in the `Header.svelte` component by adding an `aria-label` to the menu button.
     - Removed unused CSS selectors from the `faq/+page.svelte` file.

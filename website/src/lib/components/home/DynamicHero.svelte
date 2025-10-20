@@ -3,11 +3,19 @@
   import { fade } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
 
-  const imageModules = import.meta.glob('/static/img/hero/*.{png,jpg,jpeg,gif,webp}');
-  const allImages = Object.keys(imageModules).map(path => path.replace('/static', ''));
+  const imageModules = import.meta.glob('/static/img/hero/medium/*.{png,jpg,jpeg,gif,webp}');
+  const allImages = Object.keys(imageModules).map(path => {
+    const mediumUrl = path.replace('/static', '');
+    const smallUrl = mediumUrl.replace('/medium/', '/small/');
+    return {
+      default: mediumUrl,
+      small: smallUrl,
+      medium: mediumUrl
+    };
+  });
 
   let currentImageIndex = 0;
-  let interval: NodeJS.Timeout;
+  let interval: number;
 
   function getNextImage() {
     currentImageIndex = (currentImageIndex + 1) % allImages.length;
@@ -26,7 +34,7 @@
   {#key currentImageIndex}
     <div
       class="absolute inset-0 h-full w-full bg-cover bg-center"
-      style="background-image: url({allImages[currentImageIndex]})"
+      style="background-image: url({allImages[currentImageIndex].default}); background-image: -webkit-image-set(url({allImages[currentImageIndex].small}) 1x, url({allImages[currentImageIndex].medium}) 2x, url({allImages[currentImageIndex].default}) 3x); background-image: image-set(url({allImages[currentImageIndex].small}) 1x, url({allImages[currentImageIndex].medium}) 2x, url({allImages[currentImageIndex].default}) 3x);"
       in:fade={{ duration: 2500, easing: cubicInOut }}
       out:fade={{ duration: 2500, easing: cubicInOut }}
     >
@@ -52,7 +60,7 @@
   </div>
 </section>
 
-<style lang="postcss">
+<style>
   .ken-burns {
     animation: kenburns 20s ease-out infinite;
     background-size: cover;
