@@ -1,0 +1,182 @@
+<script lang="ts">
+  import Timeline from '$lib/components/home/Timeline.svelte';
+  import LocationCard from '$lib/components/home/LocationCard.svelte';
+  import BlueprintCard from '$lib/components/home/BlueprintCard.svelte';
+  import { locations } from '$lib/data/locations';
+
+  const blueprintItems = [
+    {
+      icon: 'fa-search',
+      title: 'Inquiry-Based Learning',
+      title_chinese: '探究式学习',
+      description: 'We spark curiosity by making real-world connections, encouraging students to ask big questions and explore their own answers.',
+      description_chinese: '我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。'
+    },
+    {
+      icon: 'fa-language',
+      title: 'Mandarin Immersion',
+      title_chinese: '沉浸式中文环境',
+      description: 'Our immersive environment unlocks a world of possibilities, fostering early language development and cross-cultural understanding.',
+      description_chinese: '我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。'
+    },
+    {
+      icon: 'fa-child',
+      title: 'Child-Focused Projects',
+      title_chinese: '以儿童为中心的项目',
+      description: 'We guide students through in-depth studies of real-world topics, tailored to their unique interests and skills.',
+      description_chinese: '我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。'
+    },
+    {
+      icon: 'fa-heartbeat',
+      title: 'Essential Life Skills',
+      title_chinese: '基本生活技能',
+      description: 'We cultivate focus, self-control, communication, and empathy, building a strong foundation for lifelong success.',
+      description_chinese: '我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。'
+    }
+  ];
+</script>
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
+
+    <!-- Overlay to ensure text is readable -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 p-8 max-w-3xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 uppercase tracking-wider">
+            Unleash Potential.
+            <span class="block text-3xl md:text-5xl font-light mt-2">释放潜能</span>
+        </h1>
+        <p class="text-lg md:text-2xl mb-8 font-light">
+            Start Their Journey.
+            <span class="block text-base md:text-xl mt-2">从这里开始他们的旅程</span>
+        </p>
+        <a href="/admissions" class="btn-primary py-3 px-10 text-lg font-bold uppercase tracking-wider flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105">
+            <span>Join Us</span>
+            <span class="text-sm font-normal normal-case">加入我们</span>
+        </a>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="py-20">
+    <div class="container mx-auto px-6">
+    <!-- Our Blueprint for Brilliance Section -->
+    <section class="py-20 bg-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-4">Our Blueprint for Brilliance<br><span class="text-4xl">我们的卓越蓝图</span></h2>
+            <p class="text-xl mb-12 max-w-3xl mx-auto">We've designed a holistic approach to early education that nurtures every aspect of your child's development, preparing them to thrive in a global community.<br><span class="text-lg">我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。</span></p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                {#each blueprintItems as item}
+                    <div class="p-8 transform transition-transform duration-300 hover:scale-105 hover:bg-green-700 rounded-lg" data-fade>
+                        <i class="fas {item.icon} text-4xl text-primary mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">{item.title}<br><span class="text-xl">{item.title_chinese}</span></h3>
+                        <p class="text-lg">{item.description}<br><span class="text-base">{item.description_chinese}</span></p>
+                    </div>
+                {/each}
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="py-20 bg-alt">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4 text-center text-secondary">A Glimpse Into Our World<br><span class="text-3xl">一睹我们的世界</span></h2>
+            <p class="text-xl text-center text-main mb-12">Where curiosity and creativity come to life.<br><span class="text-lg">一个让好奇心与创造力绽放的地方。</span></p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613053/pexels-photo-8613053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613070/pexels-photo-8613070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8612980/pexels-photo-8612980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8535193/pexels-photo-8535193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/7105593/pexels-photo-7105593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613053/pexels-photo-8613053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8613070/pexels-photo-8613070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8612980/pexels-photo-8612980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/8535193/pexels-photo-8535193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 transform hover:scale-105" src="https://images.pexels.com/photos/7105593/pexels-photo-7105593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+    </div>
+</section>
+
+<!-- Locations Section -->
+<section class="py-20 bg-main">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold mb-4 text-secondary">Our Campuses<br><span class="text-4xl">我们的校区</span></h2>
+        <p class="text-xl text-main mb-12 max-w-3xl mx-auto">Find the perfect learning environment for your child.<br><span class="text-lg">为您的孩子找到完美的学习环境。</span></p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            {#each locations as location}
+                <LocationCard {location} />
+            {/each}
+        </div>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<Timeline />
+
+<!-- Form Section -->
+<section id="form" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">加入小熊猫大家庭</span></h2>
+        <p class="text-xl text-gray-600 mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
+        <div class="max-w-2xl mx-auto">
+            <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-white p-8 rounded-lg shadow-lg text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
+                    <input type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input">
+                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input">
+                </div>
+                <div class="mb-6">
+                    <textarea name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary text-lg font-bold uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
+                    Join Waitlist <br><span class="text-sm font-normal normal-case">加入候补名单</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
