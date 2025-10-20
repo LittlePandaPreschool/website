@@ -54,3 +54,12 @@ To run the project locally, follow these steps:
 ## Deployment
 
 The website is continuously deployed to [Netlify](https://www.netlify.com/). Any changes pushed to the `main` branch will automatically trigger a new build and deployment.
+
+## Project Configuration
+
+*   **`package.json`**: Defines the project scripts and dependencies. Use `npm install` to install dependencies and `npm run dev` to start the development server.
+*   **`svelte.config.js`**: The project is configured as a static site, with the output being sent to the `build` directory.
+*   **`vite.config.ts`**: It uses the standard SvelteKit Vite plugin.
+*   **`tailwind.config.ts`**: The project has a well-defined design system with a custom color palette and fonts.
+*   **`postcss.config.js`**: It uses Tailwind CSS and Autoprefixer for CSS processing.
+*   **`netlify.toml`**: This file is set up for deployment on Netlify, with the correct build command and publish directory specified.
