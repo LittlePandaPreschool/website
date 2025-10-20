@@ -1,0 +1,9 @@
+# Dependencies
+/node_modules
+
+# SvelteKit build files
+/build
+/.svelte-kit
+
+# IDE settings
+.vscode/
