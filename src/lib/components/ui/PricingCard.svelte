@@ -5,12 +5,14 @@
   let selectedOption = program.options[0];
 </script>
 
-<div class="transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
-  <h3 class="text-2xl font-bold text-secondary mb-2">{program.program}</h3>
-  <p class="text-lg text-main mb-4">{program.program_chinese}</p>
-  <p class="text-lg mb-6">{program.age} <br><span class="text-base">{program.age_chinese}</span></p>
+<div class="flex flex-col h-full transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+  <div class="flex-grow">
+    <h3 class="text-2xl font-bold text-secondary mb-2">{program.program}</h3>
+    <p class="text-lg text-main mb-4">{program.program_chinese}</p>
+    <p class="text-lg mb-6">{program.age} <br><span class="text-base">{program.age_chinese}</span></p>
+  </div>
 
-  <div class="flex justify-center mb-6">
+  <div class="flex justify-center items-center mb-6 space-x-[-2em]">
     {#each program.options as option}
       <PandaButton
         selected={selectedOption === option}
@@ -21,7 +23,7 @@
     {/each}
   </div>
 
-  <div class="text-center mt-8">
+  <div class="text-center mt-auto">
     <p class="text-lg text-main">Monthly Tuition <br><span class="text-base">月费</span></p>
     <p class="text-4xl font-bold text-main">${selectedOption.price.toLocaleString()}</p>
     <p class="text-lg text-main">/ month</p>

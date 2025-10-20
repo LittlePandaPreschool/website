@@ -92,7 +92,7 @@
                 <p>Flexible options to fit your family's needs. Choose between 2, 3, or 5 days of enrollment per week.<br><span class="text-lg">灵活的选择以满足您家庭的需求。每周可选择2天、3天或5天入学。</span></p>
             </InfoCard>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
             {#each pricing as program}
                 <div class="bg-white text-text-main rounded-lg shadow-lg p-8">
                     <PricingCard {program} />
