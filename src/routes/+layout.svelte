@@ -1,8 +1,8 @@
 <script>
   import { page } from '$app/stores';
   import "../app.css";
-  import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+import Header from "$lib/components/layout/Header.svelte";
+import Footer from "$lib/components/layout/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </svelte:head>
 
 <div class="bg-bg-main">

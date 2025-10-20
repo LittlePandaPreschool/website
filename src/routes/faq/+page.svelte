@@ -93,13 +93,10 @@
   import { fade } from 'svelte/transition';
 </script>
 
-<style>
+<style lang="postcss">
     .accordion-content {
         font-size: 1.15rem; /* A bit larger than default */
         line-height: 1.8;   /* More space between lines */
-    }
-    .accordion-content p, .accordion-content ul {
-        margin-bottom: 1.25rem; /* Space between paragraphs/lists */
     }
 </style>
 
@@ -110,7 +107,7 @@
     <section class="faq-page mb-16">
         <div class="container mx-auto">
             <div class="flex justify-between items-center mb-8">
-                <button on:click={expandAll} class="btn-primary">
+                <button on:click={expandAll} class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105">
                     {openItems.length === faqs.length ? 'Collapse All / 全部收起' : 'Expand All / 全部展开'}
                 </button>
             </div>

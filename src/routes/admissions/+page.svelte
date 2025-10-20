@@ -3,6 +3,9 @@
   import { fade } from '$lib/actions/fade';
 
   let formSubmitted = false;
+  let selectedAgeGroup = '';
+  let selectedLocation = '';
+  let selectedStartDate = '';
 
   function handleSubmit(event: Event) {
     event.preventDefault();
@@ -34,65 +37,96 @@
   });
 </script>
 
-<main class="container mx-auto px-6 py-12 pt-36 admissions-page page-pattern">
-    <h1 class="text-5xl font-bold text-center mb-16 fade-in-section" data-fade>Admissions <br><span class="text-4xl">招生</span></h1>
-
-    <section class="mb-16 bg-transparent p-8 rounded-2xl shadow-lg fade-in-section" data-fade>
-        <h2 class="text-4xl font-bold mb-8 text-center text-text-main">LITTLE PANDA PRESCHOOL <br><span class="text-3xl">小熊猫幼儿园</span></h2>
-        <p class="text-xl leading-relaxed mb-6 text-center text-text-main">We are now enrolling and have immediate openings available.<br><span class="text-lg">我们现在正在招生，并有即时名额。</span></p>
+<main class="admissions-page">
+    <section class="relative text-charcoal text-center py-24 md:py-32 bg-gradient-to-b from-bg-alt to-primary-light">
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Admissions<br><span class="text-3xl md:text-5xl font-light">招生</span></h1>
+            <p class="text-lg md:text-2xl font-light">We are delighted to welcome new families into our community and begin this wonderful journey together.<br><span class="text-base md:text-xl mt-2">我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。</span></p>
+        </div>
     </section>
 
+    <div class="container mx-auto px-6 py-12">
+
     <section class="mb-16 fade-in-section" data-fade>
-        <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">ADMISSION PROCESS <br><span class="text-3xl">录取流程</span></h3>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-transparent p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">STEP 1 <br><span class="text-xl">第一步</span></h4>
-                <p class="text-xl leading-relaxed">Please fill out the enrollment inquiry information below. Once we process your information, we will send you an email or give you a call to let you know the status of your request.<br><span class="text-lg">请填写下面的入学咨询信息。我们处理您的信息后，将向您发送电子邮件或致电告知您的请求状态。</span></p>
+        <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">Your Journey to Little Panda <br><span class="text-3xl">您的小熊猫之旅</span></h3>
+        <div class="relative">
+            <div class="journey-line"></div>
+            <div class="journey-step">
+                <div class="journey-icon">1</div>
+                <div class="journey-content">
+                    <h4 class="text-2xl font-bold mb-2">Submit Your Inquiry <br><span class="text-xl">提交咨询</span></h4>
+                    <p class="text-lg">Fill out the form below to express your interest. We'll be in touch shortly to confirm we've received it.<br><span class="text-base">填写下面的表格表达您的兴趣。我们收到后会尽快与您联系确认。</span></p>
+                </div>
             </div>
-            <div class="bg-transparent p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">STEP 2 <br><span class="text-xl">第二步</span></h4>
-                <p class="text-xl leading-relaxed">Parents are invited to schedule a Free Introductory school tour.<br><span class="text-lg">我们邀请家长安排一次免费的学校参观介绍。</span></p>
+            <div class="journey-step">
+                <div class="journey-icon">2</div>
+                <div class="journey-content">
+                    <h4 class="text-2xl font-bold mb-2">Schedule a Tour <br><span class="text-xl">安排参观</span></h4>
+                    <p class="text-lg">We invite you to a personalized tour to experience our nurturing environment firsthand.<br><span class="text-base">我们邀请您进行个性化参观，亲身体验我们充满关爱的环境。</span></p>
+                </div>
             </div>
-            <div class="bg-transparent p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">STEP 3 <br><span class="text-xl">第三步</span></h4>
-                <p class="text-xl leading-relaxed">When there is a permanent spot available in the requested class time, your child will be invited to a in person playdate. Teachers will use this playdate to determine whether the program is appropriate for the student. For students, this class serves as an opportunity to participate and then decide whether they would like to enroll. This playdate will be student only.<br><span class="text-lg">当所申请的班级时间有永久名额时，您的孩子将被邀请参加一次亲身游戏日。老师将利用这次游戏日来确定该课程是否适合该学生。对于学生来说，这个班级是参与并决定是否愿意入学的机会。这次游戏日仅限学生参加。</span></p>
+            <div class="journey-step">
+                <div class="journey-icon">3</div>
+                <div class="journey-content">
+                    <h4 class="text-2xl font-bold mb-2">Student Playdate <br><span class="text-xl">学生游戏日</span></h4>
+                    <p class="text-lg">A fun opportunity for your child to interact with our teachers and explore our program.<br><span class="text-base">一个让您的孩子与我们老师互动、探索我们课程的有趣机会。</span></p>
+                </div>
             </div>
-            <div class="bg-transparent p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">STEP 4 <br><span class="text-xl">第四步</span></h4>
-                <p class="text-xl leading-relaxed">After the tour and playdate, the family of the child to be enrolled must submit a non- refundable deposit equal to one month's tuition, in order to hold the spot. The deposit will be applied to your child's tuition.<br><span class="text-lg">参观和游戏日结束后，被录取孩子的家庭必须提交相当于一个月学费的不可退还押金，以保留名额。该押金将用于抵扣您孩子的学费。</span></p>
+            <div class="journey-step">
+                <div class="journey-icon">4</div>
+                <div class="journey-content">
+                    <h4 class="text-2xl font-bold mb-2">Secure Your Spot <br><span class="text-xl">确保名额</span></h4>
+                    <p class="text-lg">A deposit secures your child's place, allowing us to prepare for their unique learning journey.<br><span class="text-base">押金可确保您孩子的名额，让我们为他们独特的学习之旅做好准备。</span></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="mb-16 fade-in-section" data-fade>
-        <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">Tuition <br><span class="text-3xl">学费</span></h3>
-        <div class="grid md:grid-cols-3 gap-8 text-xl">
-            <div class="tuition-card bg-transparent p-6 rounded-2xl shadow-lg border-t-4 border-primary transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">Preschool (age 3-5): <br><span class="text-xl">学前班 (3-5岁):</span></h4>
-                <p class="text-xl">M-F 9:00 AM-3:30 PM</p>
-                <p class="text-xl">5-days: $2,600/month <br><span class="text-lg">5天: $2,600/月</span></p>
-                <p class="text-xl">3-days: $2,000/month <br><span class="text-lg">3天: $2,000/月</span></p>
-                <p class="text-xl">2-days: $1,700/month <br><span class="text-lg">2天: $1,700/月</span></p>
+    <section class="mb-16 fade-in-section bg-secondary text-white rounded-2xl p-8" data-fade>
+        <h3 class="text-4xl font-bold mt-12 mb-6 text-center font-sans">Our Growth Tiers <br><span class="text-3xl">我们的成长阶梯</span></h3>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="growth-tier bg-white text-text-main">
+                <h4 class="text-2xl font-bold mb-2 text-primary font-sans">Infant Program <br><span class="text-xl">婴儿项目</span></h4>
+                <p class="text-sm text-gray-500 mb-4 font-sans">(6 wks - 18 mos)</p>
+                <p class="text-lg font-bold font-sans">Monthly Tuition<br><span class="text-base">月费</span></p>
+                <p class="text-base mb-4 font-sans">(based on days per week)<br><span class="text-sm">（按每周天数计算）</span></p>
+                <p class="text-xl font-sans">5 Days: $3,100</p>
+                <p class="text-xl font-sans">3 Days: $2,400</p>
+                <p class="text-xl font-sans">2 Days: $2,100</p>
             </div>
-            <div class="tuition-card bg-transparent p-6 rounded-2xl shadow-lg border-t-4 border-primary transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">Toddler (age 18 months-3) <br><span class="text-xl">幼儿班 (18个月-3岁)</span></h4>
-                <p class="text-xl">M-F 9:00 AM-3:30 PM</p>
-                <p class="text-xl">5-days: $2,800/month <br><span class="text-lg">5天: $2,800/月</span></p>
-                <p class="text-xl">3-days: $2,200/month <br><span class="text-lg">3天: $2,200/月</span></p>
-                <p class="text-xl">2-days: $1,900/month <br><span class="text-lg">2天: $1,900/月</span></p>
+            <div class="growth-tier bg-white text-text-main">
+                <h4 class="text-2xl font-bold mb-2 text-primary font-sans">Toddler Program <br><span class="text-xl">幼儿项目</span></h4>
+                <p class="text-sm text-gray-500 mb-4 font-sans">(18 mos - 3 yrs)</p>
+                <p class="text-lg font-bold font-sans">Monthly Tuition<br><span class="text-base">月费</span></p>
+                <p class="text-base mb-4 font-sans">(based on days per week)<br><span class="text-sm">（按每周天数计算）</span></p>
+                <p class="text-xl font-sans">5 Days: $2,800</p>
+                <p class="text-xl font-sans">3 Days: $2,200</p>
+                <p class="text-xl font-sans">2 Days: $1,900</p>
             </div>
-            <div class="tuition-card bg-transparent p-6 rounded-2xl shadow-lg border-t-4 border-primary transform hover:scale-105 transition-transform duration-300">
-                <h4 class="text-2xl font-bold mb-4">Infant (6 weeks to 18 months) <br><span class="text-xl">婴儿班 (6周-18个月)</span></h4>
-                <p class="text-xl">M-F 9:00 AM-3:30 PM</p>
-                <p class="text-xl">5-days $3,100/month <br><span class="text-lg">5天: $3,100/月</span></p>
-                <p class="text-xl">3-days $2,400/month <br><span class="text-lg">3天: $2,400/月</span></p>
-                <p class="text-xl">2-days $2,100/month <br><span class="text-lg">2天: $2,100/月</span></p>
+            <div class="growth-tier bg-white text-text-main">
+                <h4 class="text-2xl font-bold mb-2 text-primary font-sans">Preschool Program <br><span class="text-xl">学前班项目</span></h4>
+                <p class="text-sm text-gray-500 mb-4 font-sans">(3 - 5 yrs)</p>
+                <p class="text-lg font-bold font-sans">Monthly Tuition<br><span class="text-base">月费</span></p>
+                <p class="text-base mb-4 font-sans">(based on days per week)<br><span class="text-sm">（按每周天数计算）</span></p>
+                <p class="text-xl font-sans">5 Days: $2,600</p>
+                <p class="text-xl font-sans">3 Days: $2,000</p>
+                <p class="text-xl font-sans">2 Days: $1,700</p>
             </div>
         </div>
-        <div class="mt-12 bg-transparent p-8 rounded-2xl shadow-lg text-xl leading-relaxed">
+        <div class="mt-12 text-center text-lg leading-relaxed">
             <p class="text-xl">Little Panda Preschool offers both AM care and PM care for our students. We understand that many families have busy schedules and may need additional support beyond our regular school hours, so we're happy to be able to offer this service.<br><span class="text-lg">小熊猫幼儿园为我们的学生提供上午和下午的托管服务。我们理解许多家庭日程繁忙，可能需要在正常上课时间之外获得额外支持，因此我们很高兴能提供这项服务。</span></p>
-            <p class="mt-4 text-xl"><b>AM care program:</b> 8:30 AM to 9:00 AM, M-F, $220 per month<br><span class="text-lg"><b>上午托管项目:</b> 上午8:30至9:00，周一至周五，$220/月</span></p>
-            <p class="text-xl"><b>PM care program:</b> 3:30 PM to 5:30 PM, M-F, $650 per month<br><span class="text-lg"><b>下午托管项目:</b> 下午3:30至5:30，周一至周五，$650/月</span></p>
+            <div class="mt-4 grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-2xl font-bold mb-2">AM Care<br><span class="text-xl">上午托管</span></h4>
+                    <p class="text-xl">8:30 AM to 9:00 AM, M-F</p>
+                    <p class="text-xl font-bold">$220 per month<br><span class="text-lg">每月$220</span></p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold mb-2">PM Care<br><span class="text-xl">下午托管</span></h4>
+                    <p class="text-xl">3:30 PM to 5:30 PM, M-F</p>
+                    <p class="text-xl font-bold">$650 per month<br><span class="text-lg">每月$650</span></p>
+                </div>
+            </div>
             <p class="mt-4 text-xl">The PM care program will offer various activities including dance, yoga , math circle, stem and gardening. These activities will be provided in accordance with the established curriculum.<br><span class="text-lg">下午托管项目将提供各种活动，包括舞蹈、瑜伽、数学圈、STEM和园艺。这些活动将根据既定课程提供。</span></p>
         </div>
     </section>
@@ -110,15 +144,15 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="name" class="block text-xl mb-2">Name * <br><span class="text-lg">姓名 *</span></label>
-                            <input id="name" type="text" class="form-input w-full">
+                            <input id="name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="block text-xl mb-2">Email * <br><span class="text-lg">电子邮件 *</span></label>
-                            <input id="email" type="email" class="form-input w-full">
+                            <input id="email" type="email" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="phone" class="block text-xl mb-2">Phone * <br><span class="text-lg">电话 *</span></label>
-                            <input id="phone" type="tel" class="form-input w-full">
+                            <input id="phone" type="tel" class="form-input w-full" required>
                         </div>
                     </div>
                 </div>
@@ -129,28 +163,46 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="student-name" class="block text-xl mb-2">Student Name 学生姓名 *</label>
-                            <input id="student-name" type="text" class="form-input w-full">
+                            <input id="student-name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="student-birthday" class="block text-xl mb-2">Student Birthday (MM/DD/YYYY) 学生出生日期 (月/日/年） *</label>
-                            <input id="student-birthday" type="text" class="form-input w-full">
+                            <input id="student-birthday" type="text" class="form-input w-full" required>
                         </div>
-                        <div class="form-group">
-                            <label class="block text-xl mb-2">Age Group * <br><span class="text-lg">年龄段 *</span></label>
-                            <div class="flex flex-col space-y-2 mt-2">
-                                <label class="flex items-center"><input type="radio" name="age_group" value="infant" class="form-radio"><span class="ml-3 text-xl">Infant (0-18 mos) <br><span class="text-lg">婴儿 (0-18个月)</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="age_group" value="toddler" class="form-radio"><span class="ml-3 text-xl">Toddler (18 mos - 3 yrs) <br><span class="text-lg">幼儿 (18个月-3岁)</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="age_group" value="preschool" class="form-radio"><span class="ml-3 text-xl">Preschool (3-5 yrs) <br><span class="text-lg">学前班 (3-5岁)</span></span></label>
+                        <fieldset class="form-group">
+                            <legend class="block text-xl mb-2">Age Group * <br><span class="text-lg">年龄段 *</span></legend>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                                <label class="card-radio" class:selected="{selectedAgeGroup === 'infant'}">
+                                    <input type="radio" name="age_group" value="infant" class="hidden" bind:group="{selectedAgeGroup}">
+                                    <span class="text-xl">Infant (0-18 mos) <br><span class="text-lg">婴儿 (0-18个月)</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedAgeGroup === 'toddler'}">
+                                    <input type="radio" name="age_group" value="toddler" class="hidden" bind:group="{selectedAgeGroup}">
+                                    <span class="text-xl">Toddler (18 mos - 3 yrs) <br><span class="text-lg">幼儿 (18个月-3岁)</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedAgeGroup === 'preschool'}">
+                                    <input type="radio" name="age_group" value="preschool" class="hidden" bind:group="{selectedAgeGroup}">
+                                    <span class="text-xl">Preschool (3-5 yrs) <br><span class="text-lg">学前班 (3-5岁)</span></span>
+                                </label>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="block text-xl mb-2">Preferred Location * <br><span class="text-lg">首选地点 *</span></label>
-                            <div class="flex flex-col space-y-2 mt-2">
-                                <label class="flex items-center"><input type="radio" name="location" value="granada" class="form-radio"><span class="ml-3 text-xl">Granada Campus <br><span class="text-lg">格拉纳达校区</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="location" value="sf_state" class="form-radio"><span class="ml-3 text-xl">Children's Campus at SF State <br><span class="text-lg">旧金山州立大学儿童校区</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="location" value="ocean_ave" class="form-radio"><span class="ml-3 text-xl">Ocean Avenue Campus <br><span class="text-lg">海洋大道校区</span></span></label>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <legend class="block text-xl mb-2">Preferred Location * <br><span class="text-lg">首选地点 *</span></legend>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                                <label class="card-radio" class:selected="{selectedLocation === 'granada'}">
+                                    <input type="radio" name="location" value="granada" class="hidden" bind:group="{selectedLocation}">
+                                    <span class="text-xl">Granada Campus <br><span class="text-lg">格拉纳达校区</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedLocation === 'sf_state'}">
+                                    <input type="radio" name="location" value="sf_state" class="hidden" bind:group="{selectedLocation}">
+                                    <span class="text-xl">Children's Campus at SF State <br><span class="text-lg">旧金山州立大学儿童校区</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedLocation === 'ocean_ave'}">
+                                    <input type="radio" name="location" value="ocean_ave" class="hidden" bind:group="{selectedLocation}">
+                                    <span class="text-xl">Ocean Avenue Campus <br><span class="text-lg">海洋大道校区</span><span class="text-lg">(Coming Soon)</span></span>
+                                </label>
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
 
@@ -158,21 +210,33 @@
                 <div>
                     <h4 class="text-2xl font-semibold mb-6 border-b-2 border-primary pb-2">Enrollment Details <br><span class="text-xl">入学详情</span></h4>
                     <div class="space-y-6">
-                        <div class="form-group">
-                            <label class="block text-xl mb-2">Desired Start Date * <br><span class="text-lg">期望开始日期 *</span></label>
-                            <div class="flex flex-col space-y-2 mt-2">
-                                <label class="flex items-center"><input type="radio" name="start_date" value="asap" class="form-radio"><span class="ml-3 text-xl">As soon as possible <br><span class="text-lg">尽快</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="start_date" value="1-3_months" class="form-radio"><span class="ml-3 text-xl">In 1-3 months <br><span class="text-lg">1-3个月内</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="start_date" value="3-6_months" class="form-radio"><span class="ml-3 text-xl">In 3-6 months <br><span class="text-lg">3-6个月内</span></span></label>
-                                <label class="flex items-center"><input type="radio" name="start_date" value="exploring" class="form-radio"><span class="ml-3 text-xl">Just exploring <br><span class="text-lg">仅了解</span></span></label>
+                        <fieldset class="form-group">
+                            <legend class="block text-xl mb-2">Desired Start Date * <br><span class="text-lg">期望开始日期 *</span></legend>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                                <label class="card-radio" class:selected="{selectedStartDate === 'asap'}">
+                                    <input type="radio" name="start_date" value="asap" class="hidden" bind:group="{selectedStartDate}">
+                                    <span class="text-xl">As soon as possible <br><span class="text-lg">尽快</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedStartDate === '1-3_months'}">
+                                    <input type="radio" name="start_date" value="1-3_months" class="hidden" bind:group="{selectedStartDate}">
+                                    <span class="text-xl">In 1-3 months <br><span class="text-lg">1-3个月内</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedStartDate === '3-6_months'}">
+                                    <input type="radio" name="start_date" value="3-6_months" class="hidden" bind:group="{selectedStartDate}">
+                                    <span class="text-xl">In 3-6 months <br><span class="text-lg">3-6个月内</span></span>
+                                </label>
+                                <label class="card-radio" class:selected="{selectedStartDate === 'exploring'}">
+                                    <input type="radio" name="start_date" value="exploring" class="hidden" bind:group="{selectedStartDate}">
+                                    <span class="text-xl">Just exploring <br><span class="text-lg">仅了解</span></span>
+                                </label>
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
 
                 <!-- Submission Button -->
                 <div class="text-center mt-8">
-                    <button type="submit" class="btn-primary">Submit Inquiry <br><span class="text-lg">提交咨询</span></button>
+                    <button type="submit" class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105">Submit Inquiry <br><span class="text-lg">提交咨询</span></button>
                 </div>
             </div>
         </form>
@@ -182,7 +246,33 @@
         </div>
         {/if}
     </section>
+    </div>
 </main>
 
-<style>
+<style lang="postcss">
+    .card-radio {
+        @apply bg-white p-6 rounded-lg shadow-md cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-transparent text-center;
+    }
+    .card-radio.selected {
+        @apply border-primary shadow-lg scale-105;
+    }
+    .journey-line {
+        @apply absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 -translate-x-1/2;
+    }
+    .journey-step {
+        @apply relative mb-12 flex items-center;
+    }
+    .journey-icon {
+        @apply w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg z-10;
+    }
+    .journey-content {
+        @apply bg-white p-6 rounded-lg shadow-md ml-8 w-full transition-transform duration-300;
+    }
+    .journey-step:hover .journey-content {
+        @apply scale-105;
+    }
+    .growth-tier {
+        @apply bg-white p-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+        background-image: linear-gradient(to top, #f3f4f6, white);
+    }
 </style>

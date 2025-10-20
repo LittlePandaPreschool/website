@@ -16,7 +16,7 @@ export default {
         'text-light': '#6B7280',   // A darker gray for secondary text
       },
       fontFamily: {
-        sans: ['"Bebas Neue"', 'sans-serif'], // A bold, modern font for headings
+        sans: ['Poppins', 'sans-serif'], // A clean, modern font for headings
         body: ['Montserrat', 'sans-serif'], // A clean, readable font for body text
       },
     }

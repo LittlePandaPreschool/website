@@ -102,18 +102,18 @@
 
 <section class="py-20 bg-bg-main">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-text-main mb-12 text-center">A Day at Little Panda</h2>
+    <h2 class="text-4xl font-bold text-text-main mb-12 text-center">A Day at Little Panda <br><span class="text-3xl">小熊猫的一天</span></h2>
     <div class="relative max-w-2xl mx-auto">
       <div class="border-l-4 border-secondary absolute h-full top-0 left-3.5"></div>
       {#each items as item, i}
         <div class="mb-8 flex items-center w-full timeline-item transform hover:scale-105 transition-transform duration-300" bind:this={elements[i]}>
           <div class="z-20 flex-shrink-0">
-            <div class="h-8 w-8 bg-primary rounded-full"></div>
+            <div class="h-8 w-8 {item.dotColor} rounded-full"></div>
           </div>
-          <div class="bg-secondary rounded-lg shadow-md ml-8 p-6 w-full">
+          <div class="bg-white rounded-lg shadow-md ml-8 p-6 w-full">
             <p class="text-text-light text-sm mb-2">{item.time}</p>
-            <h3 class="flex items-center font-bold text-text-main text-xl mb-2">
-              <i class="{item.icon} text-primary mr-3"></i>
+            <h3 class="flex items-center font-body font-bold text-text-main text-xl mb-2">
+              <i class="{item.icon} {item.iconColor} mr-3"></i>
               {item.title}
             </h3>
             <p class="text-text-light">{item.description}</p>
@@ -124,5 +124,5 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
 </style>
