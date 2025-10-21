@@ -20,16 +20,18 @@
         <h2 class="text-3xl font-bold mb-8 text-center text-text-main">Open Positions <br><span class="text-2xl">空缺职位</span></h2>
         <div class="space-y-8 max-w-4xl mx-auto">
             {#each jobs as job}
-            <div class="card p-6 rounded-lg transform hover:scale-105 transition-transform duration-300" data-fade>
-                <h3 class="text-2xl font-bold mb-2">{job.title}<br><span class="text-xl">{job.chinese_title}</span></h3>
-                <p class="mb-4">{job.description}</p>
-                <p class="font-bold">Qualifications:</p>
-                <ul class="list-disc list-inside">
-                    {#each job.qualifications as qualification}
-                    <li>{qualification}</li>
-                    {/each}
-                </ul>
-                <a href="#apply-form" on:click={() => selectPosition(job.title)} class="text-primary hover:opacity-80 font-bold mt-4 inline-block">Apply Now &rarr;</a>
+            <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-lg shadow-lg">
+                <div class="card p-6 rounded-lg bg-alt hover:bg-main transition-colors duration-300" data-fade>
+                    <h3 class="text-2xl font-bold mb-2">{job.title}<br><span class="text-xl">{job.chinese_title}</span></h3>
+                    <p class="mb-4">{job.description}</p>
+                    <p class="font-bold">Qualifications:</p>
+                    <ul class="list-disc list-inside">
+                        {#each job.qualifications as qualification}
+                        <li>{qualification}</li>
+                        {/each}
+                    </ul>
+                    <a href="#apply-form" on:click={() => selectPosition(job.title)} class="btn-primary mt-4 inline-block">Apply Now &rarr;</a>
+                </div>
             </div>
             {/each}
         </div>

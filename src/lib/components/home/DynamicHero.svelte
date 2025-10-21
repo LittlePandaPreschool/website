@@ -30,7 +30,7 @@
   });
 </script>
 
-<section class="relative h-screen w-full overflow-hidden bg-black">
+<section class="relative h-[90vh] w-full overflow-hidden bg-black">
   {#key currentImageIndex}
     <div
       class="absolute inset-0 h-full w-full bg-cover bg-center"

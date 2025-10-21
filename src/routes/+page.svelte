@@ -43,10 +43,10 @@
 <DynamicHero />
 
 <!-- Programs Section -->
-<section id="programs" class="py-20">
+<section id="programs" class="py-10">
     <div class="container mx-auto px-6">
     <!-- Our Blueprint for Brilliance Section -->
-    <section class="py-20 bg-secondary text-white">
+    <section class="py-10 bg-secondary text-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-5xl font-bold mb-4">Our Blueprint for Brilliance<br><span class="text-4xl">我们的卓越蓝图</span></h2>
             <p class="text-xl mb-12 max-w-3xl mx-auto">We've designed a holistic approach to early education that nurtures every aspect of your child's development, preparing them to thrive in a global community.<br><span class="text-lg">我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。</span></p>
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Photo Gallery Section -->
-    <section class="py-20 bg-alt">
+    <section class="py-10 bg-alt">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-4 text-center text-secondary">A Glimpse Into Our World<br><span class="text-3xl">一睹我们的世界</span></h2>
             <p class="text-xl text-center text-main mb-12">Where curiosity and creativity come to life.<br><span class="text-lg">一个让好奇心与创造力绽放的地方。</span></p>
@@ -76,7 +76,7 @@
 </section>
 
 <!-- Locations Section -->
-<section class="py-20 bg-main">
+<section class="py-10 bg-main">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-5xl font-bold mb-4 text-secondary">Our Campuses<br><span class="text-4xl">我们的校区</span></h2>
         <p class="text-xl text-main mb-12 max-w-3xl mx-auto">Find the perfect learning environment for your child.<br><span class="text-lg">为您的孩子找到完美的学习环境。</span></p>
@@ -92,7 +92,7 @@
 <Timeline />
 
 <!-- Form Section -->
-<section id="form" class="py-20 bg-white">
+<section id="form" class="py-10 bg-white">
     <div class="container mx-auto px-6 text-center">                
         <img src="/img/logo.jpg" alt="Little Panda Logo" class="h-48 mx-auto mb-12">
         <h2 class="text-4xl font-bold mb-4 text-primary">Join the Little Panda Family<br><span class="text-3xl text-secondary">加入小熊猫大家庭</span></h2>        
