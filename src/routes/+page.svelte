@@ -92,12 +92,13 @@
 <Timeline />
 
 <!-- Form Section -->
-<section id="form" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">加入小熊猫大家庭</span></h2>
-        <p class="text-xl text-gray-600 mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
+<section id="form" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">                
+        <img src="/img/logo.jpg" alt="Little Panda Logo" class="h-48 mx-auto mb-12">
+        <h2 class="text-4xl font-bold mb-4 text-primary">Join the Little Panda Family<br><span class="text-3xl text-secondary">加入小熊猫大家庭</span></h2>        
+        <p class="text-xl text-text-main mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
         <div class="max-w-2xl mx-auto">
-            <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-white p-8 rounded-lg shadow-lg text-left">
+            <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-gray-100 p-8 rounded-lg shadow-lg text-left">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <input type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
                     <input type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>

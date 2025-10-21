@@ -11,7 +11,6 @@
 <header class="bg-bg-alt shadow-md fixed top-0 left-0 right-0 z-50">
   <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="/" class="text-5xl font-bold text-primary flex items-center logo">
-          <lottie-player src="/panda-animation.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
           <div class="logo-text">
               <span>Little</span>
               <span>Panda</span>
