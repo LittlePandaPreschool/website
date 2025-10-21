@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#4CBB17',      // "Kelly Green" - vibrant, natural, and energetic
-        'secondary': '#228B22',    // "Forest Green" - a deep, grounding green
+        'primary': '#A3D9B1',      // A soft, muted green that is much gentler on the eyes
+        'secondary': '#7EBF8F',    // A darker shade for contrast that is still significantly softer
         'accent': '#E2725B',       // "Terracotta" - for warmth and stability
         'bg-main': '#E6F7FF',      // A pleasant light blue
         'bg-alt': '#FFFFFF',       // White for headers and cards

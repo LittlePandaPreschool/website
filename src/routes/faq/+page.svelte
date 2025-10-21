@@ -98,6 +98,9 @@
         font-size: 1.15rem; /* A bit larger than default */
         line-height: 1.8;   /* More space between lines */
     }
+    .themed-content * {
+        color: white !important;
+    }
 </style>
 
 <main class="container mx-auto px-6 py-12">
@@ -113,18 +116,20 @@
             </div>
             <div class="accordion space-y-4">
                 {#each faqs as faq, i}
-                <div class="accordion-item card p-4 rounded-lg bg-alt transform hover:scale-105 transition-transform duration-300" data-fade>
-                    <button on:click={() => toggle(i)} class="accordion-header w-full text-left text-2xl font-semibold py-4 focus:outline-none {openItems.includes(i) ? 'active' : ''}">
-                        <span class="flex justify-between items-center">
-                            {faq.question}
-                            <span class="icon"></span>
-                        </span>
-                    </button>
+                <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-lg shadow-lg">
+                    <div class="accordion-item card p-4 rounded-lg bg-alt transform hover:scale-105 transition-transform duration-300" data-fade>
+                        <button on:click={() => toggle(i)} class="accordion-header w-full text-left text-2xl font-semibold py-4 px-6 focus:outline-none {openItems.includes(i) ? 'active' : ''}">
+                            <span class="flex justify-between items-center">
+                                {faq.question}
+                                <span class="text-2xl font-light text-primary transform transition-transform duration-300 {openItems.includes(i) ? 'rotate-45' : ''}">+</span>
+                            </span>
+                        </button>
                     {#if openItems.includes(i)}
-                    <div class="accordion-content text-lg leading-relaxed pt-2" style="opacity: 1;">
+                    <div class="accordion-content text-lg leading-relaxed p-4 bg-primary rounded-lg themed-content" style="opacity: 1;">
                         {@html faq.answer}
                     </div>
                     {/if}
+                    </div>
                 </div>
                 {/each}
             </div>

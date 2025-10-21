@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    @apply bg-gradient-to-r from-primary to-green-600 hover:from-primary hover:to-green-700 text-white font-bold py-3 px-8 rounded-full text-xl uppercase tracking-wider transition duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-gradient-to-r from-primary to-secondary hover:from-primary hover:to-green-700 text-white font-bold py-3 px-8 rounded-full text-xl uppercase tracking-wider transition duration-300 transform hover:scale-105 shadow-lg;
 }
 
 .form-input,
