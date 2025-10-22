@@ -4,6 +4,7 @@
   import DynamicHero from '$lib/components/home/DynamicHero.svelte';
   import ImageCarousel from '$lib/components/ui/ImageCarousel.svelte';
   import { locations } from '$lib/data/locations';
+  import { siteConfig } from '$lib/data/siteConfig';
   export let data;
   const { allGalleryImages } = data;
 
@@ -97,14 +98,14 @@
         <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">加入小熊猫大家庭</span></h2>
         <p class="text-xl text-gray-600 mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
         <div class="max-w-2xl mx-auto">
-            <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-white p-8 rounded-lg shadow-lg text-left">
+            <form name="contact" method="POST" data-netlify="true" class="bg-white p-8 rounded-lg shadow-lg text-left">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <input type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
                     <input type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input">
-                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input">
+                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
+                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input" on:focus={(e) => e.target.type = 'date'} on:blur={(e) => e.target.type = 'text'} min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]}>
                 </div>
                 <div class="mb-6">
                     <textarea name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea"></textarea>

@@ -43,7 +43,7 @@
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="phone">Phone Number<br><span class="text-lg">电话号码</span></label>
-                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890">
+                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="position">Position Applying For<br><span class="text-lg">申请职位</span></label>

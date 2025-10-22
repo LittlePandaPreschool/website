@@ -59,6 +59,20 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Updated the salaries to be a range instead of a specific number.
     - Added hours to the job postings.
     - Added Chinese translations to the job postings.
+- **Content Management Improvement:**
+    - Created a centralized configuration file at `src/lib/data/siteConfig.ts` to manage site-wide data like the contact email address.
+    - Refactored the website to use the new configuration file, making it easier to update the email address in the future.
+- **Email Sending Improvement:**
+    - Implemented a serverless function using Netlify Functions to handle form submissions.
+    - Integrated Netlify Forms to capture form data and trigger the serverless function.
+    - Updated the frontend to provide a seamless user experience with success and error messages.
+- **Form Handling Simplification:**
+    - Removed the serverless function and custom JavaScript for form handling.
+    - Reverted to a simple HTML form setup that uses Netlify's built-in form handling.
+- **Form Validation:**
+    - Added HTML5 validation to the forms on the homepage, admissions, and careers pages to enforce constraints on email, phone number, and date of birth fields.
+- **Form Usability:**
+    - Added a placeholder to the date of birth field on the homepage to improve user experience.
 
 ## Next Steps
 1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.
