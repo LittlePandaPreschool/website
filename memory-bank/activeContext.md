@@ -74,6 +74,10 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Added HTML5 validation to the forms on the homepage, admissions, and careers pages to enforce constraints on email, phone number, and date of birth fields.
 - **Form Usability:**
     - Added a placeholder to the date of birth field on the homepage to improve user experience.
+- **Admissions Form Enhancement:**
+    - Implemented a client-side JavaScript function to "polish" form field values before submission.
+    - Added client-side validation for US phone number format.
+    - Added a redirect to a "thank you" page after successful form submission.
 
 ## Next Steps
 1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.

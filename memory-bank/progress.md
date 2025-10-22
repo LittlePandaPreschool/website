@@ -14,3 +14,7 @@ The Memory Bank has been updated to accurately reflect the current state of the 
 ## Recent Updates
 *   **Careers Page:** The careers page has been updated with salary information and a new `JobCard.svelte` component.
 *   **Form Submission:** The admissions form now uses a client-side JavaScript function to handle form submissions. This function formats the "Desired Start Date" into a full sentence and creates a professional email template with a custom subject line and HTML body.
+*   **Admissions Form Enhancement:**
+    *   Implemented a client-side JavaScript function to "polish" form field values before submission.
+    *   Added client-side validation for US phone number format.
+    *   Added a redirect to a "thank you" page after successful form submission.

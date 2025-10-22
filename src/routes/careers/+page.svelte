@@ -6,6 +6,27 @@
     function selectPosition(position: string) {
         selectedPosition = position;
     }
+
+    async function handleSubmit(event: Event) {
+        event.preventDefault();
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+
+        // Validate phone number
+        const phone = formData.get('phone') as string;
+        const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+        if (!phoneRegex.test(phone)) {
+            alert('Please enter a valid US phone number.');
+            return;
+        }
+
+        await fetch('/', {
+            method: 'POST',
+            body: formData,
+        });
+
+        window.location.href = '/thank-you';
+    }
 </script>
 
 <main class="container mx-auto px-6 py-12">
@@ -28,7 +49,7 @@
 
     <section id="apply-form" class="py-16">
         <h2 class="text-3xl font-bold mb-8 text-center text-text-main">Apply Now <br><span class="text-2xl">立即申请</span></h2>
-        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg">
+        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg" on:submit|preventDefault={handleSubmit}>
             <input type="hidden" name="form-name" value="application" />
             <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
