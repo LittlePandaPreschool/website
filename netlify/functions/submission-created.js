@@ -1,4 +1,5 @@
 exports.handler = async function(event, context) {
+  console.log("Function invoked!");
   const { payload } = JSON.parse(event.body);
   const { data } = payload;
 
