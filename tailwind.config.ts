@@ -14,6 +14,11 @@ export default {
         'bg-alt': '#FFFFFF',       // White for headers and cards
         'text-main': '#1A1A1A',    // Dark text for high contrast on light backgrounds
         'text-light': '#6B7280',   // A darker gray for secondary text
+        'panda-p': '#D92E27',      // Red
+        'panda-a': '#43A047',      // Green
+        'panda-n': '#1E88E5',      // Blue
+        'panda-d': '#F47B20',      // Orange
+        'panda-a2': '#D81B60',     // Pink
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], // A clean, modern font for headings
