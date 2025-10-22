@@ -63,16 +63,12 @@
       </p>
     `;
 
-    const newFormData = new FormData();
-    newFormData.append('form-name', 'admissions');
-    newFormData.append('subject', subject);
-    newFormData.append('message', message);
-
-    console.log(Object.fromEntries(newFormData.entries()));
+    formData.append('subject', subject);
+    formData.append('message', message);
 
     await fetch('?/', {
       method: 'POST',
-      body: newFormData,
+      body: formData,
     });
 
     window.location.href = form.action;
