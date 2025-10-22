@@ -9,6 +9,37 @@
   let selectedLocation = '';
   let selectedStartDate = '';
 
+  async function handleSubmit(event: Event) {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    let startDate = '';
+    switch (formData.get('start_date')) {
+      case 'asap':
+        startDate = 'This family is looking to start as soon as possible.';
+        break;
+      case '1-3_months':
+        startDate = 'This family is looking to start in about 1-3 months.';
+        break;
+      case '3-6_months':
+        startDate = 'This family is looking to start in about 3-6 months.';
+        break;
+      case 'exploring':
+        startDate = 'This family is just exploring their options.';
+        break;
+    }
+    formData.set('start_date', startDate);
+
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData as any).toString(),
+    });
+
+    window.location.href = form.action;
+  }
+
   onMount(() => {
     const sections = document.querySelectorAll('[data-fade]');
 
@@ -116,7 +147,7 @@
     <section class="mb-16 p-8 rounded-2xl shadow-lg glass-effect fade-in-section" data-fade>
         <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">Little Panda Preschool Enrollment Inquiry <br><span class="text-3xl">小熊猫幼儿园入学咨询</span></h3>
         <p class="text-xl mb-6 text-center text-text-main">* Indicates required field <br><span class="text-lg">* 表示必填字段</span></p>
-        <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true" action="/thank-you">
+        <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true" action="/thank-you" on:submit={handleSubmit}>
             <input type="hidden" name="form-name" value="admissions" />
             <input type="hidden" name="subject" value="New Admission Inquiry / 新的入学咨询 from %{name}" />
             <div class="space-y-12">
