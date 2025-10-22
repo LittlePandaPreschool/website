@@ -12,11 +12,9 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Updated the `DynamicHero.svelte` component to dynamically load all images from the `/static/img/hero/` directory using Vite's `import.meta.glob` feature.
     - Updated the `+page.svelte` file to dynamically load all images from the `/static/img/gallery/` directory and pass them to the `ImageCarousel` component.
 - **Dynamic Hero Section:**
-    - Created a new `PhotoWallHero.svelte` component to replace the static hero image with a dynamic, engaging photo wall.
-    - The photo wall features a masonry-style grid of images that are in constant, subtle motion with a seamless vertical scroll.
-    - Individual images within the grid update at random, staggered intervals, creating a "twinkling" effect.
-    - The hero section periodically transitions to a single, full-screen "feature" image, creating a powerful focal point.
-    - All animations and transitions are designed to be slow, smooth, and elegant, with a custom ease-in-and-out curve.
+    - Replaced the previous "photo wall" hero concept with a full-screen, Ken Burns-style animated hero (`DynamicHero.svelte`).
+    - The hero section now cycles through a series of high-quality images with a slow, elegant zoom and pan effect.
+    - Transitions between images are handled with a smooth fade, creating a polished and engaging user experience.
     - Created a reusable `FadingImage.svelte` component to ensure all images fade in gracefully as they load.
 - **Global Font Update:** Changed the primary heading font from "Bebas Neue" to "Poppins" to improve readability and create a more modern, cohesive aesthetic. This change was applied globally by updating `tailwind.config.ts` and `+layout.svelte`.
 - **"Our Blueprint for Brilliance" Redesign:**
@@ -54,6 +52,7 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - On desktop devices, the carousel displays a 4-column grid with bi-directional scrolling.
 
 ## Next Steps
-1.  **Commit Changes:** Create a new Git branch and commit all the recent design changes and bug fixes.
-2.  **Final Design Review:** Conduct a comprehensive review of the entire site to ensure all design changes and bug fixes have been applied correctly.
-3.  **Deploy to Netlify:** Once the site is fully tested and approved, the `website/build` directory can be deployed to Netlify.
+1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.
+2.  **Commit Changes:** Create a new Git branch and commit all the recent design changes and bug fixes.
+3.  **Final Design Review:** Conduct a comprehensive review of the entire site to ensure all design changes and bug fixes have been applied correctly.
+4.  **Deploy to Netlify:** Once the site is fully tested and approved, the `website/build` directory can be deployed to Netlify.

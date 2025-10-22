@@ -11,12 +11,12 @@ The system is a simple, linear user flow designed for maximum conversion:
 6.  **Fulfillment:** The lead magnet (e-book) is delivered instantly via email.
 
 ## Animation Patterns
-- **Dynamic Hero Section:** The hero section is a dynamic, engaging photo wall that features a masonry-style grid of images in constant, subtle motion. Individual images within the grid update at random, staggered intervals, and the hero section periodically transitions to a single, full-screen "feature" image. All animations are designed to be slow, smooth, and elegant.
+- **Dynamic Hero Section:** The hero section (`DynamicHero.svelte`) features a full-screen, Ken Burns-style animation that cycles through a series of high-quality images. The images slowly zoom and pan, creating a subtle and engaging sense of motion. The transitions between images are handled with a smooth fade effect.
 - **Fade-in on Scroll:** Most sections and cards use a fade-in animation as the user scrolls down the page. This is implemented using the `data-fade` attribute and an Intersection Observer.
 - **Hover Effects:** Interactive elements such as cards, buttons, and links have hover effects to provide visual feedback to the user. These are implemented using Tailwind CSS utility classes.
 
 ## Component Architecture
-- **`PhotoWallHero.svelte`:** A self-contained, reusable component that encapsulates all the logic for the dynamic hero section, including the scrolling grid, staggered animations, and the feature image transition.
+- **`DynamicHero.svelte`:** A self-contained, reusable component that encapsulates all the logic for the dynamic hero section, including the Ken Burns animation, image cycling, and responsive image loading.
 - **`FadingImage.svelte`:** A reusable utility component that gracefully fades in an image once it's fully loaded, preventing any jarring "pop-in" effect.
 - **`LocationCard.svelte`:** A reusable component for displaying campus information.
 

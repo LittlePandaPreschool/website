@@ -125,7 +125,7 @@
                             </span>
                         </button>
                     {#if openItems.includes(i)}
-                    <div class="accordion-content text-lg leading-relaxed p-4 rounded-lg themed-content" style="opacity: 1;">
+                    <div class="accordion-content text-lg leading-relaxed p-7 rounded-lg themed-content" style="opacity: 1;">
                         {@html faq.answer}
                     </div>
                     {/if}

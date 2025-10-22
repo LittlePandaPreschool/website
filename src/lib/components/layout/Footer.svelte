@@ -5,6 +5,7 @@
             <!-- Column 1: Info -->
             <div>
                 <h3 class="font-bold text-2xl text-primary">Little Panda Preschool</h3>
+                <h3 class="font-bold text-2xl text-primary">小熊猫中文幼儿园</h3>
                 <div class="flex items-center space-x-4 mt-2">
                     <p>415-516-8121</p>
                     <a href="https://www.instagram.com/littlepandapreschoolsf/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-text-main hover:text-primary transform transition-transform duration-300 hover:scale-110 focus:scale-110">
