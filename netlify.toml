@@ -5,5 +5,5 @@
 
 [functions]
   [functions.submission-created]
-    [functions.submission-created.admissions]
-      email_template = "/static/email.html"
+    form = "admissions"
+    email_template = "/static/email.html"
