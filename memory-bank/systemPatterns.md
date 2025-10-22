@@ -23,3 +23,4 @@ The system is a simple, linear user flow designed for maximum conversion:
 ## Careers Page Architecture
 - **Data-Driven Content:** The "Open Positions" section is dynamically generated from a data structure in the component's script. This makes it easy to add, remove, or modify job postings.
 - **Auto-Selecting Form:** The "Apply Now" buttons are connected to the application form, so that clicking on a button automatically selects the corresponding position in the "Position Applying For" dropdown.
+- **`JobCard.svelte`:** A reusable component for displaying job postings with salary and hours information in both English and Chinese. The card is styled to look like a physical card with a subtle shadow and hover effect.

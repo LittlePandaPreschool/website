@@ -10,3 +10,6 @@ The Memory Bank has been updated to accurately reflect the current state of the 
 
 ## Known Issues
 *   All known issues have been resolved.
+
+## Recent Updates
+*   **Careers Page:** The careers page has been updated with salary information and a new `JobCard.svelte` component.

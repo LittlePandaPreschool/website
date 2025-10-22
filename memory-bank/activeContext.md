@@ -50,6 +50,15 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Refactored the `ImageCarousel.svelte` component to be responsive.
     - On mobile devices, the carousel now displays a single-column stack of wider, rectangular images.
     - On desktop devices, the carousel displays a 4-column grid with bi-directional scrolling.
+- **Careers Page Update:**
+    - Updated salary information in the careers data.
+    - Created a reusable `JobCard.svelte` component to display job postings with salary information.
+    - Updated the careers page to use the new `JobCard.svelte` component.
+    - Updated the styling of the `JobCard.svelte` component to give it a more physical, card-like appearance.
+    - Corrected the salary information for the Assistant Teacher and Teacher Aide positions to reflect a more logical progression.
+    - Updated the salaries to be a range instead of a specific number.
+    - Added hours to the job postings.
+    - Added Chinese translations to the job postings.
 
 ## Next Steps
 1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.
