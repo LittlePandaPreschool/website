@@ -126,15 +126,15 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="name" class="block text-xl mb-2">Name * <br><span class="text-lg">姓名 *</span></label>
-                            <input id="name" type="text" class="form-input w-full" required>
+                            <input id="name" name="name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="block text-xl mb-2">Email * <br><span class="text-lg">电子邮件 *</span></label>
-                            <input id="email" type="email" class="form-input w-full" required>
+                            <input id="email" name="email" type="email" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="phone" class="block text-xl mb-2">Phone * <br><span class="text-lg">电话 *</span></label>
-                            <input id="phone" type="tel" class="form-input w-full" required pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
+                            <input id="phone" name="phone" type="tel" class="form-input w-full" required pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
                         </div>
                     </div>
                 </div>
@@ -145,11 +145,11 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="student-name" class="block text-xl mb-2">Student Name 学生姓名 *</label>
-                            <input id="student-name" type="text" class="form-input w-full" required>
+                            <input id="student-name" name="student-name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="student-birthday" class="block text-xl mb-2">Student Birthday (MM/DD/YYYY) 学生出生日期 (月/日/年） *</label>
-                            <input id="student-birthday" type="date" class="form-input w-full" required min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]}>
+                            <input id="student-birthday" name="student-birthday" type="date" class="form-input w-full" required min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]}>
                         </div>
                         <fieldset class="form-group">
                             <legend class="block text-xl mb-2">Age Group * <br><span class="text-lg">年龄段 *</span></legend>
