@@ -186,7 +186,7 @@
         <p class="text-xl mb-6 text-center text-text-main">* Indicates required field <br><span class="text-lg">* 表示必填字段</span></p>
         <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true" action="/thank-you" on:submit={handleSubmit}>
             <input type="hidden" name="form-name" value="admissions" />
-            <input type="hidden" name="subject" value="New Admission Inquiry: &#37;{student-name}" />
+            <input type="hidden" name="subject" value="New Admission Inquiry" />
             <div class="space-y-12">
 
                 <!-- Parent/Guardian Information -->

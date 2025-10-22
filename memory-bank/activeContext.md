@@ -63,9 +63,10 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Created a centralized configuration file at `src/lib/data/siteConfig.ts` to manage site-wide data like the contact email address.
     - Refactored the website to use the new configuration file, making it easier to update the email address in the future.
 - **Email Sending Improvement:**
-    - Implemented a serverless function using Netlify Functions to handle form submissions.
-    - Integrated Netlify Forms to capture form data and trigger the serverless function.
-    - Updated the frontend to provide a seamless user experience with success and error messages.
+    - Implemented a client-side JavaScript function to handle form submissions.
+    - The function formats the "Desired Start Date" into a full sentence.
+    - The function creates a professional email template with a custom subject line and HTML body.
+    - The function submits the formatted data to Netlify Forms.
 - **Form Handling Simplification:**
     - Removed the serverless function and custom JavaScript for form handling.
     - Reverted to a simple HTML form setup that uses Netlify's built-in form handling.

@@ -1,4 +1,4 @@
-# Progress: Memory Bank Update Complete
+# Progress: Form Submission and Email Formatting Complete
 
 ## Current Status: Project Documentation Synchronized
 The Memory Bank has been updated to accurately reflect the current state of the codebase. The project is in a "final polish" stage, with all known bugs resolved.
@@ -13,3 +13,4 @@ The Memory Bank has been updated to accurately reflect the current state of the 
 
 ## Recent Updates
 *   **Careers Page:** The careers page has been updated with salary information and a new `JobCard.svelte` component.
+*   **Form Submission:** The admissions form now uses a client-side JavaScript function to handle form submissions. This function formats the "Desired Start Date" into a full sentence and creates a professional email template with a custom subject line and HTML body.

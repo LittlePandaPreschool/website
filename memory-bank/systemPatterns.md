@@ -6,7 +6,7 @@ The system is a simple, linear user flow designed for maximum conversion:
 1.  **Traffic Source:** Instagram (Reels, Posts, Stories)
 2.  **Call-to-Action (CTA):** A single, clear CTA ("Link in Bio") directs users to the landing page.
 3.  **Landing Page:** A mobile-first, fast-loading static site built with SvelteKit. The site is component-based, with a master layout that includes a reusable header and footer.
-4.  **Lead Capture:** Forms on the site capture user information. The forms use HTML5 validation to enforce constraints on email, phone number, and date of birth fields. The forms are processed by Netlify's built-in form handling.
+4.  **Lead Capture:** Forms on the site capture user information. The forms use HTML5 validation to enforce constraints on email, phone number, and date of birth fields. The admissions form uses a client-side JavaScript function to handle form submissions. This function formats the "Desired Start Date" into a full sentence and creates a professional email template with a custom subject line and HTML body. The forms are processed by Netlify's built-in form handling.
 5.  **Data Sink:** Form submissions are automatically captured by Netlify and can be configured to send email notifications.
 6.  **Fulfillment:** The lead magnet (e-book) is delivered instantly via email.
 
