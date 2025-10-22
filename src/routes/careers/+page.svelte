@@ -43,7 +43,7 @@
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="phone">Phone Number<br><span class="text-lg">电话号码</span></label>
-                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
+                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number." required>
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="position">Position Applying For<br><span class="text-lg">申请职位</span></label>
@@ -59,7 +59,7 @@
             </div>
             <div class="mb-6">
                 <label class="block text-text-main font-bold mb-2" for="cover-letter">Cover Letter<br><span class="text-lg">求职信</span></label>
-                <textarea class="form-textarea" id="cover-letter" name="cover-letter" rows="5" placeholder="Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。"></textarea>
+                <textarea class="form-textarea" id="cover-letter" name="cover-letter" rows="5" placeholder="Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。" required></textarea>
             </div>
             <div class="flex items-center justify-center">
                 <button class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105" type="submit">

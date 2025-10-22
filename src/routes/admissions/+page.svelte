@@ -5,21 +5,9 @@
   import InfoCard from '$lib/components/ui/InfoCard.svelte';
   import { pricing } from '$lib/data/pricing';
 
-  let formSubmitted = false;
   let selectedAgeGroup = '';
   let selectedLocation = '';
   let selectedStartDate = '';
-
-  function handleSubmit(event: Event) {
-    event.preventDefault();
-    formSubmitted = true;
-    const confirmationMessage = document.getElementById('confirmation-message');
-    if (confirmationMessage) {
-      confirmationMessage.style.display = 'block';
-    }
-    const form = event.target as HTMLFormElement;
-    form.style.display = 'none';
-  }
 
   onMount(() => {
     const sections = document.querySelectorAll('[data-fade]');
@@ -128,8 +116,8 @@
     <section class="mb-16 p-8 rounded-2xl shadow-lg glass-effect fade-in-section" data-fade>
         <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">Little Panda Preschool Enrollment Inquiry <br><span class="text-3xl">小熊猫幼儿园入学咨询</span></h3>
         <p class="text-xl mb-6 text-center text-text-main">* Indicates required field <br><span class="text-lg">* 表示必填字段</span></p>
-        {#if !formSubmitted}
-        <form class="max-w-2xl mx-auto" on:submit={handleSubmit}>
+        <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="admissions" />
             <div class="space-y-12">
 
                 <!-- Parent/Guardian Information -->
@@ -167,7 +155,7 @@
                             <legend class="block text-xl mb-2">Age Group * <br><span class="text-lg">年龄段 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedAgeGroup === 'infant'}">
-                                    <input type="radio" name="age_group" value="infant" class="hidden" bind:group="{selectedAgeGroup}">
+                                    <input type="radio" name="age_group" value="infant" class="hidden" bind:group="{selectedAgeGroup}" required>
                                     <span class="text-xl">Infant (0-18 mos) <br><span class="text-lg">婴儿 (0-18个月)</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedAgeGroup === 'toddler'}">
@@ -184,7 +172,7 @@
                             <legend class="block text-xl mb-2">Preferred Location * <br><span class="text-lg">首选地点 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedLocation === 'granada'}">
-                                    <input type="radio" name="location" value="granada" class="hidden" bind:group="{selectedLocation}">
+                                    <input type="radio" name="location" value="granada" class="hidden" bind:group="{selectedLocation}" required>
                                     <span class="text-xl">Granada Campus <br><span class="text-lg">格拉纳达校区</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedLocation === 'sf_state'}">
@@ -208,7 +196,7 @@
                             <legend class="block text-xl mb-2">Desired Start Date * <br><span class="text-lg">期望开始日期 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedStartDate === 'asap'}">
-                                    <input type="radio" name="start_date" value="asap" class="hidden" bind:group="{selectedStartDate}">
+                                    <input type="radio" name="start_date" value="asap" class="hidden" bind:group="{selectedStartDate}" required>
                                     <span class="text-xl">As soon as possible <br><span class="text-lg">尽快</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedStartDate === '1-3_months'}">
@@ -234,11 +222,6 @@
                 </div>
             </div>
         </form>
-        {:else}
-        <div id="confirmation-message" class="mt-8 text-center text-2xl text-primary">
-            Thank you for your inquiry! We will get back to you soon. <br><span class="text-xl">感谢您的咨询！我们会尽快与您联系。</span>
-        </div>
-        {/if}
     </section>
     </div>
 </main>

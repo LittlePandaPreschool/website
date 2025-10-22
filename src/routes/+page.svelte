@@ -104,11 +104,11 @@
                     <input type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
-                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input" on:focus={(e) => e.target.type = 'date'} on:blur={(e) => e.target.type = 'text'} min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]}>
+                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number." required>
+                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input" on:focus={(e) => (e.target as HTMLInputElement).type = 'date'} on:blur={(e) => (e.target as HTMLInputElement).type = 'text'} min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]} required>
                 </div>
                 <div class="mb-6">
-                    <textarea name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea"></textarea>
+                    <textarea name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea" required></textarea>
                 </div>
                 <button type="submit" class="w-full btn-primary text-lg font-bold uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
                     Join Waitlist <br><span class="text-sm font-normal normal-case">加入候补名单</span>
