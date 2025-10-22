@@ -98,9 +98,6 @@
         font-size: 1.15rem; /* A bit larger than default */
         line-height: 1.8;   /* More space between lines */
     }
-    .themed-content * {
-        color: white !important;
-    }
 </style>
 
 <main class="container mx-auto px-6 py-12">
