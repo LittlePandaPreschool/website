@@ -4,8 +4,30 @@
   import DynamicHero from '$lib/components/home/DynamicHero.svelte';
   import ImageCarousel from '$lib/components/ui/ImageCarousel.svelte';
   import { locations } from '$lib/data/locations';
+  import { siteConfig } from '$lib/data/siteConfig';
   export let data;
   const { allGalleryImages } = data;
+
+  async function handleSubmit(event: Event) {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    // Validate phone number
+    const phone = formData.get('Phone Number') as string;
+    const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    if (!phoneRegex.test(phone)) {
+      alert('Please enter a valid US phone number.');
+      return;
+    }
+
+    await fetch('/', {
+      method: 'POST',
+      body: formData,
+    });
+
+    window.location.href = '/thank-you';
+  }
 
   const blueprintItems = [
     {
@@ -97,17 +119,31 @@
         <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">加入小熊猫大家庭</span></h2>
         <p class="text-xl text-gray-600 mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
         <div class="max-w-2xl mx-auto">
-            <form action="mailto:littlepandapreschoolsf@gmail.com" method="post" enctype="text/plain" class="bg-white p-8 rounded-lg shadow-lg text-left">
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="bg-white p-8 rounded-lg shadow-lg text-left" on:submit|preventDefault={handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <input type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
-                    <input type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>
+                    <div>
+                        <label for="parent-name" class="sr-only">Parent's Name</label>
+                        <input id="parent-name" type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="email-address" class="sr-only">Email Address</label>
+                        <input id="email-address" type="email" name="Email Address" placeholder="Email Address / 电子邮件地址" class="form-input" required>
+                    </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <input type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input">
-                    <input type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input">
+                    <div>
+                        <label for="phone-number" class="sr-only">Phone Number</label>
+                        <input id="phone-number" type="tel" name="Phone Number" placeholder="Phone Number / 电话号码" class="form-input" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number." required>
+                    </div>
+                    <div>
+                        <label for="child-dob" class="sr-only">Child's Date of Birth</label>
+                        <input id="child-dob" type="text" name="Child's DOB" placeholder="Child's Date of Birth / 孩子的出生日期" class="form-input" on:focus={(e) => (e.target as HTMLInputElement).type = 'date'} on:blur={(e) => (e.target as HTMLInputElement).type = 'text'} min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]} required>
+                    </div>
                 </div>
                 <div class="mb-6">
-                    <textarea name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea"></textarea>
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" name="Message" placeholder="Your message or questions... / 您的留言或问题..." rows="5" class="form-textarea" required></textarea>
                 </div>
                 <button type="submit" class="w-full btn-primary text-lg font-bold uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
                     Join Waitlist <br><span class="text-sm font-normal normal-case">加入候补名单</span>

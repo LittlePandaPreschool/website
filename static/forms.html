@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netlify Form Blueprints</title>
+</head>
+<body>
+
+    <!-- Homepage Contact Form -->
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you" hidden>
+        <input type="text" name="Parent's Name" />
+        <input type="email" name="Email Address" />
+        <input type="tel" name="Phone Number" />
+        <input type="date" name="Child's DOB" />
+        <textarea name="Message"></textarea>
+    </form>
+
+    <!-- Admissions Form -->
+    <form name="admissions" netlify netlify-honeypot="bot-field" action="/thank-you" hidden>
+        <input type="hidden" name="subject" />
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="text" name="student-name" />
+        <input type="date" name="student-birthday" />
+        <input type="radio" name="age_group" value="infant" />
+        <input type="radio" name="age_group" value="toddler" />
+        <input type="radio" name="age_group" value="preschool" />
+        <input type="radio" name="location" value="granada" />
+        <input type="radio" name="location" value="sf_state" />
+        <input type="radio" name="location" value="ocean_ave" />
+        <input type="radio" name="start_date" value="asap" />
+        <input type="radio" name="start_date" value="1-3_months" />
+        <input type="radio" name="start_date" value="3-6_months" />
+        <input type="radio" name="start_date" value="exploring" />
+    </form>
+
+    <!-- Careers Application Form -->
+    <form name="application" netlify netlify-honeypot="bot-field" action="/thank-you" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <select name="position">
+            <option>--</option>
+        </select>
+        <input type="file" name="resume" />
+        <textarea name="cover-letter"></textarea>
+    </form>
+
+</body>
+</html>

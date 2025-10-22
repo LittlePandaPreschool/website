@@ -5,20 +5,81 @@
   import InfoCard from '$lib/components/ui/InfoCard.svelte';
   import { pricing } from '$lib/data/pricing';
 
-  let formSubmitted = false;
   let selectedAgeGroup = '';
   let selectedLocation = '';
   let selectedStartDate = '';
 
-  function handleSubmit(event: Event) {
+  async function handleSubmit(event: Event) {
     event.preventDefault();
-    formSubmitted = true;
-    const confirmationMessage = document.getElementById('confirmation-message');
-    if (confirmationMessage) {
-      confirmationMessage.style.display = 'block';
-    }
     const form = event.target as HTMLFormElement;
-    form.style.display = 'none';
+    const formData = new FormData(form);
+
+    // Polish start_date
+    let startDate = '';
+    switch (formData.get('start_date')) {
+      case 'asap':
+        startDate = 'This family is looking to start as soon as possible.';
+        break;
+      case '1-3_months':
+        startDate = 'This family is looking to start in about 1-3 months.';
+        break;
+      case '3-6_months':
+        startDate = 'This family is looking to start in about 3-6 months.';
+        break;
+      case 'exploring':
+        startDate = 'This family is just exploring their options.';
+        break;
+    }
+    formData.set('start_date', startDate);
+
+    // Polish age_group
+    let ageGroup = '';
+    switch (formData.get('age_group')) {
+      case 'infant':
+        ageGroup = 'Infant (0-18 mos)';
+        break;
+      case 'toddler':
+        ageGroup = 'Toddler (18 mos - 3 yrs)';
+        break;
+      case 'preschool':
+        ageGroup = 'Preschool (3-5 yrs)';
+        break;
+    }
+    formData.set('age_group', ageGroup);
+
+    // Polish location
+    let location = '';
+    switch (formData.get('location')) {
+      case 'granada':
+        location = 'Granada Campus';
+        break;
+      case 'sf_state':
+        location = "Children's Campus at SF State";
+        break;
+      case 'ocean_ave':
+        location = 'Ocean Avenue Campus (Coming Soon)';
+        break;
+    }
+    formData.set('location', location);
+
+    const studentName = formData.get('student-name');
+    const subject = `New Admission Inquiry: ${studentName}`;
+    formData.set('subject', subject);
+
+    // Validate phone number
+    const phone = formData.get('phone') as string;
+    const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    if (!phoneRegex.test(phone)) {
+      alert('Please enter a valid US phone number.');
+      return;
+    }
+
+    await fetch('?/', {
+      method: 'POST',
+      body: formData,
+    });
+
+    window.location.href = '/thank-you';
   }
 
   onMount(() => {
@@ -128,8 +189,8 @@
     <section class="mb-16 p-8 rounded-2xl shadow-lg glass-effect fade-in-section" data-fade>
         <h3 class="text-4xl font-bold mt-12 mb-6 text-center text-text-main">Little Panda Preschool Enrollment Inquiry <br><span class="text-3xl">小熊猫幼儿园入学咨询</span></h3>
         <p class="text-xl mb-6 text-center text-text-main">* Indicates required field <br><span class="text-lg">* 表示必填字段</span></p>
-        {#if !formSubmitted}
-        <form class="max-w-2xl mx-auto" on:submit={handleSubmit}>
+        <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true" action="?/" on:submit|preventDefault={handleSubmit}>
+            <input type="hidden" name="form-name" value="admissions" />
             <div class="space-y-12">
 
                 <!-- Parent/Guardian Information -->
@@ -138,15 +199,15 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="name" class="block text-xl mb-2">Name * <br><span class="text-lg">姓名 *</span></label>
-                            <input id="name" type="text" class="form-input w-full" required>
+                            <input id="name" name="name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="block text-xl mb-2">Email * <br><span class="text-lg">电子邮件 *</span></label>
-                            <input id="email" type="email" class="form-input w-full" required>
+                            <input id="email" name="email" type="email" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="phone" class="block text-xl mb-2">Phone * <br><span class="text-lg">电话 *</span></label>
-                            <input id="phone" type="tel" class="form-input w-full" required>
+                            <input id="phone" name="phone" type="tel" class="form-input w-full" required pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number.">
                         </div>
                     </div>
                 </div>
@@ -157,17 +218,17 @@
                     <div class="space-y-6">
                         <div class="form-group">
                             <label for="student-name" class="block text-xl mb-2">Student Name 学生姓名 *</label>
-                            <input id="student-name" type="text" class="form-input w-full" required>
+                            <input id="student-name" name="student-name" type="text" class="form-input w-full" required>
                         </div>
                         <div class="form-group">
                             <label for="student-birthday" class="block text-xl mb-2">Student Birthday (MM/DD/YYYY) 学生出生日期 (月/日/年） *</label>
-                            <input id="student-birthday" type="text" class="form-input w-full" required>
+                            <input id="student-birthday" name="student-birthday" type="date" class="form-input w-full" required min={new Date(new Date().setFullYear(new Date().getFullYear() - 7)).toISOString().split('T')[0]} max={new Date().toISOString().split('T')[0]}>
                         </div>
                         <fieldset class="form-group">
                             <legend class="block text-xl mb-2">Age Group * <br><span class="text-lg">年龄段 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedAgeGroup === 'infant'}">
-                                    <input type="radio" name="age_group" value="infant" class="hidden" bind:group="{selectedAgeGroup}">
+                                    <input type="radio" name="age_group" value="infant" class="hidden" bind:group="{selectedAgeGroup}" required>
                                     <span class="text-xl">Infant (0-18 mos) <br><span class="text-lg">婴儿 (0-18个月)</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedAgeGroup === 'toddler'}">
@@ -184,7 +245,7 @@
                             <legend class="block text-xl mb-2">Preferred Location * <br><span class="text-lg">首选地点 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedLocation === 'granada'}">
-                                    <input type="radio" name="location" value="granada" class="hidden" bind:group="{selectedLocation}">
+                                    <input type="radio" name="location" value="granada" class="hidden" bind:group="{selectedLocation}" required>
                                     <span class="text-xl">Granada Campus <br><span class="text-lg">格拉纳达校区</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedLocation === 'sf_state'}">
@@ -208,7 +269,7 @@
                             <legend class="block text-xl mb-2">Desired Start Date * <br><span class="text-lg">期望开始日期 *</span></legend>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                                 <label class="card-radio" class:selected="{selectedStartDate === 'asap'}">
-                                    <input type="radio" name="start_date" value="asap" class="hidden" bind:group="{selectedStartDate}">
+                                    <input type="radio" name="start_date" value="asap" class="hidden" bind:group="{selectedStartDate}" required>
                                     <span class="text-xl">As soon as possible <br><span class="text-lg">尽快</span></span>
                                 </label>
                                 <label class="card-radio" class:selected="{selectedStartDate === '1-3_months'}">
@@ -234,11 +295,6 @@
                 </div>
             </div>
         </form>
-        {:else}
-        <div id="confirmation-message" class="mt-8 text-center text-2xl text-primary">
-            Thank you for your inquiry! We will get back to you soon. <br><span class="text-xl">感谢您的咨询！我们会尽快与您联系。</span>
-        </div>
-        {/if}
     </section>
     </div>
 </main>

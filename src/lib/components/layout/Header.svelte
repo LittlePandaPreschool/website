@@ -10,12 +10,8 @@
 <!-- Header -->
 <header class="bg-bg-alt shadow-md fixed top-0 left-0 right-0 z-50">
   <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="/" class="text-5xl font-bold text-primary flex items-center logo">
-          <lottie-player src="/panda-animation.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
-          <div class="logo-text">
-              <span>Little</span>
-              <span>Panda</span>
-          </div>
+      <a href="/">
+        <img src="/img/logo.jpg" alt="Little Panda Logo" class="h-28 w-auto">
       </a>
       <div class="md:hidden">
         <button on:click={toggleMenu} aria-label="Open main menu" class="text-gray-800 focus:outline-none transform transition-transform duration-300 hover:scale-110 focus:scale-110">

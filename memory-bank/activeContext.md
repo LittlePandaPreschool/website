@@ -12,11 +12,9 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Updated the `DynamicHero.svelte` component to dynamically load all images from the `/static/img/hero/` directory using Vite's `import.meta.glob` feature.
     - Updated the `+page.svelte` file to dynamically load all images from the `/static/img/gallery/` directory and pass them to the `ImageCarousel` component.
 - **Dynamic Hero Section:**
-    - Created a new `PhotoWallHero.svelte` component to replace the static hero image with a dynamic, engaging photo wall.
-    - The photo wall features a masonry-style grid of images that are in constant, subtle motion with a seamless vertical scroll.
-    - Individual images within the grid update at random, staggered intervals, creating a "twinkling" effect.
-    - The hero section periodically transitions to a single, full-screen "feature" image, creating a powerful focal point.
-    - All animations and transitions are designed to be slow, smooth, and elegant, with a custom ease-in-and-out curve.
+    - Replaced the previous "photo wall" hero concept with a full-screen, Ken Burns-style animated hero (`DynamicHero.svelte`).
+    - The hero section now cycles through a series of high-quality images with a slow, elegant zoom and pan effect.
+    - Transitions between images are handled with a smooth fade, creating a polished and engaging user experience.
     - Created a reusable `FadingImage.svelte` component to ensure all images fade in gracefully as they load.
 - **Global Font Update:** Changed the primary heading font from "Bebas Neue" to "Poppins" to improve readability and create a more modern, cohesive aesthetic. This change was applied globally by updating `tailwind.config.ts` and `+layout.svelte`.
 - **"Our Blueprint for Brilliance" Redesign:**
@@ -52,8 +50,37 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Refactored the `ImageCarousel.svelte` component to be responsive.
     - On mobile devices, the carousel now displays a single-column stack of wider, rectangular images.
     - On desktop devices, the carousel displays a 4-column grid with bi-directional scrolling.
+- **Careers Page Update:**
+    - Updated salary information in the careers data.
+    - Created a reusable `JobCard.svelte` component to display job postings with salary information.
+    - Updated the careers page to use the new `JobCard.svelte` component.
+    - Updated the styling of the `JobCard.svelte` component to give it a more physical, card-like appearance.
+    - Corrected the salary information for the Assistant Teacher and Teacher Aide positions to reflect a more logical progression.
+    - Updated the salaries to be a range instead of a specific number.
+    - Added hours to the job postings.
+    - Added Chinese translations to the job postings.
+- **Content Management Improvement:**
+    - Created a centralized configuration file at `src/lib/data/siteConfig.ts` to manage site-wide data like the contact email address.
+    - Refactored the website to use the new configuration file, making it easier to update the email address in the future.
+- **Email Sending Improvement:**
+    - Implemented a client-side JavaScript function to handle form submissions.
+    - The function formats the "Desired Start Date" into a full sentence.
+    - The function creates a professional email template with a custom subject line and HTML body.
+    - The function submits the formatted data to Netlify Forms.
+- **Form Handling Simplification:**
+    - Removed the serverless function and custom JavaScript for form handling.
+    - Reverted to a simple HTML form setup that uses Netlify's built-in form handling.
+- **Form Validation:**
+    - Added HTML5 validation to the forms on the homepage, admissions, and careers pages to enforce constraints on email, phone number, and date of birth fields.
+- **Form Usability:**
+    - Added a placeholder to the date of birth field on the homepage to improve user experience.
+- **Admissions Form Enhancement:**
+    - Implemented a client-side JavaScript function to "polish" form field values before submission.
+    - Added client-side validation for US phone number format.
+    - Added a redirect to a "thank you" page after successful form submission.
 
 ## Next Steps
-1.  **Commit Changes:** Create a new Git branch and commit all the recent design changes and bug fixes.
-2.  **Final Design Review:** Conduct a comprehensive review of the entire site to ensure all design changes and bug fixes have been applied correctly.
-3.  **Deploy to Netlify:** Once the site is fully tested and approved, the `website/build` directory can be deployed to Netlify.
+1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.
+2.  **Commit Changes:** Create a new Git branch and commit all the recent design changes and bug fixes.
+3.  **Final Design Review:** Conduct a comprehensive review of the entire site to ensure all design changes and bug fixes have been applied correctly.
+4.  **Deploy to Netlify:** Once the site is fully tested and approved, the `website/build` directory can be deployed to Netlify.

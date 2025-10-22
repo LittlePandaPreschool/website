@@ -1,9 +1,31 @@
 <script lang="ts">
     import { jobs } from '$lib/data/careers';
+    import JobCard from '$lib/components/careers/JobCard.svelte';
     let selectedPosition: string = '';
 
     function selectPosition(position: string) {
         selectedPosition = position;
+    }
+
+    async function handleSubmit(event: Event) {
+        event.preventDefault();
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+
+        // Validate phone number
+        const phone = formData.get('phone') as string;
+        const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+        if (!phoneRegex.test(phone)) {
+            alert('Please enter a valid US phone number.');
+            return;
+        }
+
+        await fetch('/', {
+            method: 'POST',
+            body: formData,
+        });
+
+        window.location.href = '/thank-you';
     }
 </script>
 
@@ -20,24 +42,14 @@
         <h2 class="text-3xl font-bold mb-8 text-center text-text-main">Open Positions <br><span class="text-2xl">空缺职位</span></h2>
         <div class="space-y-8 max-w-4xl mx-auto">
             {#each jobs as job}
-            <div class="card p-6 rounded-lg transform hover:scale-105 transition-transform duration-300" data-fade>
-                <h3 class="text-2xl font-bold mb-2">{job.title}<br><span class="text-xl">{job.chinese_title}</span></h3>
-                <p class="mb-4">{job.description}</p>
-                <p class="font-bold">Qualifications:</p>
-                <ul class="list-disc list-inside">
-                    {#each job.qualifications as qualification}
-                    <li>{qualification}</li>
-                    {/each}
-                </ul>
-                <a href="#apply-form" on:click={() => selectPosition(job.title)} class="text-primary hover:opacity-80 font-bold mt-4 inline-block">Apply Now &rarr;</a>
-            </div>
+            <JobCard {job} on:apply={() => selectPosition(job.title)} />
             {/each}
         </div>
     </section>
 
     <section id="apply-form" class="py-16">
         <h2 class="text-3xl font-bold mb-8 text-center text-text-main">Apply Now <br><span class="text-2xl">立即申请</span></h2>
-        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg">
+        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg" on:submit|preventDefault={handleSubmit}>
             <input type="hidden" name="form-name" value="application" />
             <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -52,7 +64,7 @@
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="phone">Phone Number<br><span class="text-lg">电话号码</span></label>
-                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890">
+                <input class="form-input" id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Please enter a valid US phone number." required>
             </div>
             <div class="mb-4">
                 <label class="block text-text-main font-bold mb-2" for="position">Position Applying For<br><span class="text-lg">申请职位</span></label>
@@ -68,7 +80,7 @@
             </div>
             <div class="mb-6">
                 <label class="block text-text-main font-bold mb-2" for="cover-letter">Cover Letter<br><span class="text-lg">求职信</span></label>
-                <textarea class="form-textarea" id="cover-letter" name="cover-letter" rows="5" placeholder="Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。"></textarea>
+                <textarea class="form-textarea" id="cover-letter" name="cover-letter" rows="5" placeholder="Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。" required></textarea>
             </div>
             <div class="flex items-center justify-center">
                 <button class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105" type="submit">
