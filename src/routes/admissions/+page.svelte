@@ -14,6 +14,7 @@
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    // Polish start_date
     let startDate = '';
     switch (formData.get('start_date')) {
       case 'asap':
@@ -29,49 +30,56 @@
         startDate = 'This family is just exploring their options.';
         break;
     }
+    formData.set('start_date', startDate);
+
+    // Polish age_group
+    let ageGroup = '';
+    switch (formData.get('age_group')) {
+      case 'infant':
+        ageGroup = 'Infant (0-18 mos)';
+        break;
+      case 'toddler':
+        ageGroup = 'Toddler (18 mos - 3 yrs)';
+        break;
+      case 'preschool':
+        ageGroup = 'Preschool (3-5 yrs)';
+        break;
+    }
+    formData.set('age_group', ageGroup);
+
+    // Polish location
+    let location = '';
+    switch (formData.get('location')) {
+      case 'granada':
+        location = 'Granada Campus';
+        break;
+      case 'sf_state':
+        location = "Children's Campus at SF State";
+        break;
+      case 'ocean_ave':
+        location = 'Ocean Avenue Campus (Coming Soon)';
+        break;
+    }
+    formData.set('location', location);
 
     const studentName = formData.get('student-name');
     const subject = `New Admission Inquiry: ${studentName}`;
+    formData.set('subject', subject);
 
-    const message = `
-      <h1>Welcome to the Little Panda Family! / 欢迎加入小熊猫大家庭！</h1>
-      <h2>New Admission Inquiry / 新的入学咨询</h2>
-      <h3>Parent/Guardian Information / 家长/监护人信息</h3>
-      <ul>
-        <li><strong>Name / 姓名:</strong> ${formData.get('name')}</li>
-        <li><strong>Email / 电子邮件:</strong> ${formData.get('email')}</li>
-        <li><strong>Phone / 电话:</strong> ${formData.get('phone')}</li>
-      </ul>
-      <h3>Child's Information / 儿童信息</h3>
-      <ul>
-        <li><strong>Student Name / 学生姓名:</strong> ${studentName}</li>
-        <li><strong>Student Birthday / 学生出生日期:</strong> ${formData.get('student-birthday')}</li>
-        <li><strong>Age Group / 年龄段:</strong> ${formData.get('age_group')}</li>
-        <li><strong>Preferred Location / 首选地点:</strong> ${formData.get('location')}</li>
-      </ul>
-      <h3>Enrollment Details / 入学详情</h3>
-      <ul>
-        <li><strong>Desired Start Date / 期望开始日期:</strong> ${startDate}</li>
-      </ul>
-      <hr>
-      <p>
-        <strong>Little Panda Preschool</strong><br>
-        205 Granada Ave,<br>
-        San Francisco, CA, 94112<br>
-        (415) 516-8121<br>
-        <a href="https://littlepandapreschool.com">littlepandapreschool.com</a>
-      </p>
-    `;
-
-    formData.append('subject', subject);
-    formData.append('message', message);
+    // Validate phone number
+    const phone = formData.get('phone') as string;
+    const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    if (!phoneRegex.test(phone)) {
+      alert('Please enter a valid US phone number.');
+      return;
+    }
 
     await fetch('?/', {
       method: 'POST',
       body: formData,
     });
 
-    window.location.href = form.action;
+    window.location.href = '/thank-you';
   }
 
   onMount(() => {
