@@ -28,7 +28,7 @@
 
     <section id="apply-form" class="py-16">
         <h2 class="text-3xl font-bold mb-8 text-center text-text-main">Apply Now <br><span class="text-2xl">立即申请</span></h2>
-        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg">
+        <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you" class="max-w-2xl mx-auto card p-8 rounded-lg shadow-lg">
             <input type="hidden" name="form-name" value="application" />
             <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>

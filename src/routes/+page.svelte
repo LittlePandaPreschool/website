@@ -98,7 +98,7 @@
         <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">加入小熊猫大家庭</span></h2>
         <p class="text-xl text-gray-600 mb-12">Secure your spot on our priority waitlist.<br><span class="text-lg">立即锁定您的优先候补名额。</span></p>
         <div class="max-w-2xl mx-auto">
-            <form name="contact" method="POST" data-netlify="true" class="bg-white p-8 rounded-lg shadow-lg text-left">
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="bg-white p-8 rounded-lg shadow-lg text-left">
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <input type="text" name="Parent's Name" placeholder="Parent's Name / 家长姓名" class="form-input" required>
