@@ -4,6 +4,7 @@
   functions = "netlify/functions"
 
 [functions]
+  included_files = ["netlify/functions/submission-created.js"]
   [functions.submission-created]
     form = "admissions"
     email_template = "/static/email.html"
