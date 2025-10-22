@@ -29,12 +29,49 @@
         startDate = 'This family is just exploring their options.';
         break;
     }
-    formData.set('start_date', startDate);
+
+    const studentName = formData.get('student-name');
+    const subject = `New Admission Inquiry: ${studentName}`;
+
+    const message = `
+      <h1>Welcome to the Little Panda Family! / 欢迎加入小熊猫大家庭！</h1>
+      <h2>New Admission Inquiry / 新的入学咨询</h2>
+      <h3>Parent/Guardian Information / 家长/监护人信息</h3>
+      <ul>
+        <li><strong>Name / 姓名:</strong> ${formData.get('name')}</li>
+        <li><strong>Email / 电子邮件:</strong> ${formData.get('email')}</li>
+        <li><strong>Phone / 电话:</strong> ${formData.get('phone')}</li>
+      </ul>
+      <h3>Child's Information / 儿童信息</h3>
+      <ul>
+        <li><strong>Student Name / 学生姓名:</strong> ${studentName}</li>
+        <li><strong>Student Birthday / 学生出生日期:</strong> ${formData.get('student-birthday')}</li>
+        <li><strong>Age Group / 年龄段:</strong> ${formData.get('age_group')}</li>
+        <li><strong>Preferred Location / 首选地点:</strong> ${formData.get('location')}</li>
+      </ul>
+      <h3>Enrollment Details / 入学详情</h3>
+      <ul>
+        <li><strong>Desired Start Date / 期望开始日期:</strong> ${startDate}</li>
+      </ul>
+      <hr>
+      <p>
+        <strong>Little Panda Preschool</strong><br>
+        205 Granada Ave,<br>
+        San Francisco, CA, 94112<br>
+        (415) 516-8121<br>
+        <a href="https://littlepandapreschool.com">littlepandapreschool.com</a>
+      </p>
+    `;
+
+    const newFormData = new FormData();
+    newFormData.append('form-name', 'admissions');
+    newFormData.append('subject', subject);
+    newFormData.append('message', message);
 
     await fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData as any).toString(),
+      body: new URLSearchParams(newFormData as any).toString(),
     });
 
     window.location.href = form.action;
@@ -149,7 +186,7 @@
         <p class="text-xl mb-6 text-center text-text-main">* Indicates required field <br><span class="text-lg">* 表示必填字段</span></p>
         <form class="max-w-2xl mx-auto" name="admissions" method="POST" data-netlify="true" action="/thank-you" on:submit={handleSubmit}>
             <input type="hidden" name="form-name" value="admissions" />
-            <input type="hidden" name="subject" value="New Admission Inquiry / 新的入学咨询 from %{name}" />
+            <input type="hidden" name="subject" value="New Admission Inquiry: &#37;{student-name}" />
             <div class="space-y-12">
 
                 <!-- Parent/Guardian Information -->
