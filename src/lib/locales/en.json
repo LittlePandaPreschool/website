@@ -221,6 +221,11 @@
         "title": "PM Care Activities",
         "subtitle": "下午托管活动",
         "description": "The PM care program will offer various activities including dance, yoga , math circle, stem and gardening. These activities will be provided in accordance with the established curriculum."
+      },
+      "pricing": {
+        "monthly_tuition": "Monthly Tuition",
+        "monthly_tuition_zh": "月费",
+        "per_month": "/ month"
       }
     },
     "form": {

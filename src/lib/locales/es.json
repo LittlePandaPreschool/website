@@ -221,19 +221,24 @@
       "am": {
         "title": "Cuidado AM",
         "subtitle": "上午托管",
-        "time": "8:30 AM a 9:00 AM, L-V",
+        "time": "8:30 AM to 9:00 AM, M-F",
         "price": "$220 por mes"
       },
       "pm": {
         "title": "Cuidado PM",
         "subtitle": "下午托管",
-        "time": "3:30 PM a 5:30 PM, L-V",
+        "time": "3:30 PM to 5:30 PM, M-F",
         "price": "$650 por mes"
       },
       "activities": {
         "title": "Actividades de Cuidado PM",
         "subtitle": "下午托管活动",
         "description": "El programa de cuidado de la tarde ofrecerá diversas actividades que incluyen danza, yoga, círculo de matemáticas, STEM y jardinería. Estas actividades se proporcionarán de acuerdo con el plan de estudios establecido."
+      },
+      "pricing": {
+        "monthly_tuition": "Mensualidad",
+        "monthly_tuition_zh": "月费",
+        "per_month": "/ mes"
       }
     },
     "form": {

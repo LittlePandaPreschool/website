@@ -37,6 +37,8 @@
             <div class="flex justify-between items-center mb-8">
                 <button on:click={expandAll} class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105">
                     {openItems.length === ($t('faq') as any).faqs.length ? $t('faq.collapse') : $t('faq.expand')}
+                    <br>
+                    <span class="text-sm font-normal normal-case">{openItems.length === ($t('faq') as any).faqs.length ? chineseSubtext.faq.collapse : chineseSubtext.faq.expand}</span>
                 </button>
             </div>
             <div class="accordion space-y-4">
@@ -45,13 +47,19 @@
                     <div class="accordion-item card p-4 rounded-lg bg-alt transform hover:scale-105 transition-transform duration-300" data-fade>
                         <button on:click={() => toggle(i)} class="accordion-header w-full text-left text-2xl font-semibold py-4 px-6 focus:outline-none {openItems.includes(i) ? 'active' : ''}">
                             <span class="flex justify-between items-center">
-                                {faq.question}
+                                <span>
+                                    {faq.question}
+                                    <br>
+                                    <span class="text-xl">{chineseSubtext.faq.faqs[i].question}</span>
+                                </span>
                                 <span class="text-2xl font-light text-primary transform transition-transform duration-300 {openItems.includes(i) ? 'rotate-45' : ''}">+</span>
                             </span>
                         </button>
                     {#if openItems.includes(i)}
                     <div class="accordion-content text-lg leading-relaxed p-7 rounded-lg themed-content" style="opacity: 1;">
                         {@html faq.answer}
+                        <br>
+                        <span class="text-base">{@html chineseSubtext.faq.faqs[i].answer}</span>
                     </div>
                     {/if}
                     </div>
