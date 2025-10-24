@@ -86,8 +86,8 @@
 <!-- Form Section -->
 <section id="form" class="py-20 bg-gray-100">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-4 text-gray-800">Join the Little Panda Family<br><span class="text-3xl">{chineseSubtext.home.join_family.title}</span></h2>
-        <p class="text-xl text-gray-600 mb-12">We're building a loving and supportive community for your child. Take the first step in joining our family by filling out the form below.<br><span class="text-lg">{chineseSubtext.home.join_family.description}</span></p>
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">{$t('home.form.title')}<br><span class="text-3xl">{$t('home.form.subtitle')}</span></h2>
+        <p class="text-xl text-gray-600 mb-12">{$t('home.form.description')}<br><span class="text-lg">{$t('home.form.description_zh')}</span></p>
         <div class="max-w-2xl mx-auto">
             <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="bg-white p-8 rounded-lg shadow-lg text-left" on:submit|preventDefault={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
