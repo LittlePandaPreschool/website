@@ -1,7 +1,7 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
-  import { chineseSubtext } from '$lib/data/chineseSubtext';
   import Timeline from '$lib/components/home/Timeline.svelte';
+  import zh from '$lib/locales/zh.json';
   import LocationCard from '$lib/components/home/LocationCard.svelte';
   import DynamicHero from '$lib/components/home/DynamicHero.svelte';
   import ImageCarousel from '$lib/components/ui/ImageCarousel.svelte';
@@ -40,14 +40,14 @@
     <!-- Our Blueprint for Brilliance Section -->
     <section class="py-20 bg-secondary text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-4">{$t('home.blueprint.title')}<br><span class="text-4xl">{$t('home.blueprint.subtitle')}</span></h2>
-            <p class="text-xl mb-12 max-w-3xl mx-auto">{$t('home.blueprint.description')}<br><span class="text-lg">{$t('home.blueprint.description_zh')}</span></p>
+            <h2 class="text-5xl font-bold mb-4">{$t('home.blueprint.title')}<br><span class="text-4xl">{zh.home.blueprint.title}</span></h2>
+            <p class="text-xl mb-12 max-w-3xl mx-auto">{$t('home.blueprint.description')}<br><span class="text-lg">{zh.home.blueprint.description}</span></p>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
                 {#each Array(4) as _, i}
                     <div class="p-8 transform transition-transform duration-300 hover:scale-105 hover:bg-green-700 rounded-lg" data-fade>
                         <i class="fas {['fa-search', 'fa-language', 'fa-child', 'fa-heartbeat'][i]} text-4xl text-primary mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-white">{$t(`home.blueprint.items.${i}.title`)}<br><span class="text-xl">{$t(`home.blueprint.items.${i}.title_zh`)}</span></h3>
-                        <p class="text-lg">{$t(`home.blueprint.items.${i}.description`)}<br><span class="text-base">{$t(`home.blueprint.items.${i}.description_zh`)}</span></p>
+                        <h3 class="text-2xl font-bold mb-3 text-white">{$t(`home.blueprint.items.${i}.title`)}<br><span class="text-xl">{zh.home.blueprint.items[i].title}</span></h3>
+                        <p class="text-lg">{$t(`home.blueprint.items.${i}.description`)}<br><span class="text-base">{zh.home.blueprint.items[i].description}</span></p>
                     </div>
                 {/each}
             </div>
@@ -57,8 +57,8 @@
     <!-- Photo Gallery Section -->
     <section class="py-20 bg-alt">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-4 text-center text-secondary">{$t('home.gallery.title')}<br><span class="text-3xl">{$t('home.gallery.subtitle')}</span></h2>
-            <p class="text-xl text-center text-main mb-12">{$t('home.gallery.description')}<br><span class="text-lg">{$t('home.gallery.description_zh')}</span></p>
+            <h2 class="text-4xl font-bold mb-4 text-center text-secondary">{$t('home.gallery.title')}<br><span class="text-3xl">{zh.home.gallery.title}</span></h2>
+            <p class="text-xl text-center text-main mb-12">{$t('home.gallery.description')}<br><span class="text-lg">{zh.home.gallery.description}</span></p>
             <ImageCarousel images={allGalleryImages} />
         </div>
     </section>
@@ -70,8 +70,8 @@
 <!-- Locations Section -->
 <section class="py-20 bg-main">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-5xl font-bold mb-4 text-secondary">{$t('home.campuses.title')}<br><span class="text-4xl">{chineseSubtext.home.campuses.title}</span></h2>
-        <p class="text-xl text-main mb-12 max-w-3xl mx-auto">{$t('home.campuses.description')}<br><span class="text-lg">{chineseSubtext.home.campuses.description}</span></p>
+        <h2 class="text-5xl font-bold mb-4 text-secondary">{$t('home.campuses.title')}<br><span class="text-4xl">{zh.home.campuses.title}</span></h2>
+        <p class="text-xl text-main mb-12 max-w-3xl mx-auto">{$t('home.campuses.description')}<br><span class="text-lg">{zh.home.campuses.description}</span></p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             {#each locations as location}
                 <LocationCard {location} />
@@ -86,8 +86,8 @@
 <!-- Form Section -->
 <section id="form" class="py-20 bg-gray-100">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-4 text-gray-800">{$t('home.form.title')}<br><span class="text-3xl">{$t('home.form.subtitle')}</span></h2>
-        <p class="text-xl text-gray-600 mb-12">{$t('home.form.description')}<br><span class="text-lg">{$t('home.form.description_zh')}</span></p>
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">{$t('home.form.title')}<br><span class="text-3xl">{zh.home.join_family.title}</span></h2>
+        <p class="text-xl text-gray-600 mb-12">{$t('home.form.description')}<br><span class="text-lg">{zh.home.join_family.description}</span></p>
         <div class="max-w-2xl mx-auto">
             <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="bg-white p-8 rounded-lg shadow-lg text-left" on:submit|preventDefault={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
@@ -116,7 +116,7 @@
                     <textarea id="message" name="Message" placeholder={$t('home.form.message')} rows="5" class="form-textarea" required></textarea>
                 </div>
                 <button type="submit" class="w-full btn-primary text-lg font-bold uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
-                    {$t('home.form.submit')} <br><span class="text-sm font-normal normal-case">{$t('home.form.submit_chinese')}</span>
+                    {$t('home.form.submit')} <br><span class="text-sm font-normal normal-case">{zh.home.join_family.title}</span>
                 </button>
             </form>
         </div>

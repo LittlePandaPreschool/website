@@ -82,6 +82,13 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Translated all language files to their corresponding languages.
     - Ensured Chinese subtext is present in all language files.
     - Fixed hardcoded text in the homepage form.
+    - Internationalized the `Timeline.svelte` component to use `svelte-i18n` for titles.
+    - Internationalized the pricing information on the admissions page, including updating the data structure in `pricing.ts` and the `PricingCard.svelte` component.
+    - Centralized all Chinese subtext for the FAQ page into `chineseSubtext.ts` and updated the `faq/+page.svelte` component to use it.
+    - Added Chinese subtext to the "Collapse All" and "Expand All" buttons on the FAQ page.
+    - Refactored the `pricing.ts` data to use translation keys from the `svelte-i18n` library, removing hardcoded strings and centralizing all pricing-related translations in the locale files.
+    - Restored the interactive functionality of the `PricingCard.svelte` component, which was lost during the initial refactoring. The component now correctly displays dynamic pricing based on user selection and is fully integrated with the `svelte-i18n` library for translations.
+    - Completed the internationalization of the pricing card by translating the pricing information into all supported languages.
 
 ## Next Steps
 1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.

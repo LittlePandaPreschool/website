@@ -6,19 +6,6 @@
     "careers": "Carreras",
     "enroll": "Inscríbase Ahora"
   },
-  "footer": {
-    "title": "Preescolar Little Panda",
-    "subtitle": "小熊猫中文幼儿园",
-    "granada": "🏫 Campus de Granada",
-    "sfsu": "🏫 Campus Infantil en SF State",
-    "ocean": "🏫 Campus de Ocean Avenue",
-    "granada_address_1": "205 Granada Ave,",
-    "granada_address_2": "San Francisco, CA, 94112",
-    "sfsu_address_1": "1600 Holloway Ave,",
-    "sfsu_address_2": "San Francisco, CA 94132",
-    "ocean_address_1": "1946-1948 Ocean Avenue,",
-    "ocean_address_2": "San Francisco, CA, 94127"
-  },
   "home": {
     "hero": {
       "title": "Libera el Potencial.",
@@ -27,41 +14,29 @@
     },
     "blueprint": {
       "title": "Nuestro Plan para la Brillantez",
-      "subtitle": "我们的卓越蓝图",
       "description": "Hemos diseñado un enfoque holístico para la educación temprana que nutre cada aspecto del desarrollo de su hijo, preparándolos para prosperar en una comunidad global.",
-      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
       "items": [
         {
           "title": "Aprendizaje Basado en la Indagación",
-          "description": "Despertamos la curiosidad al hacer conexiones con el mundo real, alentando a los estudiantes a hacer grandes preguntas y explorar sus propias respuestas.",
-          "title_zh": "探究式学习",
-          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+          "description": "Despertamos la curiosidad al hacer conexiones con el mundo real, alentando a los estudiantes a hacer grandes preguntas y explorar sus propias respuestas."
         },
         {
           "title": "Inmersión en Mandarín",
-          "description": "Nuestro entorno de inmersión abre un mundo de posibilidades, fomentando el desarrollo temprano del lenguaje y la comprensión intercultural.",
-          "title_zh": "沉浸式中文环境",
-          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+          "description": "Nuestro entorno de inmersión abre un mundo de posibilidades, fomentando el desarrollo temprano del lenguaje y la comprensión intercultural."
         },
         {
           "title": "Proyectos Centrados en el Niño",
-          "description": "Guiamos a los estudiantes a través de estudios en profundidad de temas del mundo real, adaptados a sus intereses y habilidades únicos.",
-          "title_zh": "以儿童为中心的项目",
-          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+          "description": "Guiamos a los estudiantes a través de estudios en profundidad de temas del mundo real, adaptados a sus intereses y habilidades únicos."
         },
         {
           "title": "Habilidades Esenciales para la Vida",
-          "description": "Cultivamos el enfoque, el autocontrol, la comunicación y la empatía, construyendo una base sólida para el éxito de por vida.",
-          "title_zh": "基本生活技能",
-          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+          "description": "Cultivamos el enfoque, el autocontrol, la comunicación y la empatía, construyendo una base sólida para el éxito de por vida."
         }
       ]
     },
     "gallery": {
       "title": "Un Vistazo a Nuestro Mundo",
-      "subtitle": "一睹我们的世界",
-      "description": "Donde la curiosidad y la creatividad cobran vida.",
-      "description_zh": "一个让好奇心与创造力绽放的地方。"
+      "description": "Donde la curiosidad y la creatividad cobran vida."
     },
     "campuses": {
       "title": "Nuestros Campus",
@@ -151,16 +126,13 @@
     },
     "form": {
       "title": "Únase a la Familia Little Panda",
-      "subtitle": "加入小熊猫大家庭",
-      "description": "Asegure su lugar en nuestra lista de espera prioritaria.",
-      "description_zh": "立即锁定您的优先候补名额。",
-      "parentName": "Nombre del Padre / Madre / 家长姓名",
-      "email": "Dirección de Correo Electrónico / 电子邮件地址",
-      "phone": "Número de Teléfono / 电话号码",
-      "childDob": "Fecha de Nacimiento del Niño / 孩子的出生日期",
-      "message": "Su mensaje o preguntas... / 您的留言或问题...",
+      "description": "Estamos construyendo una comunidad amorosa y de apoyo para su hijo. Dé el primer paso para unirse a nuestra familia llenando el formulario a continuación.",
+      "parentName": "Nombre del Padre / Madre",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "childDob": "Fecha de Nacimiento del Niño",
+      "message": "Su mensaje o preguntas...",
       "submit": "Unirse a la Lista de Espera",
-      "submit_chinese": "加入候补名单",
       "parentName_label": "Nombre del Padre/Madre",
       "email_label": "Dirección de Correo Electrónico",
       "phone_label": "Número de Teléfono",
@@ -176,163 +148,134 @@
   },
   "admissions": {
     "title": "Admisiones",
-    "subtitle": "招生",
     "description": "Estamos encantados de dar la bienvenida a nuevas familias a nuestra comunidad y comenzar juntos este maravilloso viaje.",
-    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
     "journey": {
       "title": "Su Viaje a Little Panda",
-      "subtitle": "您的小熊猫之旅",
       "steps": [
         {
           "title": "Envíe su Consulta",
-          "subtitle": "提交咨询",
           "description": "Complete el siguiente formulario para expresar su interés. Nos pondremos en contacto en breve para confirmar que lo hemos recibido."
         },
         {
           "title": "Programe una Visita",
-          "subtitle": "安排参观",
           "description": "Le invitamos a una visita personalizada para que experimente de primera mano nuestro entorno de crianza."
         },
         {
           "title": "Cita de Juego para Estudiantes",
-          "subtitle": "学生游戏日",
           "description": "Una oportunidad divertida para que su hijo interactúe con nuestros maestros y explore nuestro programa."
         },
         {
           "title": "Asegure su Lugar",
-          "subtitle": "确保名额",
           "description": "Un depósito asegura el lugar de su hijo, lo que nos permite prepararnos para su viaje de aprendizaje único."
         }
       ]
     },
     "tiers": {
       "title": "Nuestros Niveles de Crecimiento",
-      "subtitle": "我们的成长阶梯",
       "flexible": {
         "title": "Opciones Flexibles",
-        "subtitle": "灵活选择",
         "description": "Opciones flexibles para satisfacer las necesidades de su familia. Elija entre 2, 3 o 5 días de inscripción por semana."
       },
       "extended": {
         "title": "Cuidado Extendido",
-        "subtitle": "额外托管",
         "description": "El preescolar Little Panda ofrece cuidado por la mañana y por la tarde para nuestros estudiantes. Entendemos que muchas familias tienen horarios ocupados y pueden necesitar apoyo adicional más allá de nuestro horario escolar regular, por lo que nos complace poder ofrecer este servicio."
       },
       "am": {
         "title": "Cuidado AM",
-        "subtitle": "上午托管",
         "time": "8:30 AM to 9:00 AM, M-F",
         "price": "$220 por mes"
       },
       "pm": {
         "title": "Cuidado PM",
-        "subtitle": "下午托管",
         "time": "3:30 PM to 5:30 PM, M-F",
         "price": "$650 por mes"
       },
       "activities": {
         "title": "Actividades de Cuidado PM",
-        "subtitle": "下午托管活动",
         "description": "El programa de cuidado de la tarde ofrecerá diversas actividades que incluyen danza, yoga, círculo de matemáticas, STEM y jardinería. Estas actividades se proporcionarán de acuerdo con el plan de estudios establecido."
       },
-      "pricing": {
-        "monthly_tuition": "Mensualidad",
-        "monthly_tuition_zh": "月费",
-        "per_month": "/ mes"
-      }
+"pricing": {
+    "monthly_tuition": "Matrícula Mensual",
+    "per_month": "/ mes",
+    "infant": {
+        "program": "Programa Infantil",
+        "age": "(6 sem - 18 mes)"
+    },
+    "toddler": {
+        "program": "Programa para Niños Pequeños",
+        "age": "(18 mes - 3 años)"
+    },
+    "preschool": {
+        "program": "Programa Preescolar",
+        "age": "(3 - 5 años)"
+    },
+    "days": {
+        "five": "5 días",
+        "three": "3 días",
+        "two": "2 días"
+    }
+}
     },
     "form": {
       "title": "Consulta de Inscripción para el Preescolar Little Panda",
-      "subtitle": "小熊猫幼儿园入学咨询",
       "required": "* Indica campo obligatorio",
       "parent_info": {
         "title": "Información del Padre/Tutor",
-        "subtitle": "家长/监护人信息",
         "name": "Nombre *",
-        "name_chinese": "姓名 *",
         "email": "Correo Electrónico *",
-        "email_chinese": "电子邮件 *",
-        "phone": "Teléfono *",
-        "phone_chinese": "电话 *"
+        "phone": "Teléfono *"
       },
       "child_info": {
         "title": "Información del Niño",
-        "subtitle": "儿童信息",
         "name": "Nombre del Estudiante *",
         "birthday": "Fecha de Nacimiento del Estudiante (MM/DD/AAAA) *",
         "age_group": {
           "title": "Grupo de Edad *",
-          "subtitle": "年龄段 *",
           "infant": "Bebé (0-18 meses)",
-          "infant_chinese": "婴儿 (0-18个月)",
           "toddler": "Niño Pequeño (18 meses - 3 años)",
-          "toddler_chinese": "幼儿 (18个月-3岁)",
-          "preschool": "Preescolar (3-5 años)",
-          "preschool_chinese": "学前班 (3-5岁)"
+          "preschool": "Preescolar (3-5 años)"
         },
         "location": {
           "title": "Ubicación Preferida *",
-          "subtitle": "首选地点 *",
           "granada": "Campus de Granada",
-          "granada_chinese": "格拉纳达校区",
           "sf_state": "Campus Infantil en SF State",
-          "sf_state_chinese": "旧金山州立大学儿童校区",
           "ocean_ave": "Campus de Ocean Avenue",
-          "ocean_ave_chinese": "海洋大道校区",
           "coming_soon": "(Próximamente)"
         }
       },
       "enrollment": {
         "title": "Detalles de la Inscripción",
-        "subtitle": "入学详情",
         "start_date": {
           "title": "Fecha de Inicio Deseada *",
-          "subtitle": "期望开始日期 *",
           "asap": "Lo antes posible",
-          "asap_chinese": "尽快",
           "one_three": "En 1-3 meses",
-          "one_three_chinese": "1-3个月内",
           "three_six": "En 3-6 meses",
-          "three_six_chinese": "3-6个月内",
-          "exploring": "Solo explorando",
-          "exploring_chinese": "仅了解"
+          "exploring": "Solo explorando"
         }
       },
-      "submit": "Enviar Consulta",
-      "submit_chinese": "提交咨询"
+      "submit": "Enviar Consulta"
     }
   },
   "careers": {
     "title": "Únase a Nuestro Equipo de Corazones Amables",
-    "subtitle": "加入我们充满爱心的团队",
     "description": "En Little Panda, somos más que una escuela; somos una comunidad. Buscamos educadores apasionados y dedicados que compartan nuestro compromiso de nutrir a la próxima generación de mentes brillantes. Si tiene un corazón amable y amor por el aprendizaje, nos encantaría saber de usted.",
     "positions": {
-      "title": "Posiciones Abiertas",
-      "subtitle": "空缺职位"
+      "title": "Posiciones Abiertas"
     },
     "form": {
       "title": "Aplica ya",
-      "subtitle": "立即申请",
       "name": "Nombre Completo",
-      "name_chinese": "全名",
       "email": "Dirección de Correo Electrónico",
-      "email_chinese": "电子邮件地址",
       "phone": "Número de Teléfono",
-      "phone_chinese": "电话号码",
       "position": "Posición a la que Aplica",
-      "position_chinese": "申请职位",
       "resume": "Currículum/CV",
-      "resume_chinese": "简历",
       "cover_letter": "Carta de Presentación",
-      "cover_letter_chinese": "求职信",
-      "cover_letter_placeholder": "Cuéntenos por qué sería un gran candidato para nuestro equipo. / 告诉我们为什么您是这个职位的最佳人选。",
-      "submit": "Enviar Aplicación",
-      "submit_chinese": "提交申请"
+      "cover_letter_placeholder": "Cuéntenos por qué sería un gran candidato para nuestro equipo.",
+      "submit": "Enviar Aplicación"
     }
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "常见问题",
     "expand": "Expandir Todo",
     "collapse": "Contraer Todo",
     "faqs": [

@@ -6,325 +6,350 @@
     "careers": "Nghề nghiệp",
     "enroll": "Ghi danh ngay"
   },
-  "footer": {
-    "title": "Trường mầm non Little Panda",
-    "subtitle": "小熊猫中文幼儿园",
-    "granada": "🏫 Cơ sở Granada",
-    "sfsu": "🏫 Cơ sở trẻ em tại SF State",
-    "ocean": "🏫 Cơ sở Ocean Avenue",
-    "granada_address_1": "205 Granada Ave,",
-    "granada_address_2": "San Francisco, CA, 94112",
-    "sfsu_address_1": "1600 Holloway Ave,",
-    "sfsu_address_2": "San Francisco, CA 94132",
-    "ocean_address_1": "1946-1948 Ocean Avenue,",
-    "ocean_address_2": "San Francisco, CA, 94127"
-  },
   "home": {
     "hero": {
-      "title": "Unleash Potential.",
-      "title_zh": "释放潜能",
-      "subtitle": "Start Their Journey.",
-      "subtitle_zh": "从这里开始他们的旅程",
-      "cta": "Join Us",
-      "cta_zh": "加入我们"
+      "title": "Khai phá tiềm năng",
+      "subtitle": "Bắt đầu hành trình của bé",
+      "cta": "Tham gia cùng chúng tôi"
     },
     "blueprint": {
-      "title": "Bản thiết kế cho sự xuất sắc của chúng tôi",
-      "subtitle": "我们的卓越蓝图",
-      "description": "Chúng tôi đã thiết kế một phương pháp tiếp cận toàn diện cho giáo dục sớm nhằm nuôi dưỡng mọi khía cạnh phát triển của con bạn, chuẩn bị cho chúng phát triển mạnh trong một cộng đồng toàn cầu.",
-      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
+      "title": "Bản thiết kế cho sự vượt trội",
+      "description": "Chúng tôi đã thiết kế một phương pháp giáo dục sớm toàn diện nhằm nuôi dưỡng mọi khía cạnh phát triển của trẻ, chuẩn bị cho trẻ tự tin phát triển trong một cộng đồng toàn cầu.",
       "items": [
         {
-          "title": "Học tập dựa trên câu hỏi",
-          "description": "Chúng tôi khơi dậy sự tò mò bằng cách tạo ra các kết nối trong thế giới thực, khuyến khích học sinh đặt những câu hỏi lớn và khám phá câu trả lời của riêng mình.",
-          "title_zh": "探究式学习",
-          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+          "title": "Học tập qua khám phá",
+          "description": "Chúng tôi khơi dậy trí tò mò bằng cách tạo ra những kết nối thực tế, khuyến khích trẻ đặt những câu hỏi lớn và tự tìm kiếm câu trả lời."
         },
         {
-          "title": "Hòa mình vào tiếng Quan Thoại",
-          "description": "Môi trường hòa mình của chúng tôi mở ra một thế giới đầy tiềm năng, thúc đẩy sự phát triển ngôn ngữ sớm và sự hiểu biết đa văn hóa.",
-          "title_zh": "沉浸式中文环境",
-          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+          "title": "Môi trường tiếng Quan Thoại",
+          "description": "Môi trường học tập song ngữ của chúng tôi mở ra một thế giới cơ hội, thúc đẩy sự phát triển ngôn ngữ sớm và sự hiểu biết đa văn hóa."
         },
         {
-          "title": "Các dự án tập trung vào trẻ em",
-          "description": "Chúng tôi hướng dẫn học sinh qua các nghiên cứu chuyên sâu về các chủ đề trong thế giới thực, phù hợp với sở thích và kỹ năng riêng của chúng.",
-          "title_zh": "以儿童为中心的项目",
-          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+          "title": "Dự án lấy trẻ làm trung tâm",
+          "description": "Chúng tôi hướng dẫn trẻ nghiên cứu sâu về các chủ đề thực tế, phù hợp với sở thích và kỹ năng riêng của từng bé."
         },
         {
-          "title": "Các kỹ năng sống cần thiết",
-          "description": "Chúng tôi trau dồi sự tập trung, tự chủ, giao tiếp và sự đồng cảm, xây dựng một nền tảng vững chắc cho sự thành công suốt đời.",
-          "title_zh": "基本生活技能",
-          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+          "title": "Kỹ năng sống cần thiết",
+          "description": "Chúng tôi trau dồi sự tập trung, tự chủ, giao tiếp và lòng đồng cảm, xây dựng nền tảng vững chắc cho thành công suốt đời."
         }
       ]
     },
     "gallery": {
-      "title": "Một thoáng nhìn vào thế giới của chúng tôi",
-      "subtitle": "一睹我们的世界",
-      "description": "Nơi sự tò mò và sáng tạo trở nên sống động.",
-      "description_zh": "一个让好奇心与创造力绽放的地方。"
+      "title": "Thế giới của chúng tôi qua ảnh",
+      "description": "Nơi trí tò mò và sự sáng tạo được thắp sáng."
     },
     "campuses": {
       "title": "Các cơ sở của chúng tôi",
-      "subtitle": "我们的校区",
       "description": "Tìm môi trường học tập hoàn hảo cho con bạn.",
-      "description_zh": "为您的孩子找到完美的学习环境。"
+      "request_tour": "Yêu cầu tham quan",
+      "enroll_now": "Ghi danh ngay",
+      "granada": {
+        "name": "Cơ sở Granada",
+        "ages": "18 tháng - 6 tuổi"
+      },
+      "sf_state": {
+        "name": "Cơ sở trẻ em tại SF State",
+        "ages": "3 tháng - 6 tuổi"
+      },
+      "ocean_ave": {
+        "name": "Cơ sở Ocean Avenue",
+        "ages": "3 tháng - 6 tuổi"
+      }
+    },
+    "timeline": {
+      "title": "Một ngày ở Little Panda",
+      "events": [
+        {
+          "time": "9:00 - 9:30 sáng",
+          "title": "Đón trẻ và sinh hoạt đầu giờ",
+          "icon": "fas fa-sun",
+          "iconColor": "text-yellow-400",
+          "dotColor": "bg-yellow-400"
+        },
+        {
+          "time": "9:30 - 10:00 sáng",
+          "title": "Giờ ăn nhẹ",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "10:00 - 10:30 sáng",
+          "title": "Hoạt động dự án",
+          "icon": "fas fa-paint-brush",
+          "iconColor": "text-green-400",
+          "dotColor": "bg-green-400"
+        },
+        {
+          "time": "10:30 - 11:30 sáng",
+          "title": "Khám phá ngoài trời",
+          "icon": "fas fa-tree",
+          "iconColor": "text-blue-400",
+          "dotColor": "bg-blue-400"
+        },
+        {
+          "time": "11:30 sáng - 12:30 chiều",
+          "title": "Ăn trưa",
+          "icon": "fas fa-utensils",
+          "iconColor": "text-orange-400",
+          "dotColor": "bg-orange-400"
+        },
+        {
+          "time": "12:30 - 1:00 chiều",
+          "title": "Giờ kể chuyện/Vận động tinh/Chơi kịch",
+          "icon": "fas fa-book-open",
+          "iconColor": "text-indigo-400",
+          "dotColor": "bg-indigo-400"
+        },
+        {
+          "time": "1:00 - 2:30 chiều",
+          "title": "Giờ ngủ trưa",
+          "icon": "fas fa-bed",
+          "iconColor": "text-purple-400",
+          "dotColor": "bg-purple-400"
+        },
+        {
+          "time": "2:30 - 3:00 chiều",
+          "title": "Bữa ăn nhẹ",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "3:00 - 3:30 chiều",
+          "title": "Trả trẻ",
+          "icon": "fas fa-flag-checkered",
+          "iconColor": "text-red-400",
+          "dotColor": "bg-red-400"
+        }
+      ]
     },
     "form": {
-      "title": "Tham gia gia đình Little Panda",
-      "subtitle": "加入小熊猫大家庭",
-      "description": "Đảm bảo vị trí của bạn trong danh sách chờ ưu tiên của chúng tôi.",
-      "description_zh": "立即锁定您的优先候补名额。",
-      "parentName": "Tên phụ huynh / 家长姓名",
-      "email": "Địa chỉ email / 电子邮件地址",
-      "phone": "Số điện thoại / 电话号码",
-      "childDob": "Ngày sinh của trẻ / 孩子的出生日期",
-      "message": "Tin nhắn hoặc câu hỏi của bạn... / 您的留言或问题...",
-      "submit": "Tham gia danh sách chờ",
-      "submit_chinese": "加入候补名单",
+      "title": "Gia nhập gia đình Little Panda",
+      "description": "Chúng tôi đang xây dựng một cộng đồng yêu thương và hỗ trợ cho con bạn. Hãy thực hiện bước đầu tiên để tham gia gia đình của chúng tôi bằng cách điền vào biểu mẫu dưới đây.",
+      "parentName": "Tên phụ huynh",
+      "email": "Địa chỉ email",
+      "phone": "Số điện thoại",
+      "childDob": "Ngày sinh của trẻ",
+      "message": "Lời nhắn hoặc câu hỏi của bạn...",
+      "submit": "Gia nhập danh sách chờ",
       "parentName_label": "Tên phụ huynh",
       "email_label": "Địa chỉ email",
       "phone_label": "Số điện thoại",
       "childDob_label": "Ngày sinh của trẻ",
-      "message_label": "Tin nhắn",
+      "message_label": "Lời nhắn",
       "email_name": "Địa chỉ email"
     }
   },
   "thank_you": {
     "title": "Cảm ơn bạn!",
-    "message": "Bài gửi của bạn đã được nhận.",
+    "message": "Thông tin của bạn đã được gửi thành công.",
     "return": "Trở về trang chủ"
   },
   "admissions": {
     "title": "Tuyển sinh",
-    "subtitle": "招生",
-    "description": "Chúng tôi rất vui mừng được chào đón các gia đình mới vào cộng đồng của chúng tôi và cùng nhau bắt đầu cuộc hành trình tuyệt vời này.",
-    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
+    "description": "Chúng tôi rất vui mừng chào đón các gia đình mới đến với cộng đồng của mình và cùng nhau bắt đầu hành trình tuyệt vời này.",
     "journey": {
-      "title": "Hành trình của bạn đến Little Panda",
-      "subtitle": "您的小熊猫之旅",
+      "title": "Hành trình của bạn tại Little Panda",
       "steps": [
         {
-          "title": "Gửi yêu cầu của bạn",
-          "subtitle": "提交咨询",
-          "description": "Điền vào biểu mẫu dưới đây để bày tỏ sự quan tâm của bạn. Chúng tôi sẽ liên hệ lại sớm để xác nhận rằng chúng tôi đã nhận được nó."
+          "title": "Gửi yêu cầu tư vấn",
+          "description": "Điền vào biểu mẫu dưới đây để thể hiện sự quan tâm của bạn. Chúng tôi sẽ sớm liên hệ để xác nhận."
         },
         {
-          "title": "Lên lịch tham quan",
-          "subtitle": "安排参观",
-          "description": "Chúng tôi mời bạn tham gia một chuyến tham quan được cá nhân hóa để tận mắt trải nghiệm môi trường nuôi dưỡng của chúng tôi."
+          "title": "Đặt lịch tham quan",
+          "description": "Chúng tôi mời bạn tham gia một chuyến tham quan cá nhân hóa để trực tiếp trải nghiệm môi trường nuôi dưỡng của chúng tôi."
         },
         {
-          "title": "Buổi chơi của học sinh",
-          "subtitle": "学生游戏日",
-          "description": "Một cơ hội thú vị để con bạn tương tác với giáo viên của chúng tôi và khám phá chương trình của chúng tôi."
+          "title": "Buổi chơi thử cho bé",
+          "description": "Một cơ hội thú vị để con bạn tương tác với giáo viên và khám phá chương trình học của chúng tôi."
         },
         {
-          "title": "Đảm bảo vị trí của bạn",
-          "subtitle": "确保名额",
-          "description": "Một khoản tiền đặt cọc sẽ đảm bảo vị trí của con bạn, cho phép chúng tôi chuẩn bị cho hành trình học tập độc đáo của chúng."
+          "title": "Giữ chỗ cho bé",
+          "description": "Một khoản đặt cọc sẽ đảm bảo suất học cho con bạn, cho phép chúng tôi chuẩn bị cho hành trình học tập độc đáo của bé."
         }
       ]
     },
     "tiers": {
-      "title": "Các cấp độ phát triển của chúng tôi",
-      "subtitle": "我们的成长阶梯",
+      "title": "Các chương trình học của chúng tôi",
       "flexible": {
-        "title": "Các tùy chọn linh hoạt",
-        "subtitle": "灵活选择",
-        "description": "Các tùy chọn linh hoạt để phù hợp với nhu cầu của gia đình bạn. Chọn giữa 2, 3 hoặc 5 ngày ghi danh mỗi tuần."
+        "title": "Lựa chọn linh hoạt",
+        "description": "Các lựa chọn linh hoạt phù hợp với nhu cầu của gia đình bạn. Chọn ghi danh 2, 3 hoặc 5 ngày mỗi tuần."
       },
       "extended": {
-        "title": "Chăm sóc mở rộng",
-        "subtitle": "额外托管",
-        "description": "Trường mầm non Little Panda cung cấp cả dịch vụ chăm sóc buổi sáng và chăm sóc buổi chiều cho học sinh của chúng tôi. Chúng tôi hiểu rằng nhiều gia đình có lịch trình bận rộn và có thể cần hỗ trợ thêm ngoài giờ học thông thường của chúng tôi, vì vậy chúng tôi rất vui khi có thể cung cấp dịch vụ này."
+        "title": "Chăm sóc ngoài giờ",
+        "description": "Trường mầm non Little Panda cung cấp dịch vụ chăm sóc buổi sáng và buổi chiều cho học sinh. Chúng tôi hiểu rằng nhiều gia đình có lịch trình bận rộn và có thể cần hỗ trợ thêm ngoài giờ học chính thức."
       },
       "am": {
         "title": "Chăm sóc buổi sáng",
-        "subtitle": "上午托管",
-        "time": "8:30 sáng đến 9:00 sáng, Thứ Hai-Thứ Sáu",
-        "price": "220 đô la mỗi tháng"
+        "time": "8:30 - 9:00, Thứ Hai - Thứ Sáu",
+        "price": "220 đô la/tháng"
       },
       "pm": {
         "title": "Chăm sóc buổi chiều",
-        "subtitle": "下午托管",
-        "time": "3:30 chiều đến 5:30 chiều, Thứ Hai-Thứ Sáu",
-        "price": "650 đô la mỗi tháng"
+        "time": "15:30 - 17:30, Thứ Hai - Thứ Sáu",
+        "price": "650 đô la/tháng"
       },
       "activities": {
-        "title": "Các hoạt động chăm sóc buổi chiều",
-        "subtitle": "下午托管活动",
-        "description": "Chương trình chăm sóc buổi chiều sẽ cung cấp nhiều hoạt động khác nhau bao gồm khiêu vũ, yoga, vòng tròn toán học, khoa học công nghệ và làm vườn. Các hoạt động này sẽ được cung cấp theo chương trình giảng dạy đã được thiết lập."
-      }
+        "title": "Hoạt động chăm sóc buổi chiều",
+        "description": "Chương trình chăm sóc buổi chiều sẽ cung cấp nhiều hoạt động đa dạng như khiêu vũ, yoga, toán học, STEM và làm vườn, theo chương trình giảng dạy đã được thiết lập."
+      },
+"pricing": {
+    "monthly_tuition": "Học phí hàng tháng",
+    "per_month": "/tháng",
+"infant": {
+    "program": "Chương trình cho trẻ sơ sinh",
+    "age": "(6 tuần - 18 tháng)"
+},
+"toddler": {
+    "program": "Chương trình cho trẻ mới biết đi",
+    "age": "(18 tháng - 3 tuổi)"
+},
+"preschool": {
+    "program": "Chương trình mầm non",
+    "age": "(3 - 5 tuổi)"
+},
+"days": {
+    "five": "5 ngày",
+    "three": "3 ngày",
+    "two": "2 ngày"
+}
+}
     },
     "form": {
       "title": "Yêu cầu ghi danh vào trường mầm non Little Panda",
-      "subtitle": "小熊猫幼儿园入学咨询",
-      "required": "* Cho biết trường bắt buộc",
+      "required": "* là trường bắt buộc",
       "parent_info": {
         "title": "Thông tin phụ huynh/người giám hộ",
-        "subtitle": "家长/监护人信息",
         "name": "Tên *",
-        "name_chinese": "姓名 *",
         "email": "Email *",
-        "email_chinese": "电子邮件 *",
-        "phone": "Điện thoại *",
-        "phone_chinese": "电话 *"
+        "phone": "Điện thoại *"
       },
       "child_info": {
         "title": "Thông tin của trẻ",
-        "subtitle": "儿童信息",
         "name": "Tên học sinh *",
         "birthday": "Ngày sinh của học sinh (MM/DD/YYYY) *",
         "age_group": {
           "title": "Nhóm tuổi *",
-          "subtitle": "年龄段 *",
           "infant": "Trẻ sơ sinh (0-18 tháng)",
-          "infant_chinese": "婴儿 (0-18个月)",
           "toddler": "Trẻ mới biết đi (18 tháng - 3 tuổi)",
-          "toddler_chinese": "幼儿 (18个月-3岁)",
-          "preschool": "Mầm non (3-5 tuổi)",
-          "preschool_chinese": "学前班 (3-5岁)"
+          "preschool": "Mầm non (3-5 tuổi)"
         },
         "location": {
-          "title": "Vị trí ưa thích *",
-          "subtitle": "首选地点 *",
+          "title": "Cơ sở ưu tiên *",
           "granada": "Cơ sở Granada",
-          "granada_chinese": "格拉纳达校区",
           "sf_state": "Cơ sở trẻ em tại SF State",
-          "sf_state_chinese": "旧金山州立大学儿童校区",
           "ocean_ave": "Cơ sở Ocean Avenue",
-          "ocean_ave_chinese": "海洋大道校区",
-          "coming_soon": "(Sắp có)"
+          "coming_soon": "(Sắp khai trương)"
         }
       },
       "enrollment": {
         "title": "Chi tiết ghi danh",
-        "subtitle": "入学详情",
         "start_date": {
           "title": "Ngày bắt đầu mong muốn *",
-          "subtitle": "期望开始日期 *",
           "asap": "Càng sớm càng tốt",
-          "asap_chinese": "尽快",
-          "one_three": "Trong 1-3 tháng",
-          "one_three_chinese": "1-3个月内",
-          "three_six": "Trong 3-6 tháng",
-          "three_six_chinese": "3-6个月内",
-          "exploring": "Chỉ đang tìm hiểu",
-          "exploring_chinese": "仅了解"
+          "one_three": "Trong vòng 1-3 tháng",
+          "three_six": "Trong vòng 3-6 tháng",
+          "exploring": "Chỉ đang tìm hiểu"
         }
       },
-      "submit": "Gửi yêu cầu",
-      "submit_chinese": "提交咨询"
+      "submit": "Gửi yêu cầu"
     }
   },
   "careers": {
-    "title": "Tham gia đội ngũ những trái tim nhân hậu của chúng tôi",
-    "subtitle": "加入我们充满爱心的团队",
-    "description": "Tại Little Panda, chúng tôi không chỉ là một ngôi trường; chúng tôi là một cộng đồng. Chúng tôi đang tìm kiếm những nhà giáo dục đầy nhiệt huyết và tận tâm, những người chia sẻ cam kết của chúng tôi trong việc nuôi dưỡng thế hệ những bộ óc lỗi lạc tiếp theo. Nếu bạn có một trái tim nhân hậu và tình yêu học hỏi, chúng tôi rất muốn nghe từ bạn.",
+    "title": "Gia nhập đội ngũ những trái tim nhân hậu",
+    "description": "Tại Little Panda, chúng tôi không chỉ là một ngôi trường, mà là một cộng đồng. Chúng tôi tìm kiếm những nhà giáo dục nhiệt huyết, tận tâm, cùng chia sẻ cam kết nuôi dưỡng thế hệ những tài năng tương lai. Nếu bạn có một trái tim nhân hậu và tình yêu với việc học hỏi, chúng tôi rất mong nhận được hồ sơ của bạn.",
     "positions": {
-      "title": "Các vị trí đang tuyển",
-      "subtitle": "空缺职位"
+      "title": "Các vị trí đang tuyển"
     },
     "form": {
       "title": "Ứng tuyển ngay",
-      "subtitle": "立即申请",
       "name": "Họ và tên",
-      "name_chinese": "全名",
       "email": "Địa chỉ email",
-      "email_chinese": "电子邮件地址",
       "phone": "Số điện thoại",
-      "phone_chinese": "电话号码",
       "position": "Vị trí ứng tuyển",
-      "position_chinese": "申请职位",
       "resume": "Sơ yếu lý lịch/CV",
-      "resume_chinese": "简历",
       "cover_letter": "Thư xin việc",
-      "cover_letter_chinese": "求职信",
-      "cover_letter_placeholder": "Hãy cho chúng tôi biết tại sao bạn sẽ là một sự phù hợp tuyệt vời cho đội ngũ của chúng tôi. / 告诉我们为什么您是这个职位的最佳人选。",
-      "submit": "Nộp đơn",
-      "submit_chinese": "提交申请"
+      "cover_letter_placeholder": "Hãy cho chúng tôi biết tại sao bạn là ứng viên phù hợp cho đội ngũ của chúng tôi.",
+      "submit": "Nộp hồ sơ"
     }
   },
   "faq": {
     "title": "Các câu hỏi thường gặp",
-    "subtitle": "常见问题",
     "expand": "Mở rộng tất cả",
     "collapse": "Thu gọn tất cả",
     "faqs": [
       {
-        "question": "Quy trình đăng ký",
-        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 1: Đăng ký và tham quan</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>Phí đăng ký không hoàn lại và không thể chuyển nhượng là 100 đô la phải được thanh toán cho Little Panda qua Paypal.</li><li>Sau đó, trường sẽ sắp xếp thời gian với bạn để tham quan trường trực tiếp sau khi chúng tôi nhận được phí đăng ký của bạn.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 2: Danh sách chờ</h3><p class=\"text-text-main mt-2\">Đơn đăng ký được chấp nhận trong suốt cả năm. Nếu không có chỗ trống tại thời điểm xử lý đơn đăng ký của con bạn, chúng sẽ được đưa vào danh sách chờ. Bạn sẽ nhận được email xác nhận sau khi nhận được để xác nhận đơn đăng ký và tài liệu đã được xử lý.</p><p class=\"text-text-main mt-2 font-bold\">***Tuyển sinh được chấp nhận trong suốt cả năm ngay khi có chỗ trống***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 3: Chấp nhận và đặt cọc</h3><p class=\"text-text-main mt-2\">Sau khi được thông báo chấp nhận, các gia đình phải nộp một khoản tiền đặt cọc một tháng để đảm bảo chỗ ghi danh cho trẻ, lên lịch một buổi chơi, hoàn thành tất cả các tài liệu/biểu mẫu trong gói ghi danh và tham dự một cuộc họp định hướng. Thông tin chi tiết cụ thể hơn sẽ được cung cấp trong email chấp nhận.</p><p class=\"text-text-main mt-2\">Ngoài ra, bạn có thể xác nhận với Trường mầm non Little Panda để đưa con bạn vào danh sách chờ.</p></div>"
+        "question": "Quy trình nộp đơn",
+        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 1: Nộp đơn và Tham quan</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>Phí nộp đơn không hoàn lại và không thể chuyển nhượng là 100 đô la, thanh toán cho Little Panda qua Paypal.</li><li>Sau khi nhận được phí, nhà trường sẽ sắp xếp một buổi tham quan trực tiếp tại trường cho bạn.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 2: Danh sách chờ</h3><p class=\"text-text-main mt-2\">Đơn đăng ký được nhận quanh năm. Nếu không có chỗ trống tại thời điểm xử lý hồ sơ, con bạn sẽ được đưa vào danh sách chờ. Bạn sẽ nhận được email xác nhận khi hồ sơ được xử lý.</p><p class=\"text-text-main mt-2 font-bold\">***Tuyển sinh được chấp nhận quanh năm ngay khi có chỗ trống***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Bước 3: Chấp nhận và Đặt cọc</h3><p class=\"text-text-main mt-2\">Sau khi nhận được thông báo trúng tuyển, gia đình cần đặt cọc một tháng học phí để giữ chỗ, lên lịch cho buổi chơi thử, hoàn tất hồ sơ nhập học và tham dự buổi định hướng. Thông tin chi tiết sẽ được cung cấp trong email trúng tuyển.</p><p class=\"text-text-main mt-2\">Ngoài ra, bạn có thể xác nhận với trường để đưa con vào danh sách chờ.</p></div>"
       },
       {
-        "question": "Trẻ em được phân nhóm như thế nào?",
-        "answer": "Trong mỗi lớp học, chúng tôi có 12-14 học sinh trong một nhóm. Học sinh được phân nhóm theo độ tuổi."
+        "question": "Trẻ được phân nhóm như thế nào?",
+        "answer": "Mỗi lớp có 12-14 học sinh, được phân nhóm theo độ tuổi."
       },
       {
         "question": "Tỷ lệ giáo viên trên học sinh là bao nhiêu?",
-        "answer": "<ul><li>1 giáo viên cho mỗi 4 trẻ sơ sinh (3 tháng-18 tháng)</li><li>1 giáo viên cho mỗi 5 trẻ mới biết đi (18 tháng-24 tháng)</li><li>1 giáo viên cho mỗi 6 trẻ mới biết đi lớn hơn (2 tuổi-3 tuổi)</li><li>1 giáo viên cho mỗi 7 trẻ mầm non (3 tuổi-6 tuổi)</li></ul>"
+        "answer": "<ul><li>1 giáo viên/4 trẻ sơ sinh (3-18 tháng)</li><li>1 giáo viên/5 trẻ nhỏ (18-24 tháng)</li><li>1 giáo viên/6 trẻ lớn hơn (2-3 tuổi)</li><li>1 giáo viên/7 trẻ mầm non (3-6 tuổi)</li></ul>"
       },
       {
-        "question": "Bạn có cung cấp các chuyến thăm tại chỗ hay chỉ ảo?",
-        "answer": "Chúng tôi cung cấp cả tham quan tại chỗ và tham quan ảo."
+        "question": "Nhà trường có tổ chức tham quan trực tiếp hay chỉ trực tuyến?",
+        "answer": "Chúng tôi tổ chức cả tham quan trực tiếp và trực tuyến."
       },
       {
-        "question": "Bạn chấp nhận độ tuổi nào?",
-        "answer": "<ul><li>Cơ sở Gorham: 3 tháng đến TK (Mầm non cho tất cả và chương trình đủ điều kiện TK)</li><li>Cơ sở Granada: 18 tháng đến khi vào mẫu giáo</li></ul>"
+        "question": "Nhà trường nhận trẻ từ độ tuổi nào?",
+        "answer": "<ul><li>Cơ sở Gorham: từ 3 tháng đến lớp TK (chương trình Mầm non cho mọi người và đủ điều kiện TK)</li><li>Cơ sở Granada: từ 18 tháng đến khi vào Mẫu giáo</li></ul>"
       },
       {
-        "question": "Thời gian đưa đón và đón trẻ linh hoạt như thế nào?",
-        "answer": "Học sinh sẽ vào và ra khỏi trường theo đơn vị nhóm lớp. Mỗi nhóm có một thời gian đưa đón và đón trẻ cố định. Thông báo cho giáo viên nhóm một ngày trước nếu bạn sẽ đến sớm hoặc muộn so với thời gian đón hoặc đưa trẻ."
+        "question": "Giờ đưa đón có linh hoạt không?",
+        "answer": "Học sinh ra vào trường theo từng nhóm lớp với thời gian cố định. Vui lòng thông báo cho giáo viên của nhóm trước một ngày nếu bạn đến sớm hoặc muộn."
       },
       {
-        "question": "Bạn có cung cấp dịch vụ chăm sóc mở rộng không?",
-        "answer": "<ul><li>Chăm sóc buổi sáng: 8:30-9:00 sáng thêm 220 đô la/tháng</li><li>Chăm sóc buổi chiều: 3:30-5:30 chiều thêm 650 đô la/tháng</li></ul>"
+        "question": "Nhà trường có cung cấp dịch vụ chăm sóc ngoài giờ không?",
+        "answer": "<ul><li>Chăm sóc buổi sáng: 8:30-9:00, phụ phí 220 đô la/tháng</li><li>Chăm sóc buổi chiều: 15:30-17:30, phụ phí 650 đô la/tháng</li></ul>"
       },
       {
-        "question": "Trình độ nhân viên",
-        "answer": "Tất cả các giáo viên của Trung tâm chăm sóc trẻ em Little Panda đều đáp ứng hoặc vượt quá các yêu cầu cấp phép của Bộ Giáo dục bang California (CADE). Hàng năm, các giáo viên phải hoàn thành một số giờ đào tạo liên tục theo yêu cầu. Tất cả các nhân viên đều có kinh nghiệm làm việc với trẻ nhỏ trong một chương trình được giám sát. Ngoài ra, các thành viên trong đội ngũ nhân viên của chúng tôi thực sự yêu thích và hiểu rõ sự phát triển của trẻ và triết lý dựa trên dự án của trường chúng tôi."
+        "question": "Trình độ chuyên môn của nhân viên",
+        "answer": "Tất cả giáo viên tại Trung tâm Chăm sóc Trẻ em Little Panda đều đáp ứng hoặc vượt qua yêu cầu cấp phép của Bộ Giáo dục Bang California (CADE) và phải hoàn thành số giờ đào tạo liên tục hàng năm. Toàn bộ nhân viên đều có kinh nghiệm làm việc với trẻ nhỏ trong môi trường được giám sát."
       },
       {
-        "question": "Bảo mật",
-        "answer": "Bảo mật đóng một vai trò quan trọng trong việc thúc đẩy sự tôn trọng đối với mỗi cá nhân và thúc đẩy một cộng đồng vững mạnh. Trung tâm chăm sóc trẻ em Little Panda rất coi trọng vấn đề bảo mật và nỗ lực hết sức để bảo vệ quyền riêng tư của mỗi gia đình. Thông tin liên lạc giữa nhân viên và phụ huynh về trẻ em sẽ được giữ bí mật mọi lúc. Trung tâm chăm sóc trẻ em Little Panda khuyến nghị rằng các cuộc trò chuyện về một đứa trẻ, hành vi của chúng hoặc một sự cố cụ thể nên được tiến hành riêng tư, tránh xa đứa trẻ và các thành viên khác của cộng đồng Trung tâm chăm sóc trẻ em Little Panda. Nếu phụ huynh có câu hỏi hoặc thắc mắc, chúng tôi đề nghị phụ huynh này liên hệ với giáo viên qua email hoặc trực tiếp để sắp xếp thời gian thảo luận."
+        "question": "Bảo mật thông tin",
+        "answer": "Chúng tôi rất coi trọng việc bảo mật và quyền riêng tư của mỗi gia đình. Mọi thông tin trao đổi giữa nhân viên và phụ huynh về trẻ sẽ được giữ kín. Các cuộc thảo luận về hành vi hoặc sự cố cụ thể của trẻ nên được thực hiện riêng tư."
       },
       {
         "question": "Có cung cấp bữa ăn không?",
-        "answer": "Chúng tôi cung cấp một bữa ăn nhẹ buổi sáng, bữa trưa và một bữa ăn nhẹ buổi chiều."
+        "answer": "Chúng tôi cung cấp bữa ăn nhẹ buổi sáng, bữa trưa và bữa ăn nhẹ buổi chiều."
       },
       {
         "question": "Nếu con tôi không biết tiếng Quan Thoại thì sao?",
-        "answer": "Con bạn không cần phải biết bất kỳ tiếng Quan Thoại nào trước khi ghi danh. Chúng tôi có khả năng đọc viết cân bằng để hỗ trợ con bạn nghe, nói, đọc, viết và trình bày."
+        "answer": "Không yêu cầu trẻ phải biết tiếng Quan Thoại trước khi nhập học. Chúng tôi có chương trình ngôn ngữ cân bằng để hỗ trợ trẻ phát triển các kỹ năng nghe, nói, đọc, viết."
       },
       {
-        "question": "Con tôi có cần phải được huấn luyện đi vệ sinh không?",
-        "answer": "Học sinh không bắt buộc phải được huấn luyện đi vệ sinh, chúng tôi có các phương pháp học đi vệ sinh rất thành công."
+        "question": "Trẻ có cần được huấn luyện đi vệ sinh trước không?",
+        "answer": "Không bắt buộc. Chúng tôi có các phương pháp hiệu quả để hỗ trợ trẻ trong việc này."
       },
       {
         "question": "Giờ ngủ trưa là khi nào?",
-        "answer": "Trẻ sơ sinh và trẻ mới biết đi có thể ngủ trưa bất cứ lúc nào chúng mệt. Trẻ mới biết đi lớn hơn và trẻ mầm non ngủ trưa từ 12:30 đến 03:00 chiều."
+        "answer": "Trẻ sơ sinh và trẻ nhỏ có thể ngủ bất cứ lúc nào. Trẻ lớn hơn và trẻ mầm non ngủ trưa từ 12:30 đến 15:00."
       },
       {
-        "question": "Các chuyến đi thực tế diễn ra bao lâu một lần và đến đâu?",
-        "answer": "Chúng tôi đến thư viện mỗi tuần một lần. Mỗi năm học, chúng tôi tổ chức các chuyến đi thực tế cho học sinh đến thăm các địa điểm khác nhau. Ví dụ, bảo tàng, Vườn bách thảo SF, Học viện Khoa học, Sở thú SF, Exploratorium, các vườn bí ngô, v.v."
+        "question": "Tần suất và địa điểm các chuyến đi thực tế?",
+        "answer": "Chúng tôi đến thư viện hàng tuần và tổ chức các chuyến đi đến bảo tàng, vườn bách thảo, sở thú và nhiều nơi khác trong suốt năm học."
       },
       {
-        "question": "Học sinh có thể ghi danh vào giữa năm không?",
-        "answer": "Đơn đăng ký được chấp nhận trong suốt cả năm. Khi đăng ký mới diễn ra, đơn đăng ký được nhận theo thứ tự ai đến trước được phục vụ trước."
+        "question": "Có thể đăng ký nhập học giữa năm không?",
+        "answer": "Có, chúng tôi nhận đơn đăng ký quanh năm và xét duyệt theo thứ tự ưu tiên."
       },
       {
-        "question": "Bạn xử lý kỷ luật như thế nào?",
-        "answer": "Trung tâm chăm sóc trẻ em Little Panda cam kết cung cấp một môi trường học tập an toàn và tích cực cho tất cả trẻ em. Chính sách hành vi của trường khuyến khích trẻ em phát triển các kỹ năng xã hội phản ánh nhiều giá trị của Trung tâm chăm sóc trẻ em Little Panda, bao gồm tự chủ, tôn trọng người khác và lòng tự trọng cao.<p>Giáo viên làm gương cho hành vi phù hợp và hướng dẫn các tương tác tích cực giữa trẻ em và người lớn. Nuôi dưỡng các kỹ năng xã hội này là một thành phần trung tâm của Creative Curriculum® và nó giúp trẻ em phát triển thành những người học thành công suốt đời.</p>"
+        "question": "Phương pháp kỷ luật của nhà trường là gì?",
+        "answer": "Chúng tôi cam kết tạo ra một môi trường học tập an toàn và tích cực, khuyến khích trẻ phát triển các kỹ năng xã hội như tự chủ, tôn trọng người khác và lòng tự trọng cao. Giáo viên sẽ là người làm gương và hướng dẫn các tương tác tích cực."
       },
       {
-        "question": "Đồ chơi và lớp học được vệ sinh bao lâu một lần?",
-        "answer": "<ul><li>Những đồ chơi không thể làm sạch và vệ sinh sẽ không được sử dụng.</li><li>Những đồ chơi mà trẻ em đã cho vào miệng hoặc bị nhiễm bẩn bởi dịch tiết cơ thể sẽ được để riêng cho đến khi được làm sạch.</li><li>Đồ chơi bằng vải có thể giặt bằng máy chỉ nên được sử dụng bởi một cá nhân tại một thời điểm hoặc không nên được sử dụng chút nào.</li><li>Đồ chơi không được chia sẻ với các nhóm trẻ sơ sinh hoặc trẻ mới biết đi khác, trừ khi chúng đã được rửa và vệ sinh trước.</li><li>Chúng tôi có đủ đồ chơi để chúng có thể được luân chuyển qua các lần làm sạch.</li><li>Các bộ lọc không khí cấp HEPA và đèn UV HVAC đã được lắp đặt trong mỗi lớp học.</li></ul>"
+        "question": "Đồ chơi và lớp học được vệ sinh thường xuyên không?",
+        "answer": "<ul><li>Những đồ chơi không thể làm sạch và khử trùng sẽ không được sử dụng.</li><li>Những đồ chơi trẻ em đã cho vào miệng hoặc bị nhiễm bẩn bởi dịch tiết cơ thể sẽ được để riêng cho đến khi được làm sạch.</li><li>Đồ chơi bằng vải có thể giặt bằng máy chỉ nên được sử dụng bởi một cá nhân tại một thời điểm, hoặc hoàn toàn không nên được sử dụng.</li><li>Đồ chơi không được chia sẻ với các nhóm trẻ sơ sinh hoặc trẻ mới biết đi khác, trừ khi chúng đã được rửa và khử trùng trước.</li><li>Chúng tôi có đủ đồ chơi để có thể luân phiên trong quá trình làm sạch.</li><li>Bộ lọc không khí cấp HEPA và đèn UV HVAC đã được lắp đặt trong mỗi lớp học.</li></ul>"
       },
       {
-        "question": "Quy trình xử lý khi trẻ bị ốm là gì?",
-        "answer": "Vi trùng lây lan nhanh chóng trong môi trường mầm non. Tất cả trẻ em và nhân viên đều khỏe mạnh hơn khi người bệnh ở nhà. Cần phải có ý thức chung trong trường hợp bị cảm lạnh, có thể từ một trường hợp sổ mũi nhẹ đến nhiễm trùng xoang toàn phát hoặc ho sâu.<p>Chúng tôi sử dụng MẪU KHẨN CẤP, LIC700 để liên hệ với phụ huynh hoặc bất kỳ người lớn được chỉ định nào khác nếu con bạn có các triệu chứng bệnh khi đang ở trong lớp. Chúng tôi sẽ cách ly con bạn ở một nơi thoải mái, có giám sát cho đến khi có thể đón được.</p><p>Nếu một đứa trẻ hoặc gia đình có bất kỳ triệu chứng nào của Covid-19, phụ huynh cần thông báo ngay cho nhà trường. Đứa trẻ sẽ cần phải ở nhà không đến trường cho đến khi nhận được kết quả xét nghiệm COVID-19 âm tính hoặc đã được cách ly trong 14 ngày. Chúng tôi sẽ tuân theo các hướng dẫn của SFPDHD để sửa đổi giao thức này nếu cần.</p>"
+        "question": "Quy trình xử lý khi trẻ bị ốm?",
+        "answer": "Trẻ bị ốm nên ở nhà để đảm bảo sức khỏe cho cộng đồng. Nếu trẻ có triệu chứng bệnh trong giờ học, chúng tôi sẽ liên hệ ngay với phụ huynh. Nếu có triệu chứng Covid-19, vui lòng thông báo cho nhà trường và tuân thủ hướng dẫn của SFPDHD."
       }
     ]
   }

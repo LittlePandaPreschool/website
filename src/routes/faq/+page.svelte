@@ -1,7 +1,7 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
-  import { chineseSubtext } from '$lib/data/chineseSubtext';
   import { fade } from 'svelte/transition';
+  import zh from '$lib/locales/zh.json';
   let openItems: number[] = [];
 
   function toggle(index: number) {
@@ -29,7 +29,7 @@
 </style>
 
 <main class="container mx-auto px-6 py-12">
-    <h1 class="text-5xl font-bold text-center mb-16 text-text-main">{$t('faq.title')} <br><span class="text-4xl">{chineseSubtext.faq.title}</span></h1>
+    <h1 class="text-5xl font-bold text-center mb-16 text-text-main">{$t('faq.title')} <br><span class="text-4xl">{zh.faq.title}</span></h1>
 
     <!-- FAQ Section -->
     <section class="faq-page mb-16">
@@ -38,7 +38,7 @@
                 <button on:click={expandAll} class="btn-primary transform transition-transform duration-300 hover:scale-105 focus:scale-105">
                     {openItems.length === ($t('faq') as any).faqs.length ? $t('faq.collapse') : $t('faq.expand')}
                     <br>
-                    <span class="text-sm font-normal normal-case">{openItems.length === ($t('faq') as any).faqs.length ? chineseSubtext.faq.collapse : chineseSubtext.faq.expand}</span>
+                    <span class="text-sm font-normal normal-case">{openItems.length === ($t('faq') as any).faqs.length ? zh.faq.collapse : zh.faq.expand}</span>
                 </button>
             </div>
             <div class="accordion space-y-4">
@@ -50,7 +50,7 @@
                                 <span>
                                     {faq.question}
                                     <br>
-                                    <span class="text-xl">{chineseSubtext.faq.faqs[i].question}</span>
+                                    <span class="text-xl">{zh.faq.faqs[i].question}</span>
                                 </span>
                                 <span class="text-2xl font-light text-primary transform transition-transform duration-300 {openItems.includes(i) ? 'rotate-45' : ''}">+</span>
                             </span>
@@ -59,7 +59,7 @@
                     <div class="accordion-content text-lg leading-relaxed p-7 rounded-lg themed-content" style="opacity: 1;">
                         {@html faq.answer}
                         <br>
-                        <span class="text-base">{@html chineseSubtext.faq.faqs[i].answer}</span>
+                        <span class="text-base">{@html zh.faq.faqs[i].answer}</span>
                     </div>
                     {/if}
                     </div>

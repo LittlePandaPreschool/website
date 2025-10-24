@@ -14,41 +14,29 @@
     },
     "blueprint": {
       "title": "Our Blueprint for Brilliance",
-      "subtitle": "我们的卓越蓝图",
       "description": "We've designed a holistic approach to early education that nurtures every aspect of your child's development, preparing them to thrive in a global community.",
-      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
       "items": [
         {
           "title": "Inquiry-Based Learning",
-          "description": "We spark curiosity by making real-world connections, encouraging students to ask big questions and explore their own answers.",
-          "title_zh": "探究式学习",
-          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+          "description": "We spark curiosity by making real-world connections, encouraging students to ask big questions and explore their own answers."
         },
         {
           "title": "Mandarin Immersion",
-          "description": "Our immersive environment unlocks a world of possibilities, fostering early language development and cross-cultural understanding.",
-          "title_zh": "沉浸式中文环境",
-          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+          "description": "Our immersive environment unlocks a world of possibilities, fostering early language development and cross-cultural understanding."
         },
         {
           "title": "Child-Focused Projects",
-          "description": "We guide students through in-depth studies of real-world topics, tailored to their unique interests and skills.",
-          "title_zh": "以儿童为中心的项目",
-          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+          "description": "We guide students through in-depth studies of real-world topics, tailored to their unique interests and skills."
         },
         {
           "title": "Essential Life Skills",
-          "description": "We cultivate focus, self-control, communication, and empathy, building a strong foundation for lifelong success.",
-          "title_zh": "基本生活技能",
-          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+          "description": "We cultivate focus, self-control, communication, and empathy, building a strong foundation for lifelong success."
         }
       ]
     },
     "gallery": {
       "title": "A Glimpse Into Our World",
-      "subtitle": "一睹我们的世界",
-      "description": "Where curiosity and creativity come to life.",
-      "description_zh": "一个让好奇心与创造力绽放的地方。"
+      "description": "Where curiosity and creativity come to life."
     },
     "campuses": {
       "title": "Our Campuses",
@@ -138,16 +126,13 @@
     },
     "form": {
       "title": "Join the Little Panda Family",
-      "subtitle": "加入小熊猫大家庭",
       "description": "We're building a loving and supportive community for your child. Take the first step in joining our family by filling out the form below.",
-      "description_zh": "我们正在为您的孩子建立一个充满爱心和支持的社区。填写下面的表格，迈出加入我们大家庭的第一步。",
-      "parentName": "Parent's Name / 家长姓名",
-      "email": "Email Address / 电子邮件地址",
-      "phone": "Phone Number / 电话号码",
-      "childDob": "Child's Date of Birth / 孩子的出生日期",
-      "message": "Your message or questions... / 您的留言或问题...",
+      "parentName": "Parent's Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "childDob": "Child's Date of Birth",
+      "message": "Your message or questions...",
       "submit": "Join Waitlist",
-      "submit_chinese": "加入候补名单",
       "parentName_label": "Parent's Name",
       "email_label": "Email Address",
       "phone_label": "Phone Number",
@@ -163,163 +148,134 @@
   },
   "admissions": {
     "title": "Admissions",
-    "subtitle": "招生",
     "description": "We are delighted to welcome new families into our community and begin this wonderful journey together.",
-    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
     "journey": {
       "title": "Your Journey to Little Panda",
-      "subtitle": "您的小熊猫之旅",
       "steps": [
         {
           "title": "Submit Your Inquiry",
-          "subtitle": "提交咨询",
           "description": "Fill out the form below to express your interest. We'll be in touch shortly to confirm we've received it."
         },
         {
           "title": "Schedule a Tour",
-          "subtitle": "安排参观",
           "description": "We invite you to a personalized tour to experience our nurturing environment firsthand."
         },
         {
           "title": "Student Playdate",
-          "subtitle": "学生游戏日",
           "description": "A fun opportunity for your child to interact with our teachers and explore our program."
         },
         {
           "title": "Secure Your Spot",
-          "subtitle": "确保名额",
           "description": "A deposit secures your child's place, allowing us to prepare for their unique learning journey."
         }
       ]
     },
     "tiers": {
       "title": "Our Growth Tiers",
-      "subtitle": "我们的成长阶梯",
       "flexible": {
         "title": "Flexible Options",
-        "subtitle": "灵活选择",
         "description": "Flexible options to fit your family's needs. Choose between 2, 3, or 5 days of enrollment per week."
       },
       "extended": {
         "title": "Extended Care",
-        "subtitle": "额外托管",
         "description": "Little Panda Preschool offers both AM care and PM care for our students. We understand that many families have busy schedules and may need additional support beyond our regular school hours, so we're happy to be able to offer this service."
       },
       "am": {
         "title": "AM Care",
-        "subtitle": "上午托管",
         "time": "8:30 AM to 9:00 AM, M-F",
         "price": "$220 per month"
       },
       "pm": {
         "title": "PM Care",
-        "subtitle": "下午托管",
         "time": "3:30 PM to 5:30 PM, M-F",
         "price": "$650 per month"
       },
       "activities": {
         "title": "PM Care Activities",
-        "subtitle": "下午托管活动",
         "description": "The PM care program will offer various activities including dance, yoga , math circle, stem and gardening. These activities will be provided in accordance with the established curriculum."
       },
       "pricing": {
         "monthly_tuition": "Monthly Tuition",
-        "monthly_tuition_zh": "月费",
-        "per_month": "/ month"
+        "per_month": "/ month",
+        "infant": {
+          "program": "Infant Program",
+          "age": "(6 wks - 18 mos)"
+        },
+        "toddler": {
+          "program": "Toddler Program",
+          "age": "(18 mos - 3 yrs)"
+        },
+        "preschool": {
+          "program": "Preschool Program",
+          "age": "(3 - 5 yrs)"
+        },
+        "days": {
+          "five": "5 days",
+          "three": "3 days",
+          "two": "2 days"
+        }
       }
     },
     "form": {
       "title": "Little Panda Preschool Enrollment Inquiry",
-      "subtitle": "小熊猫幼儿园入学咨询",
       "required": "* Indicates required field",
       "parent_info": {
         "title": "Parent/Guardian Information",
-        "subtitle": "家长/监护人信息",
         "name": "Name *",
-        "name_chinese": "姓名 *",
         "email": "Email *",
-        "email_chinese": "电子邮件 *",
-        "phone": "Phone *",
-        "phone_chinese": "电话 *"
+        "phone": "Phone *"
       },
       "child_info": {
         "title": "Child's Information",
-        "subtitle": "儿童信息",
-        "name": "Student Name 学生姓名 *",
-        "birthday": "Student Birthday (MM/DD/YYYY) 学生出生日期 (月/日/年） *",
+        "name": "Student Name *",
+        "birthday": "Student Birthday (MM/DD/YYYY) *",
         "age_group": {
           "title": "Age Group *",
-          "subtitle": "年龄段 *",
           "infant": "Infant (0-18 mos)",
-          "infant_chinese": "婴儿 (0-18个月)",
           "toddler": "Toddler (18 mos - 3 yrs)",
-          "toddler_chinese": "幼儿 (18个月-3岁)",
-          "preschool": "Preschool (3-5 yrs)",
-          "preschool_chinese": "学前班 (3-5岁)"
+          "preschool": "Preschool (3-5 yrs)"
         },
         "location": {
           "title": "Preferred Location *",
-          "subtitle": "首选地点 *",
           "granada": "Granada Campus",
-          "granada_chinese": "格拉纳达校区",
           "sf_state": "Children's Campus at SF State",
-          "sf_state_chinese": "旧金山州立大学儿童校区",
           "ocean_ave": "Ocean Avenue Campus",
-          "ocean_ave_chinese": "海洋大道校区",
           "coming_soon": "(Coming Soon)"
         }
       },
       "enrollment": {
         "title": "Enrollment Details",
-        "subtitle": "入学详情",
         "start_date": {
           "title": "Desired Start Date *",
-          "subtitle": "期望开始日期 *",
           "asap": "As soon as possible",
-          "asap_chinese": "尽快",
           "one_three": "In 1-3 months",
-          "one_three_chinese": "1-3个月内",
           "three_six": "In 3-6 months",
-          "three_six_chinese": "3-6个月内",
-          "exploring": "Just exploring",
-          "exploring_chinese": "仅了解"
+          "exploring": "Just exploring"
         }
       },
-      "submit": "Submit Inquiry",
-      "submit_chinese": "提交咨询"
+      "submit": "Submit Inquiry"
     }
   },
   "careers": {
     "title": "Join Our Team of Kind Hearts",
-    "subtitle": "加入我们充满爱心的团队",
     "description": "At Little Panda, we are more than just a school; we are a community. We are looking for passionate, dedicated educators who share our commitment to nurturing the next generation of brilliant minds. If you have a kind heart and a love for learning, we would love to hear from you.",
     "positions": {
-      "title": "Open Positions",
-      "subtitle": "空缺职位"
+      "title": "Open Positions"
     },
     "form": {
       "title": "Apply Now",
-      "subtitle": "立即申请",
       "name": "Full Name",
-      "name_chinese": "全名",
       "email": "Email Address",
-      "email_chinese": "电子邮件地址",
       "phone": "Phone Number",
-      "phone_chinese": "电话号码",
       "position": "Position Applying For",
-      "position_chinese": "申请职位",
       "resume": "Resume/CV",
-      "resume_chinese": "简历",
       "cover_letter": "Cover Letter",
-      "cover_letter_chinese": "求职信",
-      "cover_letter_placeholder": "Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。",
-      "submit": "Submit Application",
-      "submit_chinese": "提交申请"
+      "cover_letter_placeholder": "Tell us why you'd be a great fit for our team.",
+      "submit": "Submit Application"
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "常见问题",
     "expand": "Expand All",
     "collapse": "Collapse All",
     "faqs": [

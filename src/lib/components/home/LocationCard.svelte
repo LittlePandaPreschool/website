@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
-  import { chineseSubtext } from '$lib/data/chineseSubtext';
+  import zh from '$lib/locales/zh.json';
   export let location: {
     name: string;
     name_chinese: string;
@@ -21,8 +21,8 @@
       <i class="fas {location.icon} mr-3"></i>
       {$t(location.name)}
     </h3>
-    <h4 class="text-xl font-bold mb-3 text-primary">{chineseSubtext.home.campuses.locations[location.name_chinese as keyof typeof chineseSubtext.home.campuses.locations].name}</h4>
-    <p class="text-gray-600 mb-2">{$t(location.ages)}<br><span class="text-sm">{chineseSubtext.home.campuses.locations[location.ages_chinese as keyof typeof chineseSubtext.home.campuses.locations].ages}</span></p>
+    <h4 class="text-xl font-bold mb-3 text-primary">{zh.home.campuses.locations[location.name_chinese as keyof typeof zh.home.campuses.locations].name}</h4>
+    <p class="text-gray-600 mb-2">{$t(location.ages)}<br><span class="text-sm">{zh.home.campuses.locations[location.ages_chinese as keyof typeof zh.home.campuses.locations].ages}</span></p>
     <p class="text-gray-600 mb-4">{location.address}</p>
   </div>
   <div class="mt-6">
@@ -34,10 +34,10 @@
     {:else}
       <div class="flex flex-col items-center space-y-4">
       <a href={location.tourLink} class="text-gray-800 font-bold hover:underline">
-        {$t('home.campuses.request_tour')}<br><span class="text-sm font-normal">{chineseSubtext.home.campuses.request_tour}</span>
+        {$t('home.campuses.request_tour')}<br><span class="text-sm font-normal">{zh.home.campuses.request_tour}</span>
       </a>
       <a href={location.enrollLink} class="bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
-        {$t('home.campuses.enroll_now')}<br><span class="text-sm font-normal">{chineseSubtext.home.campuses.enroll_now}</span>
+        {$t('home.campuses.enroll_now')}<br><span class="text-sm font-normal">{zh.home.campuses.enroll_now}</span>
       </a>
       </div>
     {/if}

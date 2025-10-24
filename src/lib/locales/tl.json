@@ -6,84 +6,133 @@
     "careers": "Karera",
     "enroll": "Mag-enroll Ngayon"
   },
-  "footer": {
-    "title": "Little Panda Preschool",
-    "subtitle": "小熊猫中文幼儿园",
-    "granada": "🏫 Granada Campus",
-    "sfsu": "🏫 Children's Campus sa SF State",
-    "ocean": "🏫 Ocean Avenue Campus",
-    "granada_address_1": "205 Granada Ave,",
-    "granada_address_2": "San Francisco, CA, 94112",
-    "sfsu_address_1": "1600 Holloway Ave,",
-    "sfsu_address_2": "San Francisco, CA 94132",
-    "ocean_address_1": "1946-1948 Ocean Avenue,",
-    "ocean_address_2": "San Francisco, CA, 94127"
-  },
   "home": {
     "hero": {
-      "title": "Unleash Potential.",
-      "title_zh": "释放潜能",
-      "subtitle": "Start Their Journey.",
-      "subtitle_zh": "从这里开始他们的旅程",
-      "cta": "Join Us",
-      "cta_zh": "加入我们"
+      "title": "Ilabas ang Potensyal",
+      "subtitle": "Simulan ang Kanilang Paglalakbay",
+      "cta": "Sumali sa Amin"
     },
     "blueprint": {
       "title": "Ang Aming Blueprint para sa Kahusayan",
-      "subtitle": "我们的卓越蓝图",
       "description": "Nilikha namin ang isang holistic na diskarte sa maagang edukasyon na nag-aalaga sa bawat aspeto ng pag-unlad ng iyong anak, na naghahanda sa kanila na umunlad sa isang pandaigdigang komunidad.",
-      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
       "items": [
         {
           "title": "Pag-aaral na Batay sa Pagtatanong",
-          "description": "Pinasisigla namin ang pag-usisa sa pamamagitan ng paggawa ng mga koneksyon sa totoong mundo, na hinihikayat ang mga mag-aaral na magtanong ng malalaking katanungan at tuklasin ang kanilang sariling mga sagot.",
-          "title_zh": "探究式学习",
-          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+          "description": "Pinasisigla namin ang pag-usisa sa pamamagitan ng paggawa ng mga koneksyon sa totoong mundo, na hinihikayat ang mga mag-aaral na magtanong ng malalaking katanungan at tuklasin ang kanilang sariling mga sagot."
         },
         {
           "title": "Paglulubog sa Mandarin",
-          "description": "Ang aming nakaka-engganyong kapaligiran ay nagbubukas ng isang mundo ng mga posibilidad, na nagtataguyod ng maagang pag-unlad ng wika at pag-unawa sa cross-cultural.",
-          "title_zh": "沉浸式中文环境",
-          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+          "description": "Ang aming nakaka-engganyong kapaligiran ay nagbubukas ng isang mundo ng mga posibilidad, na nagtataguyod ng maagang pag-unlad ng wika at pag-unawa sa cross-cultural."
         },
         {
           "title": "Mga Proyekto na Nakatuon sa Bata",
-          "description": "Ginagabayan namin ang mga mag-aaral sa pamamagitan ng malalim na pag-aaral ng mga paksa sa totoong mundo, na iniayon sa kanilang mga natatanging interes at kasanayan.",
-          "title_zh": "以儿童为中心的项目",
-          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+          "description": "Ginagabayan namin ang mga mag-aaral sa pamamagitan ng malalim na pag-aaral ng mga paksa sa totoong mundo, na iniayon sa kanilang mga natatanging interes at kasanayan."
         },
         {
           "title": "Mahahalagang Kasanayan sa Buhay",
-          "description": "Nililinang namin ang pagtuon, pagpipigil sa sarili, komunikasyon, at empatiya, na nagtatayo ng isang matibay na pundasyon para sa habambuhay na tagumpay.",
-          "title_zh": "基本生活技能",
-          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+          "description": "Nililinang namin ang pagtuon, pagpipigil sa sarili, komunikasyon, at empatiya, na nagtatayo ng isang matibay na pundasyon para sa habambuhay na tagumpay."
         }
       ]
     },
     "gallery": {
       "title": "Isang Sulyap sa Aming Mundo",
-      "subtitle": "一睹我们的世界",
-      "description": "Kung saan nabubuhay ang pag-usisa at pagkamalikhain.",
-      "description_zh": "一个让好奇心与创造力绽放的地方。"
+      "description": "Kung saan nabubuhay ang pag-usisa at pagkamalikhain."
     },
     "campuses": {
       "title": "Ang Aming mga Kampus",
-      "subtitle": "我们的校区",
       "description": "Hanapin ang perpektong kapaligiran sa pag-aaral para sa iyong anak.",
-      "description_zh": "为您的孩子找到完美的学习环境。"
+      "request_tour": "Humiling ng Paglilibot",
+      "enroll_now": "Mag-enroll Ngayon",
+      "granada": {
+        "name": "Granada Campus",
+        "ages": "18 buwan-6 taong gulang"
+      },
+      "sf_state": {
+        "name": "Children's Campus sa SF State",
+        "ages": "3 buwan-6 taong gulang"
+      },
+      "ocean_ave": {
+        "name": "Ocean Avenue Campus",
+        "ages": "3 buwan-6 taong gulang"
+      }
+    },
+    "timeline": {
+      "title": "Isang Araw sa Little Panda",
+      "events": [
+        {
+          "time": "9:00 - 9:30 AM",
+          "title": "Pagdating at Pulong sa Umaga",
+          "icon": "fas fa-sun",
+          "iconColor": "text-yellow-400",
+          "dotColor": "bg-yellow-400"
+        },
+        {
+          "time": "9:30 - 10:00 AM",
+          "title": "Oras ng Meryenda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "10:00 - 10:30 AM",
+          "title": "Proyekto",
+          "icon": "fas fa-paint-brush",
+          "iconColor": "text-green-400",
+          "dotColor": "bg-green-400"
+        },
+        {
+          "time": "10:30 - 11:30 AM",
+          "title": "Pagtuklas sa Labas",
+          "icon": "fas fa-tree",
+          "iconColor": "text-blue-400",
+          "dotColor": "bg-blue-400"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "Tanghalian",
+          "icon": "fas fa-utensils",
+          "iconColor": "text-orange-400",
+          "dotColor": "bg-orange-400"
+        },
+        {
+          "time": "12:30 - 1:00 PM",
+          "title": "Oras ng Kuwento/Fine motor/Dramatic Play",
+          "icon": "fas fa-book-open",
+          "iconColor": "text-indigo-400",
+          "dotColor": "bg-indigo-400"
+        },
+        {
+          "time": "1:00 - 2:30 PM",
+          "title": "Oras ng Siesta",
+          "icon": "fas fa-bed",
+          "iconColor": "text-purple-400",
+          "dotColor": "bg-purple-400"
+        },
+        {
+          "time": "2:30 - 3:00 PM",
+          "title": "Meryenda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "3:00 - 3:30 PM",
+          "title": "Pag-alis",
+          "icon": "fas fa-flag-checkered",
+          "iconColor": "text-red-400",
+          "dotColor": "bg-red-400"
+        }
+      ]
     },
     "form": {
       "title": "Sumali sa Pamilyang Little Panda",
-      "subtitle": "加入小熊猫大家庭",
-      "description": "I-secure ang iyong puwesto sa aming priority waitlist.",
-      "description_zh": "立即锁定您的优先候补名额。",
-      "parentName": "Pangalan ng Magulang / 家长姓名",
-      "email": "Email Address / 电子邮件地址",
-      "phone": "Numero ng Telepono / 电话号码",
-      "childDob": "Petsa ng Kapanganakan ng Bata / 孩子的出生日期",
-      "message": "Ang iyong mensahe o mga katanungan... / 您的留言或问题...",
+      "description": "Nagtatayo kami ng isang mapagmahal at sumusuportang komunidad para sa iyong anak. Gawin ang unang hakbang sa pagsali sa aming pamilya sa pamamagitan ng pagpuno sa form sa ibaba.",
+      "parentName": "Pangalan ng Magulang",
+      "email": "Email Address",
+      "phone": "Numero ng Telepono",
+      "childDob": "Petsa ng Kapanganakan ng Bata",
+      "message": "Ang iyong mensahe o mga katanungan...",
       "submit": "Sumali sa Waitlist",
-      "submit_chinese": "加入候补名单",
       "parentName_label": "Pangalan ng Magulang",
       "email_label": "Email Address",
       "phone_label": "Numero ng Telepono",
@@ -99,158 +148,134 @@
   },
   "admissions": {
     "title": "Pagpasok",
-    "subtitle": "招生",
     "description": "Kami ay nalulugod na tanggapin ang mga bagong pamilya sa aming komunidad at simulan ang kahanga-hangang paglalakbay na ito nang sama-sama.",
-    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
     "journey": {
       "title": "Ang Iyong Paglalakbay sa Little Panda",
-      "subtitle": "您的小熊猫之旅",
       "steps": [
         {
           "title": "Isumite ang Iyong Pagtatanong",
-          "subtitle": "提交咨询",
           "description": "Punan ang form sa ibaba upang ipahayag ang iyong interes. Makikipag-ugnay kami sa ilang sandali upang kumpirmahin na natanggap namin ito."
         },
         {
           "title": "Mag-iskedyul ng Paglilibot",
-          "subtitle": "安排参观",
           "description": "Inaanyayahan ka namin sa isang personalized na paglilibot upang maranasan mismo ang aming mapag-arugang kapaligiran."
         },
         {
           "title": "Playdate ng Mag-aaral",
-          "subtitle": "学生游戏日",
           "description": "Isang masayang pagkakataon para sa iyong anak na makipag-ugnayan sa aming mga guro at tuklasin ang aming programa."
         },
         {
           "title": "I-secure ang Iyong Puwesto",
-          "subtitle": "确保名额",
           "description": "Ang isang deposito ay nagsisiguro sa lugar ng iyong anak, na nagpapahintulot sa amin na maghanda para sa kanilang natatanging paglalakbay sa pag-aaral."
         }
       ]
     },
     "tiers": {
       "title": "Ang Aming mga Antas ng Paglago",
-      "subtitle": "我们的成长阶梯",
       "flexible": {
         "title": "Mga Flexible na Pagpipilian",
-        "subtitle": "灵活选择",
         "description": "Mga nababaluktot na pagpipilian upang umangkop sa mga pangangailangan ng iyong pamilya. Pumili sa pagitan ng 2, 3, o 5 araw ng pagpapatala bawat linggo."
       },
       "extended": {
         "title": "Pinalawak na Pangangalaga",
-        "subtitle": "额外托管",
         "description": "Nag-aalok ang Little Panda Preschool ng parehong pangangalaga sa umaga at pangangalaga sa hapon para sa aming mga mag-aaral. Nauunawaan namin na maraming pamilya ang may abalang iskedyul at maaaring mangailangan ng karagdagang suporta sa labas ng aming regular na oras ng paaralan, kaya natutuwa kaming maiaalok ang serbisyong ito."
       },
       "am": {
         "title": "Pangangalaga sa Umaga",
-        "subtitle": "上午托管",
         "time": "8:30 AM hanggang 9:00 AM, M-F",
         "price": "$220 bawat buwan"
       },
       "pm": {
         "title": "Pangangalaga sa Hapon",
-        "subtitle": "下午托管",
         "time": "3:30 PM hanggang 5:30 PM, M-F",
         "price": "$650 bawat buwan"
       },
       "activities": {
         "title": "Mga Aktibidad sa Pangangalaga sa Hapon",
-        "subtitle": "下午托管活动",
         "description": "Ang programa sa pangangalaga sa hapon ay mag-aalok ng iba't ibang mga aktibidad kabilang ang sayaw, yoga, math circle, stem at paghahardin. Ang mga aktibidad na ito ay ibibigay alinsunod sa itinatag na kurikulum."
-      }
+      },
+"pricing": {
+    "monthly_tuition": "Buwanang Matrikula",
+    "per_month": "/buwan",
+"infant": {
+    "program": "Programa ng Sanggol",
+    "age": "(6 na linggo - 18 buwan)"
+},
+"toddler": {
+    "program": "Programa ng Bata",
+    "age": "(18 buwan - 3 taon)"
+},
+"preschool": {
+    "program": "Programa ng Preschool",
+    "age": "(3 - 5 taon)"
+},
+"days": {
+    "five": "5 Araw",
+    "three": "3 Araw",
+    "two": "2 Araw"
+}
+}
     },
     "form": {
       "title": "Pagtatanong sa Pagpapatala sa Little Panda Preschool",
-      "subtitle": "小熊猫幼儿园入学咨询",
       "required": "* Nagpapahiwatig ng kinakailangang field",
       "parent_info": {
         "title": "Impormasyon ng Magulang/Tagapangalaga",
-        "subtitle": "家长/监护人信息",
         "name": "Pangalan *",
-        "name_chinese": "姓名 *",
         "email": "Email *",
-        "email_chinese": "电子邮件 *",
-        "phone": "Telepono *",
-        "phone_chinese": "电话 *"
+        "phone": "Telepono *"
       },
       "child_info": {
         "title": "Impormasyon ng Bata",
-        "subtitle": "儿童信息",
         "name": "Pangalan ng Mag-aaral *",
         "birthday": "Kaarawan ng Mag-aaral (MM/DD/YYYY) *",
         "age_group": {
           "title": "Pangkat ng Edad *",
-          "subtitle": "年龄段 *",
           "infant": "Sanggol (0-18 buwan)",
-          "infant_chinese": "婴儿 (0-18个月)",
           "toddler": "Bata (18 buwan - 3 taon)",
-          "toddler_chinese": "幼儿 (18个月-3岁)",
-          "preschool": "Preschool (3-5 taon)",
-          "preschool_chinese": "学前班 (3-5岁)"
+          "preschool": "Preschool (3-5 taon)"
         },
         "location": {
           "title": "Ginustong Lokasyon *",
-          "subtitle": "首选地点 *",
           "granada": "Granada Campus",
-          "granada_chinese": "格拉纳达校区",
           "sf_state": "Children's Campus sa SF State",
-          "sf_state_chinese": "旧金山州立大学儿童校区",
           "ocean_ave": "Ocean Avenue Campus",
-          "ocean_ave_chinese": "海洋大道校区",
           "coming_soon": "(Malapit na)"
         }
       },
       "enrollment": {
         "title": "Mga Detalye ng Pagpapatala",
-        "subtitle": "入学详情",
         "start_date": {
           "title": "Ninanais na Petsa ng Pagsisimula *",
-          "subtitle": "期望开始日期 *",
           "asap": "Sa lalong madaling panahon",
-          "asap_chinese": "尽快",
           "one_three": "Sa loob ng 1-3 buwan",
-          "one_three_chinese": "1-3个月内",
           "three_six": "Sa loob ng 3-6 na buwan",
-          "three_six_chinese": "3-6个月内",
-          "exploring": "Naghahanap lang",
-          "exploring_chinese": "仅了解"
+          "exploring": "Naghahanap lang"
         }
       },
-      "submit": "Isumite ang Pagtatanong",
-      "submit_chinese": "提交咨询"
+      "submit": "Isumite ang Pagtatanong"
     }
   },
   "careers": {
     "title": "Sumali sa Aming Koponan ng Mababait na Puso",
-    "subtitle": "加入我们充满爱心的团队",
     "description": "Sa Little Panda, kami ay higit pa sa isang paaralan; kami ay isang komunidad. Naghahanap kami ng mga masigasig at dedikadong tagapagturo na kabahagi ng aming pangako sa pag-aalaga sa susunod na henerasyon ng mga napakatalino na isipan. Kung mayroon kang mabait na puso at pagmamahal sa pag-aaral, gusto naming marinig mula sa iyo.",
     "positions": {
-      "title": "Mga Bukas na Posisyon",
-      "subtitle": "空缺职位"
+      "title": "Mga Bukas na Posisyon"
     },
     "form": {
       "title": "Mag-apply Ngayon",
-      "subtitle": "立即申请",
       "name": "Buong Pangalan",
-      "name_chinese": "全名",
       "email": "Email Address",
-      "email_chinese": "电子邮件地址",
       "phone": "Numero ng Telepono",
-      "phone_chinese": "电话号码",
       "position": "Posisyon na Ina-applyan",
-      "position_chinese": "申请职位",
       "resume": "Resume/CV",
-      "resume_chinese": "简历",
       "cover_letter": "Cover Letter",
-      "cover_letter_chinese": "求职信",
-      "cover_letter_placeholder": "Sabihin sa amin kung bakit ka magiging isang mahusay na akma para sa aming koponan. / 告诉我们为什么您是这个职位的最佳人选。",
-      "submit": "Isumite ang Aplikasyon",
-      "submit_chinese": "提交申请"
+      "cover_letter_placeholder": "Sabihin sa amin kung bakit ka magiging isang mahusay na akma para sa aming koponan.",
+      "submit": "Isumite ang Aplikasyon"
     }
   },
   "faq": {
     "title": "Mga Madalas Itanong",
-    "subtitle": "常见问题",
     "expand": "Palawakin Lahat",
     "collapse": "I-collapse Lahat",
     "faqs": [
