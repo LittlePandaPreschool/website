@@ -7,8 +7,17 @@
   import ImageCarousel from '$lib/components/ui/ImageCarousel.svelte';
   import { locations } from '$lib/data/locations';
   import { siteConfig } from '$lib/data/siteConfig';
-  export let data;
-  const { allGalleryImages } = data;
+
+  const galleryImageModules = import.meta.glob('/static/img/gallery/medium/*.{jpg,jpeg,gif,webp}');
+  const allGalleryImages = Object.keys(galleryImageModules).map(path => {
+    const mediumUrl = path.replace('/static', '');
+    const smallUrl = mediumUrl.replace('/medium/', '/small/');
+    return {
+      default: mediumUrl,
+      small: smallUrl,
+      medium: mediumUrl
+    };
+  });
 
   async function handleSubmit(event: Event) {
     event.preventDefault();
@@ -86,8 +95,8 @@
 <!-- Form Section -->
 <section id="form" class="py-20 bg-gray-100">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-4 text-gray-800">{$t('home.form.title')}<br><span class="text-3xl">{zh.home.join_family.title}</span></h2>
-        <p class="text-xl text-gray-600 mb-12">{$t('home.form.description')}<br><span class="text-lg">{zh.home.join_family.description}</span></p>
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">{$t('home.form.title')}<br><span class="text-3xl">{zh.home.form.title}</span></h2>
+        <p class="text-xl text-gray-600 mb-12">{$t('home.form.description')}<br><span class="text-lg">{zh.home.form.description}</span></p>
         <div class="max-w-2xl mx-auto">
             <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="bg-white p-8 rounded-lg shadow-lg text-left" on:submit|preventDefault={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
@@ -116,7 +125,7 @@
                     <textarea id="message" name="Message" placeholder={$t('home.form.message')} rows="5" class="form-textarea" required></textarea>
                 </div>
                 <button type="submit" class="w-full btn-primary text-lg font-bold uppercase tracking-wider transform transition-transform duration-300 hover:scale-105 focus:scale-105">
-                    {$t('home.form.submit')} <br><span class="text-sm font-normal normal-case">{zh.home.join_family.title}</span>
+                    {$t('home.form.submit')} <br><span class="text-sm font-normal normal-case">{zh.home.form.title}</span>
                 </button>
             </form>
         </div>
