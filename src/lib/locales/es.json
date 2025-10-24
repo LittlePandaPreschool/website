@@ -1,0 +1,356 @@
+{
+  "header": {
+    "home": "Inicio",
+    "admissions": "Admisiones",
+    "faq": "Preguntas Frecuentes",
+    "careers": "Carreras",
+    "enroll": "Inscríbase Ahora"
+  },
+  "home": {
+    "hero": {
+      "title": "Libera el Potencial.",
+      "subtitle": "Comienza Su Viaje.",
+      "cta": "Únete a Nosotros"
+    },
+    "blueprint": {
+      "title": "Nuestro Plan para la Brillantez",
+      "description": "Hemos diseñado un enfoque holístico para la educación temprana que nutre cada aspecto del desarrollo de su hijo, preparándolos para prosperar en una comunidad global.",
+      "items": [
+        {
+          "title": "Aprendizaje Basado en la Indagación",
+          "description": "Despertamos la curiosidad al hacer conexiones con el mundo real, alentando a los estudiantes a hacer grandes preguntas y explorar sus propias respuestas."
+        },
+        {
+          "title": "Inmersión en Mandarín",
+          "description": "Nuestro entorno de inmersión abre un mundo de posibilidades, fomentando el desarrollo temprano del lenguaje y la comprensión intercultural."
+        },
+        {
+          "title": "Proyectos Centrados en el Niño",
+          "description": "Guiamos a los estudiantes a través de estudios en profundidad de temas del mundo real, adaptados a sus intereses y habilidades únicos."
+        },
+        {
+          "title": "Habilidades Esenciales para la Vida",
+          "description": "Cultivamos el enfoque, el autocontrol, la comunicación y la empatía, construyendo una base sólida para el éxito de por vida."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Un Vistazo a Nuestro Mundo",
+      "description": "Donde la curiosidad y la creatividad cobran vida."
+    },
+    "campuses": {
+      "title": "Nuestros Campus",
+      "description": "Encuentre el entorno de aprendizaje perfecto para su hijo.",
+      "request_tour": "Solicitar una Visita",
+      "enroll_now": "Inscribirse Ahora",
+      "granada": {
+        "name": "Campus de Granada",
+        "ages": "18 meses-6 años"
+      },
+      "sf_state": {
+        "name": "Campus Infantil en SF State",
+        "ages": "3 meses-6 años"
+      },
+      "ocean_ave": {
+        "name": "Campus de Ocean Avenue",
+        "ages": "3 meses-6 años"
+      }
+    },
+    "timeline": {
+      "title": "Un Día en Little Panda",
+      "events": [
+        {
+          "time": "9:00 - 9:30 AM",
+          "title": "Llegada y Reunión Matutina",
+          "icon": "fas fa-sun",
+          "iconColor": "text-yellow-400",
+          "dotColor": "bg-yellow-400"
+        },
+        {
+          "time": "9:30 - 10:00 AM",
+          "title": "Hora de la Merienda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "10:00 - 10:30 AM",
+          "title": "Proyecto",
+          "icon": "fas fa-paint-brush",
+          "iconColor": "text-green-400",
+          "dotColor": "bg-green-400"
+        },
+        {
+          "time": "10:30 - 11:30 AM",
+          "title": "Exploración al Aire Libre",
+          "icon": "fas fa-tree",
+          "iconColor": "text-blue-400",
+          "dotColor": "bg-blue-400"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "Almuerzo",
+          "icon": "fas fa-utensils",
+          "iconColor": "text-orange-400",
+          "dotColor": "bg-orange-400"
+        },
+        {
+          "time": "12:30 - 1:00 PM",
+          "title": "Hora del Cuento/Motricidad Fina/Juego Dramático",
+          "icon": "fas fa-book-open",
+          "iconColor": "text-indigo-400",
+          "dotColor": "bg-indigo-400"
+        },
+        {
+          "time": "1:00 - 2:30 PM",
+          "title": "Hora de la Siesta",
+          "icon": "fas fa-bed",
+          "iconColor": "text-purple-400",
+          "dotColor": "bg-purple-400"
+        },
+        {
+          "time": "2:30 - 3:00 PM",
+          "title": "Merienda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "3:00 - 3:30 PM",
+          "title": "Salida",
+          "icon": "fas fa-flag-checkered",
+          "iconColor": "text-red-400",
+          "dotColor": "bg-red-400"
+        }
+      ]
+    },
+    "form": {
+      "title": "Únase a la Familia Little Panda",
+      "description": "Estamos construyendo una comunidad amorosa y de apoyo para su hijo. Dé el primer paso para unirse a nuestra familia llenando el formulario a continuación.",
+      "parentName": "Nombre del Padre / Madre",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "childDob": "Fecha de Nacimiento del Niño",
+      "message": "Su mensaje o preguntas...",
+      "submit": "Unirse a la Lista de Espera",
+      "parentName_label": "Nombre del Padre/Madre",
+      "email_label": "Dirección de Correo Electrónico",
+      "phone_label": "Número de Teléfono",
+      "childDob_label": "Fecha de Nacimiento del Niño",
+      "message_label": "Mensaje",
+      "email_name": "Dirección de Correo Electrónico"
+    }
+  },
+  "thank_you": {
+    "title": "¡Gracias!",
+    "message": "Su envío ha sido recibido.",
+    "return": "Volver a la página principal"
+  },
+  "admissions": {
+    "title": "Admisiones",
+    "description": "Estamos encantados de dar la bienvenida a nuevas familias a nuestra comunidad y comenzar juntos este maravilloso viaje.",
+    "journey": {
+      "title": "Su Viaje a Little Panda",
+      "steps": [
+        {
+          "title": "Envíe su Consulta",
+          "description": "Complete el siguiente formulario para expresar su interés. Nos pondremos en contacto en breve para confirmar que lo hemos recibido."
+        },
+        {
+          "title": "Programe una Visita",
+          "description": "Le invitamos a una visita personalizada para que experimente de primera mano nuestro entorno de crianza."
+        },
+        {
+          "title": "Cita de Juego para Estudiantes",
+          "description": "Una oportunidad divertida para que su hijo interactúe con nuestros maestros y explore nuestro programa."
+        },
+        {
+          "title": "Asegure su Lugar",
+          "description": "Un depósito asegura el lugar de su hijo, lo que nos permite prepararnos para su viaje de aprendizaje único."
+        }
+      ]
+    },
+    "tiers": {
+      "title": "Nuestros Niveles de Crecimiento",
+      "flexible": {
+        "title": "Opciones Flexibles",
+        "description": "Opciones flexibles para satisfacer las necesidades de su familia. Elija entre 2, 3 o 5 días de inscripción por semana."
+      },
+      "extended": {
+        "title": "Cuidado Extendido",
+        "description": "El preescolar Little Panda ofrece cuidado por la mañana y por la tarde para nuestros estudiantes. Entendemos que muchas familias tienen horarios ocupados y pueden necesitar apoyo adicional más allá de nuestro horario escolar regular, por lo que nos complace poder ofrecer este servicio."
+      },
+      "am": {
+        "title": "Cuidado AM",
+        "time": "8:30 AM to 9:00 AM, M-F",
+        "price": "$220 por mes"
+      },
+      "pm": {
+        "title": "Cuidado PM",
+        "time": "3:30 PM to 5:30 PM, M-F",
+        "price": "$650 por mes"
+      },
+      "activities": {
+        "title": "Actividades de Cuidado PM",
+        "description": "El programa de cuidado de la tarde ofrecerá diversas actividades que incluyen danza, yoga, círculo de matemáticas, STEM y jardinería. Estas actividades se proporcionarán de acuerdo con el plan de estudios establecido."
+      },
+"pricing": {
+    "monthly_tuition": "Matrícula Mensual",
+    "per_month": "/ mes",
+    "infant": {
+        "program": "Programa Infantil",
+        "age": "(6 sem - 18 mes)"
+    },
+    "toddler": {
+        "program": "Programa para Niños Pequeños",
+        "age": "(18 mes - 3 años)"
+    },
+    "preschool": {
+        "program": "Programa Preescolar",
+        "age": "(3 - 5 años)"
+    },
+    "days": {
+        "five": "5 días",
+        "three": "3 días",
+        "two": "2 días"
+    }
+}
+    },
+    "form": {
+      "title": "Consulta de Inscripción para el Preescolar Little Panda",
+      "required": "* Indica campo obligatorio",
+      "parent_info": {
+        "title": "Información del Padre/Tutor",
+        "name": "Nombre *",
+        "email": "Correo Electrónico *",
+        "phone": "Teléfono *"
+      },
+      "child_info": {
+        "title": "Información del Niño",
+        "name": "Nombre del Estudiante *",
+        "birthday": "Fecha de Nacimiento del Estudiante (MM/DD/AAAA) *",
+        "age_group": {
+          "title": "Grupo de Edad *",
+          "infant": "Bebé (0-18 meses)",
+          "toddler": "Niño Pequeño (18 meses - 3 años)",
+          "preschool": "Preescolar (3-5 años)"
+        },
+        "location": {
+          "title": "Ubicación Preferida *",
+          "granada": "Campus de Granada",
+          "sf_state": "Campus Infantil en SF State",
+          "ocean_ave": "Campus de Ocean Avenue",
+          "coming_soon": "(Próximamente)"
+        }
+      },
+      "enrollment": {
+        "title": "Detalles de la Inscripción",
+        "start_date": {
+          "title": "Fecha de Inicio Deseada *",
+          "asap": "Lo antes posible",
+          "one_three": "En 1-3 meses",
+          "three_six": "En 3-6 meses",
+          "exploring": "Solo explorando"
+        }
+      },
+      "submit": "Enviar Consulta"
+    }
+  },
+  "careers": {
+    "title": "Únase a Nuestro Equipo de Corazones Amables",
+    "description": "En Little Panda, somos más que una escuela; somos una comunidad. Buscamos educadores apasionados y dedicados que compartan nuestro compromiso de nutrir a la próxima generación de mentes brillantes. Si tiene un corazón amable y amor por el aprendizaje, nos encantaría saber de usted.",
+    "positions": {
+      "title": "Posiciones Abiertas"
+    },
+    "form": {
+      "title": "Aplica ya",
+      "name": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "position": "Posición a la que Aplica",
+      "resume": "Currículum/CV",
+      "cover_letter": "Carta de Presentación",
+      "cover_letter_placeholder": "Cuéntenos por qué sería un gran candidato para nuestro equipo.",
+      "submit": "Enviar Aplicación"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "expand": "Expandir Todo",
+    "collapse": "Contraer Todo",
+    "faqs": [
+      {
+        "question": "Proceso de Solicitud",
+        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Paso 1: Solicitud y Visita</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>Se debe pagar una tarifa de solicitud no reembolsable y no transferible de $100 a Little Panda a través de Paypal.</li><li>La escuela organizará una hora con usted para una visita escolar individual en persona después de que recibamos su tarifa de solicitud.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Paso 2: Lista de Espera</h3><p class=\"text-text-main mt-2\">Se aceptan solicitudes durante todo el año. Si no hay plazas disponibles en el momento en que se procesa la solicitud de su hijo, se le colocará en la lista de espera. Recibirá un correo electrónico de confirmación al recibirlo para confirmar que la solicitud y los documentos han sido procesados.</p><p class=\"text-text-main mt-2 font-bold\">***Se aceptan admisiones durante todo el año tan pronto como haya plazas disponibles***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Paso 3: Aceptación y Depósito</h3><p class=\"text-text-main mt-2\">Una vez notificada la aceptación, las familias deben presentar un depósito de un mes para asegurar la plaza de inscripción del niño, programar una cita de juego, completar todos los documentos/formularios del paquete de inscripción y asistir a una reunión de orientación. Se proporcionarán detalles más específicos en el correo electrónico de aceptación.</p><p class=\"text-text-main mt-2\">Alternativamente, puede confirmar con el Preescolar Little Panda para poner a su hijo en la lista de espera.</p></div>"
+      },
+      {
+        "question": "¿Cómo se Agrupan los Niños?",
+        "answer": "En cada aula, tenemos de 12 a 14 estudiantes en un grupo. Los estudiantes se agrupan por edad."
+      },
+      {
+        "question": "¿Cuál es la Proporción de Maestros por Estudiante?",
+        "answer": "<ul><li>1 maestro por cada 4 bebés (3 meses-18 meses)</li><li>1 maestro por cada 5 niños pequeños (18 meses-24 meses)</li><li>1 maestro por cada 6 niños pequeños mayores (2 años-3 años)</li><li>1 maestro por cada 7 preescolares (3 años-6 años)</li></ul>"
+      },
+      {
+        "question": "¿Ofrecen Visitas en Persona o Solo Virtuales?",
+        "answer": "Ofrecemos tanto visitas en persona como virtuales."
+      },
+      {
+        "question": "¿Qué Edades Aceptan?",
+        "answer": "<ul><li>Campus de Gorham: 3 meses hasta TK (Preescolar para todos y programa calificado de TK)</li><li>Campus de Granada: 18 meses hasta el ingreso a Kindergarten</li></ul>"
+      },
+      {
+        "question": "¿Qué tan Flexibles son los Horarios de Entrega y Recogida?",
+        "answer": "Los estudiantes entrarán y saldrán de la escuela en unidades de grupos de clase. Cada grupo tiene un horario fijo de entrega y recogida. Notifique al maestro del grupo con un día de anticipación si llegará temprano o tarde a los horarios de recogida o entrega."
+      },
+      {
+        "question": "¿Ofrecen Cuidado Extendido?",
+        "answer": "<ul><li>Cuidado AM: 8:30-9:00 AM adicional $220/mes</li><li>Cuidado PM: 3:30-5:30 PM adicional $650/mes</li></ul>"
+      },
+      {
+        "question": "Calificaciones del Personal",
+        "answer": "Todos los maestros del Centro de Cuidado Infantil Little Panda cumplen o superan los requisitos de licencia del Departamento de Educación del Estado de California (CADE). Cada año, los maestros deben completar un número requerido de horas de capacitación continua. Todo el personal tiene experiencia trabajando con niños pequeños en un programa supervisado. Además, nuestros miembros del personal realmente aman y entienden el desarrollo infantil y la filosofía basada en proyectos de nuestra escuela."
+      },
+      {
+        "question": "Confidencialidad",
+        "answer": "La confidencialidad juega un papel vital en la promoción del respeto por cada individuo y el fomento de una comunidad fuerte. El Centro de Cuidado Infantil Little Panda se toma la confidencialidad muy en serio y hace todo lo posible para proteger la privacidad de cada familia. Las comunicaciones entre el personal y los padres sobre los niños se mantendrán confidenciales en todo momento. El Centro de Cuidado Infantil Little Panda recomienda que las conversaciones sobre un niño, su comportamiento o un incidente específico se realicen en privado, lejos del niño y de otros miembros de la comunidad del Centro de Cuidado Infantil Little Panda. Si un padre tiene una pregunta o inquietud, sugerimos que se comunique con el maestro por correo electrónico o en persona para programar una hora para discutir."
+      },
+      {
+        "question": "¿Se Proporcionan Comidas?",
+        "answer": "Ofrecemos un refrigerio por la mañana, almuerzo y un refrigerio por la tarde."
+      },
+      {
+        "question": "¿Qué Pasa si Mi Hijo No Sabe Mandarín?",
+        "answer": "Su hijo no necesita saber mandarín antes de la inscripción. Tenemos una alfabetización equilibrada para apoyar a su hijo en la escucha, el habla, la lectura, la escritura y la representación."
+      },
+      {
+        "question": "¿Mi Hijo Necesita Estar Entrenado para ir al Baño?",
+        "answer": "No se requiere que los estudiantes estén entrenados para ir al baño, tenemos métodos de aprendizaje para ir al baño muy exitosos."
+      },
+      {
+        "question": "¿Cuándo es la Hora de la Siesta?",
+        "answer": "Los bebés y los niños pequeños pueden tomar una siesta en cualquier momento que estén cansados. Los niños pequeños mayores y los preescolares toman una siesta de 12:30 a 3:00 p.m."
+      },
+      {
+        "question": "¿Con qué Frecuencia se Realizan Excursiones y a Dónde?",
+        "answer": "Visitamos la biblioteca una vez a la semana. Cada año académico, organizamos excursiones para que los estudiantes visiten diferentes lugares. Por ejemplo, museos, el Jardín Botánico de SF, la Academia de Ciencias, el Zoológico de SF, el Exploratorium, campos de calabazas, etc."
+      },
+      {
+        "question": "¿Pueden los Estudiantes Inscribirse a Mitad de Año?",
+        "answer": "Se aceptan solicitudes durante todo el año. Cuando se realiza una nueva inscripción, las solicitudes se aceptan por orden de llegada."
+      },
+      {
+        "question": "¿Cómo Manejan la Disciplina?",
+        "answer": "El Centro de Cuidado Infantil Little Panda se compromete a proporcionar un entorno de aprendizaje seguro y positivo para todos los niños. La política de comportamiento de la escuela alienta a los niños a desarrollar habilidades sociales que reflejan muchos de los valores del Centro de Cuidado Infantil Little Panda, incluido el autocontrol, el respeto por los demás y una alta autoestima.<p>Los maestros modelan el comportamiento apropiado y guían las interacciones positivas entre niños y adultos. Fomentar estas habilidades sociales es un componente central de Creative Curriculum®, y ayuda a los niños a crecer como aprendices exitosos de por vida.</p>"
+      },
+      {
+        "question": "¿Con qué Frecuencia se Desinfectan los Juguetes y las Aulas?",
+        "answer": "<ul><li>No se usarán juguetes que no se puedan limpiar y desinfectar.</li><li>Los juguetes que los niños se han metido en la boca o que han sido contaminados por secreciones corporales se apartan hasta que se limpian.</li><li>Los juguetes de tela lavables a máquina solo deben ser utilizados por una persona a la vez o no deben usarse en absoluto.</li><li>Los juguetes no se comparten con otros grupos de bebés o niños pequeños, a menos que se hayan lavado y desinfectado primero.</li><li>Tenemos suficientes juguetes para que puedan rotarse a través de las limpiezas.</li><li>Se han instalado filtros de aire de grado HEPA y luces UV HVAC en cada aula.</li></ul>"
+      },
+      {
+        "question": "¿Cuál es el Procedimiento si un Niño está Enfermo?",
+        "answer": "Los gérmenes se propagan rápidamente en un entorno preescolar. Todos los niños y el personal se mantienen más saludables cuando las personas enfermas se quedan en casa. Debe prevalecer el sentido común en el caso de los resfriados, que pueden variar desde un caso leve de congestión nasal hasta una infección sinusal en toda regla o una tos profunda.<p>Utilizamos el FORMULARIO DE EMERGENCIA, LIC700 para comunicarnos con los padres o cualquier otro adulto designado si su hijo desarrolla síntomas de enfermedad mientras está en clase. Aislaremos a su hijo en un lugar cómodo y supervisado hasta que pueda ser recogido.</p><p>Si un niño o una familia tiene algún síntoma de Covid-19, los padres deben informar a la escuela de inmediato. El niño deberá quedarse en casa y no ir a la escuela hasta que reciba un resultado negativo de la prueba de COVID-19 o haya estado en cuarentena durante 14 días. Seguiremos las pautas de SFPDHD para modificar este protocolo si es necesario.</p>"
+      }
+    ]
+  }
+}

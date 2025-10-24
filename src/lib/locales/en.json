@@ -1,0 +1,356 @@
+{
+  "header": {
+    "home": "Home",
+    "admissions": "Admissions",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "enroll": "Enroll Now"
+  },
+  "home": {
+    "hero": {
+      "title": "Unleash Potential.",
+      "subtitle": "Start Their Journey.",
+      "cta": "Join Us"
+    },
+    "blueprint": {
+      "title": "Our Blueprint for Brilliance",
+      "description": "We've designed a holistic approach to early education that nurtures every aspect of your child's development, preparing them to thrive in a global community.",
+      "items": [
+        {
+          "title": "Inquiry-Based Learning",
+          "description": "We spark curiosity by making real-world connections, encouraging students to ask big questions and explore their own answers."
+        },
+        {
+          "title": "Mandarin Immersion",
+          "description": "Our immersive environment unlocks a world of possibilities, fostering early language development and cross-cultural understanding."
+        },
+        {
+          "title": "Child-Focused Projects",
+          "description": "We guide students through in-depth studies of real-world topics, tailored to their unique interests and skills."
+        },
+        {
+          "title": "Essential Life Skills",
+          "description": "We cultivate focus, self-control, communication, and empathy, building a strong foundation for lifelong success."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "A Glimpse Into Our World",
+      "description": "Where curiosity and creativity come to life."
+    },
+    "campuses": {
+      "title": "Our Campuses",
+      "description": "Find the perfect learning environment for your child.",
+      "request_tour": "Request a Tour",
+      "enroll_now": "Enroll Now",
+      "granada": {
+        "name": "Granada Campus",
+        "ages": "18 months-6 years old"
+      },
+      "sf_state": {
+        "name": "Children's Campus at SF State",
+        "ages": "3 months-6 years old"
+      },
+      "ocean_ave": {
+        "name": "Ocean Avenue Campus",
+        "ages": "3 months-6 years old"
+      }
+    },
+    "timeline": {
+      "title": "A Day at Little Panda",
+      "events": [
+        {
+          "time": "9:00 - 9:30 AM",
+          "title": "Arrival and Morning Meeting",
+          "icon": "fas fa-sun",
+          "iconColor": "text-yellow-400",
+          "dotColor": "bg-yellow-400"
+        },
+        {
+          "time": "9:30 - 10:00 AM",
+          "title": "Snack Time",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "10:00 - 10:30 AM",
+          "title": "Project",
+          "icon": "fas fa-paint-brush",
+          "iconColor": "text-green-400",
+          "dotColor": "bg-green-400"
+        },
+        {
+          "time": "10:30 - 11:30 AM",
+          "title": "Outdoor Exploration",
+          "icon": "fas fa-tree",
+          "iconColor": "text-blue-400",
+          "dotColor": "bg-blue-400"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "Lunch",
+          "icon": "fas fa-utensils",
+          "iconColor": "text-orange-400",
+          "dotColor": "bg-orange-400"
+        },
+        {
+          "time": "12:30 - 1:00 PM",
+          "title": "Story Time/Fine motor/Dramatic Play",
+          "icon": "fas fa-book-open",
+          "iconColor": "text-indigo-400",
+          "dotColor": "bg-indigo-400"
+        },
+        {
+          "time": "1:00 - 2:30 PM",
+          "title": "Nap Time",
+          "icon": "fas fa-bed",
+          "iconColor": "text-purple-400",
+          "dotColor": "bg-purple-400"
+        },
+        {
+          "time": "2:30 - 3:00 PM",
+          "title": "Snack",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "3:00 - 3:30 PM",
+          "title": "Departure",
+          "icon": "fas fa-flag-checkered",
+          "iconColor": "text-red-400",
+          "dotColor": "bg-red-400"
+        }
+      ]
+    },
+    "form": {
+      "title": "Join the Little Panda Family",
+      "description": "We're building a loving and supportive community for your child. Take the first step in joining our family by filling out the form below.",
+      "parentName": "Parent's Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "childDob": "Child's Date of Birth",
+      "message": "Your message or questions...",
+      "submit": "Join Waitlist",
+      "parentName_label": "Parent's Name",
+      "email_label": "Email Address",
+      "phone_label": "Phone Number",
+      "childDob_label": "Child's Date of Birth",
+      "message_label": "Message",
+      "email_name": "Email Address"
+    }
+  },
+  "thank_you": {
+    "title": "Thank You!",
+    "message": "Your submission has been received.",
+    "return": "Return to Home"
+  },
+  "admissions": {
+    "title": "Admissions",
+    "description": "We are delighted to welcome new families into our community and begin this wonderful journey together.",
+    "journey": {
+      "title": "Your Journey to Little Panda",
+      "steps": [
+        {
+          "title": "Submit Your Inquiry",
+          "description": "Fill out the form below to express your interest. We'll be in touch shortly to confirm we've received it."
+        },
+        {
+          "title": "Schedule a Tour",
+          "description": "We invite you to a personalized tour to experience our nurturing environment firsthand."
+        },
+        {
+          "title": "Student Playdate",
+          "description": "A fun opportunity for your child to interact with our teachers and explore our program."
+        },
+        {
+          "title": "Secure Your Spot",
+          "description": "A deposit secures your child's place, allowing us to prepare for their unique learning journey."
+        }
+      ]
+    },
+    "tiers": {
+      "title": "Our Growth Tiers",
+      "flexible": {
+        "title": "Flexible Options",
+        "description": "Flexible options to fit your family's needs. Choose between 2, 3, or 5 days of enrollment per week."
+      },
+      "extended": {
+        "title": "Extended Care",
+        "description": "Little Panda Preschool offers both AM care and PM care for our students. We understand that many families have busy schedules and may need additional support beyond our regular school hours, so we're happy to be able to offer this service."
+      },
+      "am": {
+        "title": "AM Care",
+        "time": "8:30 AM to 9:00 AM, M-F",
+        "price": "$220 per month"
+      },
+      "pm": {
+        "title": "PM Care",
+        "time": "3:30 PM to 5:30 PM, M-F",
+        "price": "$650 per month"
+      },
+      "activities": {
+        "title": "PM Care Activities",
+        "description": "The PM care program will offer various activities including dance, yoga , math circle, stem and gardening. These activities will be provided in accordance with the established curriculum."
+      },
+      "pricing": {
+        "monthly_tuition": "Monthly Tuition",
+        "per_month": "/ month",
+        "infant": {
+          "program": "Infant Program",
+          "age": "(6 wks - 18 mos)"
+        },
+        "toddler": {
+          "program": "Toddler Program",
+          "age": "(18 mos - 3 yrs)"
+        },
+        "preschool": {
+          "program": "Preschool Program",
+          "age": "(3 - 5 yrs)"
+        },
+        "days": {
+          "five": "5 days",
+          "three": "3 days",
+          "two": "2 days"
+        }
+      }
+    },
+    "form": {
+      "title": "Little Panda Preschool Enrollment Inquiry",
+      "required": "* Indicates required field",
+      "parent_info": {
+        "title": "Parent/Guardian Information",
+        "name": "Name *",
+        "email": "Email *",
+        "phone": "Phone *"
+      },
+      "child_info": {
+        "title": "Child's Information",
+        "name": "Student Name *",
+        "birthday": "Student Birthday (MM/DD/YYYY) *",
+        "age_group": {
+          "title": "Age Group *",
+          "infant": "Infant (0-18 mos)",
+          "toddler": "Toddler (18 mos - 3 yrs)",
+          "preschool": "Preschool (3-5 yrs)"
+        },
+        "location": {
+          "title": "Preferred Location *",
+          "granada": "Granada Campus",
+          "sf_state": "Children's Campus at SF State",
+          "ocean_ave": "Ocean Avenue Campus",
+          "coming_soon": "(Coming Soon)"
+        }
+      },
+      "enrollment": {
+        "title": "Enrollment Details",
+        "start_date": {
+          "title": "Desired Start Date *",
+          "asap": "As soon as possible",
+          "one_three": "In 1-3 months",
+          "three_six": "In 3-6 months",
+          "exploring": "Just exploring"
+        }
+      },
+      "submit": "Submit Inquiry"
+    }
+  },
+  "careers": {
+    "title": "Join Our Team of Kind Hearts",
+    "description": "At Little Panda, we are more than just a school; we are a community. We are looking for passionate, dedicated educators who share our commitment to nurturing the next generation of brilliant minds. If you have a kind heart and a love for learning, we would love to hear from you.",
+    "positions": {
+      "title": "Open Positions"
+    },
+    "form": {
+      "title": "Apply Now",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "position": "Position Applying For",
+      "resume": "Resume/CV",
+      "cover_letter": "Cover Letter",
+      "cover_letter_placeholder": "Tell us why you'd be a great fit for our team.",
+      "submit": "Submit Application"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "expand": "Expand All",
+    "collapse": "Collapse All",
+    "faqs": [
+      {
+        "question": "Application Process",
+        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 1: Application and Tour</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>A non-refundable and non-transferable application fee of $100 must be paid to Little Panda via Paypal.</li><li>The school will then arrange a time with you for an individual in-person school tour after we receive your application fee.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 2: Waitlist</h3><p class=\"text-text-main mt-2\">Applications are accepted throughout the year. If spaces are not available at the time your child’s application is processed, they will be placed on the waitlist. You will receive a confirmation email upon receival to confirm the application and documents have been processed.</p><p class=\"text-text-main mt-2 font-bold\">***Admission is accepted throughout the year as soon as space becomes available***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 3: Acceptance and Deposit</h3><p class=\"text-text-main mt-2\">Once notified of acceptance, families must submit a one-month deposit to secure the child’s enrollment space, schedule a play date, complete all documents/forms in the enrollment package, and attend an orientation meeting. More specific details will be provided in the acceptance email.</p><p class=\"text-text-main mt-2\">Alternatively, you may confirm with the Little Panda Preschool to put your child on the waiting list.</p></div>"
+      },
+      {
+        "question": "How Are The Kids Grouped?",
+        "answer": "In each classroom, we have 12-14 students in a group. The students are grouped by age."
+      },
+      {
+        "question": "What is the Teacher to Student Ratio?",
+        "answer": "<ul><li>1 teacher for every 4 infants (3 months-18months)</li><li>1 teacher for every 5 young toddlers (18 months- 24 months)</li><li>1 teacher for every 6 older toddlers (2 years old -3 years old)</li><li>1 teacher for every 7 preschoolers (3 years old- 6 years old)</li></ul>"
+      },
+      {
+        "question": "Are You Offering On-site Visits or Virtual Only?",
+        "answer": "We offer both on-site touring and virtual touring."
+      },
+      {
+        "question": "What Ages Do You Accept?",
+        "answer": "<ul><li>Gorham campus: 3 months through TK (Preschool for all and TK qualified program)</li><li>Granada campus: 18 months through Kindergarten-entry</li></ul>"
+      },
+      {
+        "question": "How Flexible Are Drop-off and Pick-up Times?",
+        "answer": "Students will enter and leave the school in units of classroom groups. Each group has a fixed drop-off and pick-up time. Notify the group teacher one day prior if you will be early or late to pick-up or drop-off times."
+      },
+      {
+        "question": "Do you offer extended care?",
+        "answer": "<ul><li>AM care: 8:30-9:00AM additional $220/month</li><li>PM care: 3:30-5:30PM additional $650/month</li></ul>"
+      },
+      {
+        "question": "Staff Qualifications",
+        "answer": "All Little Panda Childcare Center teachers meet or exceed the California State Department of Education (CADE) licensing requirements. Every year, the teachers must complete a required number of continued training hours. All of the staff have experience working with young children in a supervised program. In addition, our staff members truly love and understand child development and our school’s project-based philosophy."
+      },
+      {
+        "question": "Confidentiality",
+        "answer": "Confidentiality plays a vital role in promoting respect for every individual and fostering a strong community. Little Panda Childcare Center takes confidentiality very seriously and makes every effort to protect each family’s privacy. Communications among staff and parents about children will be kept confidential at all times. Little Panda Childcare Center recommends that conversations about a child, their behavior, or a specific incident should be conducted in private, away from the child and other members of the Little Panda Childcare Center community. If a parent has a question or concern, we suggest that this parent contact the teacher via email or in person to arrange a time to discuss."
+      },
+      {
+        "question": "Are Meals Provided?",
+        "answer": "We provide a morning snack, Lunch, and an afternoon snack."
+      },
+      {
+        "question": "What if My Child Doesn't Know Any Mandarin?",
+        "answer": "Your child does not need to know any Mandarin prior to enrollment. We have balanced literacy to support your child in listening, speaking, reading, writing, and representing."
+      },
+      {
+        "question": "Does My Child Need To Be Potty Trained?",
+        "answer": "Students are not required to be potty trained, we have very successful toilet learning methods."
+      },
+      {
+        "question": "When is Nap Time?",
+        "answer": "Infants and toddlers can nap anytime they are tired. Older toddlers and preschoolers nap from 12:30- 03:00 PM."
+      },
+      {
+        "question": "How Often Are Field Trips and to Where?",
+        "answer": "We visit the Library once a week. Every academic year, we organize field trips for students to visit different places. For example, museums, SF Botanical Garden, Academy of Science, SF Zoo, Exploratorium, pumpkin patches, etc."
+      },
+      {
+        "question": "Can Students Enroll in the Middle of the Year?",
+        "answer": "Applications are accepted throughout the year. When new registration takes place, applications are taken on a first-come, first-served basis."
+      },
+      {
+        "question": "How Do You Handle Discipline?",
+        "answer": "Little Panda Childcare Center is committed to providing a safe and positive learning environment for all children. The school’s behavior policy encourages children to develop social skills that reflect many of Little Panda Childcare Center’s values, including self-control, respect for others, and high self-esteem.<p>Teachers model appropriate behavior and guide positive interactions among children and adults. Nurturing these social skills is a central component of Creative Curriculum®, and it helps children grow as successful, lifelong learners.</p>"
+      },
+      {
+        "question": "How Frequently Are Toys and Classrooms Sanitized?",
+        "answer": "<ul><li>Toys that cannot be cleaned and sanitized will not be used.</li><li>Toys that children have placed in their mouths or that have been contaminated by body secretions are set aside until they are cleaned.</li><li>Machine-washable cloth toys should only be used by one individual at a time or, should not be used at all.</li><li>Toys are not shared with other groups of infants or toddlers, unless they have been washed and sanitized first.</li><li>We have enough toys that they can be rotated through cleanings.</li><li>HEPA grade air filters and HVAC UV lights have been installed in every classroom.</li></ul>"
+      },
+      {
+        "question": "What is the Procedure if a Child is Sick?",
+        "answer": "Germs spread quickly in a preschool environment. All children and staff stay healthier when sick persons stay at home. Common sense must prevail in the case of colds, which can range from a mild case of sniffles to a full-blown sinus infection or deep cough.<p>We use the EMERGENCY FORM, LIC700 to contact parents or any other designated adult if your child develops symptoms of illness while in class. We will isolate your child in a comfortable, supervised place until he/she can be picked up.</p><p>If a child or family has any symptoms of Covid-19, parents need to inform the school immediately. The child will need to stay home from school until they receive a negative COVID-19 test result, or have quarantined for 14 days. We will follow the guidelines of SFPDHD to amend this protocol if needed.</p>"
+      }
+    ]
+  }
+}

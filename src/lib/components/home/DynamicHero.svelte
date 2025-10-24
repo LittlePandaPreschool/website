@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   import { onMount, onDestroy } from 'svelte';
+  import zh from '$lib/locales/zh.json';
   import { fade } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
 
@@ -15,7 +17,7 @@
   });
 
   let currentImageIndex = 0;
-  let interval: number;
+  let interval: ReturnType<typeof setInterval>;
 
   function getNextImage() {
     currentImageIndex = (currentImageIndex + 1) % allImages.length;
@@ -46,16 +48,16 @@
 
   <div class="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
     <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 uppercase tracking-wider">
-      Unleash Potential.
-      <span class="block text-3xl md:text-5xl font-light mt-2">释放潜能</span>
+      {$t('home.hero.title')}
+      <span class="block text-3xl md:text-5xl font-light mt-2">{zh.home.hero.title}</span>
     </h1>
     <p class="text-lg md:text-2xl mb-8 font-light">
-      Start Their Journey.
-      <span class="block text-base md:text-xl mt-2">从这里开始他们的旅程</span>
+      {$t('home.hero.subtitle')}
+      <span class="block text-base md:text-xl mt-2">{zh.home.hero.subtitle}</span>
     </p>
     <a href="/admissions" class="btn-primary py-3 px-10 text-lg font-bold uppercase tracking-wider flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105">
-      <span>Join Us</span>
-      <span class="text-sm font-normal normal-case">加入我们</span>
+      <span>{$t('home.hero.cta')}</span>
+      <span class="text-sm font-normal normal-case">{zh.home.hero.cta}</span>
     </a>
   </div>
 </section>

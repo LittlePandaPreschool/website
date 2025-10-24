@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { _ } from 'svelte-i18n';
   import { onMount } from 'svelte';
 
   let items = [
@@ -76,6 +77,7 @@
     }
   ];
 
+
   let elements: (HTMLDivElement | null)[] = [];
 
   onMount(() => {
@@ -105,7 +107,9 @@
 
 <section class="py-20 bg-bg-main">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-text-main mb-12 text-center">A Day at Little Panda <br><span class="text-3xl">小熊猫的一天</span></h2>
+    <h2 class="text-4xl font-bold text-text-main mb-12 text-center">
+      {$_('home.timeline.title')} <br /><span class="text-3xl">小熊猫的一天</span>
+    </h2>
     <div class="relative max-w-2xl mx-auto">
       <div class="border-l-4 border-secondary absolute h-full top-0 left-3.5"></div>
       {#each items as item, i}
@@ -120,7 +124,7 @@
             <p class="text-text-light text-sm mb-2">{item.time}</p>
             <h3 class="flex items-center font-body font-bold text-text-main text-xl mb-2">
               <i class="{item.icon} {item.iconColor} mr-3"></i>
-              {item.title}
+              {$_(`home.timeline.events.${i}.title`)}
             </h3>
             <p class="text-text-light">{item.description}</p>
           </div>

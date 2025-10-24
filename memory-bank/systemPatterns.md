@@ -24,3 +24,7 @@ The system is a simple, linear user flow designed for maximum conversion:
 - **Data-Driven Content:** The "Open Positions" section is dynamically generated from a data structure in the component's script. This makes it easy to add, remove, or modify job postings.
 - **Auto-Selecting Form:** The "Apply Now" buttons are connected to the application form, so that clicking on a button automatically selects the corresponding position in the "Position Applying For" dropdown.
 - **`JobCard.svelte`:** A reusable component for displaying job postings with salary and hours information in both English and Chinese. The card is styled to look like a physical card with a subtle shadow and hover effect.
+
+## Localization Patterns
+- **Bilingual Display:** The site maintains a bilingual display where the primary text is translated into the user's selected language (e.g., English) using the `svelte-i18n` library. The Chinese text from `zh.json` is always displayed as a subtext underneath the primary text. This provides a consistent experience for all users while still making the Chinese text available.
+- **Single Source of Truth:** All Chinese translations are stored in `src/lib/locales/zh.json`. This file is the single source of truth for all Chinese text on the site, including both the primary translations for Chinese-speaking users and the subtext for users of other languages.

@@ -12,6 +12,7 @@ The Memory Bank has been updated to accurately reflect the current state of the 
 *   All known issues have been resolved.
 
 ## Recent Updates
+*   **Internationalization:** A series of internationalization updates have been completed, including translating the timeline, pricing information, and FAQ page. Chinese subtext has been added to the FAQ page and centralized in the `chineseSubtext.ts` file for consistency. The pricing data has been refactored to use translation keys from the `svelte-i18n` library, removing hardcoded strings and centralizing all pricing-related translations in the locale files. The `PricingCard.svelte` component's interactive functionality was also restored and fully integrated with the `svelte-i18n` library. All pricing card information has been translated into all supported languages.
 *   **Careers Page:** The careers page has been updated with salary information and a new `JobCard.svelte` component.
 *   **Form Submission:** The admissions form now uses a client-side JavaScript function to handle form submissions. This function formats the "Desired Start Date" into a full sentence and creates a professional email template with a custom subject line and HTML body.
 *   **Admissions Form Enhancement:**
