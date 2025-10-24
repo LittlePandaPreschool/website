@@ -1,0 +1,368 @@
+{
+  "header": {
+    "home": "Home",
+    "admissions": "Admissions",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "enroll": "Enroll Now"
+  },
+  "home": {
+    "hero": {
+      "title": "Unleash Potential.",
+      "title_zh": "释放潜能",
+      "subtitle": "Start Their Journey.",
+      "subtitle_zh": "从这里开始他们的旅程",
+      "cta": "Join Us",
+      "cta_zh": "加入我们"
+    },
+    "blueprint": {
+      "title": "Our Blueprint for Brilliance",
+      "subtitle": "我们的卓越蓝图",
+      "description": "We've designed a holistic approach to early education that nurtures every aspect of your child's development, preparing them to thrive in a global community.",
+      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
+      "items": [
+        {
+          "title": "Inquiry-Based Learning",
+          "description": "We spark curiosity by making real-world connections, encouraging students to ask big questions and explore their own answers.",
+          "title_zh": "探究式学习",
+          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+        },
+        {
+          "title": "Mandarin Immersion",
+          "description": "Our immersive environment unlocks a world of possibilities, fostering early language development and cross-cultural understanding.",
+          "title_zh": "沉浸式中文环境",
+          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+        },
+        {
+          "title": "Child-Focused Projects",
+          "description": "We guide students through in-depth studies of real-world topics, tailored to their unique interests and skills.",
+          "title_zh": "以儿童为中心的项目",
+          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+        },
+        {
+          "title": "Essential Life Skills",
+          "description": "We cultivate focus, self-control, communication, and empathy, building a strong foundation for lifelong success.",
+          "title_zh": "基本生活技能",
+          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "A Glimpse Into Our World",
+      "subtitle": "一睹我们的世界",
+      "description": "Where curiosity and creativity come to life.",
+      "description_zh": "一个让好奇心与创造力绽放的地方。"
+    },
+    "campuses": {
+      "title": "Our Campuses",
+      "subtitle": "我们的校区",
+      "description": "Find the perfect learning environment for your child.",
+      "description_zh": "为您的孩子找到完美的学习环境。"
+    },
+    "timeline": {
+      "title": "A Day at Little Panda",
+      "events": [
+        {
+          "time": "9:00 AM",
+          "title": "Arrival and Morning Meeting",
+          "description": "Greeting friends and teachers, sharing news, and planning for the day."
+        },
+        {
+          "time": "9:30 AM",
+          "title": "Project Work & Learning Centers",
+          "description": "Engaging in hands-on activities, exploring interests, and collaborative projects."
+        },
+        {
+          "time": "11:00 AM",
+          "title": "Outdoor Play",
+          "description": "Fresh air, physical activity, and social interaction in our play areas."
+        },
+        {
+          "time": "12:00 PM",
+          "title": "Lunch",
+          "description": "A nutritious meal shared with friends, fostering healthy eating habits."
+        },
+        {
+          "time": "12:45 PM",
+          "title": "Story Time & Quiet Activities",
+          "description": "Winding down with stories, puzzles, and quiet reflection."
+        },
+        {
+          "time": "1:00 PM",
+          "title": "Nap Time",
+          "description": "Rest and rejuvenation to recharge for the afternoon."
+        },
+        {
+          "time": "3:00 PM",
+          "title": "Afternoon Snack & Play",
+          "description": "A healthy snack followed by more opportunities for play and learning."
+        },
+        {
+          "time": "4:00 PM",
+          "title": "Special Activities",
+          "description": "Music, art, and movement to inspire creativity and self-expression."
+        },
+        {
+          "time": "5:00 PM",
+          "title": "Dismissal",
+          "description": "Saying goodbye to friends and teachers, and sharing highlights of the day."
+        }
+      ]
+    },
+    "form": {
+      "title": "Join the Little Panda Family",
+      "subtitle": "加入小熊猫大家庭",
+      "description": "Secure your spot on our priority waitlist.",
+      "description_zh": "立即锁定您的优先候补名额。",
+      "parentName": "Parent's Name / 家长姓名",
+      "email": "Email Address / 电子邮件地址",
+      "phone": "Phone Number / 电话号码",
+      "childDob": "Child's Date of Birth / 孩子的出生日期",
+      "message": "Your message or questions... / 您的留言或问题...",
+      "submit": "Join Waitlist",
+      "submit_chinese": "加入候补名单",
+      "parentName_label": "Parent's Name",
+      "email_label": "Email Address",
+      "phone_label": "Phone Number",
+      "childDob_label": "Child's Date of Birth",
+      "message_label": "Message",
+      "email_name": "Email Address"
+    }
+  },
+  "thank_you": {
+    "title": "Thank You!",
+    "message": "Your submission has been received.",
+    "return": "Return to Home"
+  },
+  "admissions": {
+    "title": "Admissions",
+    "subtitle": "招生",
+    "description": "We are delighted to welcome new families into our community and begin this wonderful journey together.",
+    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
+    "journey": {
+      "title": "Your Journey to Little Panda",
+      "subtitle": "您的小熊猫之旅",
+      "steps": [
+        {
+          "title": "Submit Your Inquiry",
+          "subtitle": "提交咨询",
+          "description": "Fill out the form below to express your interest. We'll be in touch shortly to confirm we've received it."
+        },
+        {
+          "title": "Schedule a Tour",
+          "subtitle": "安排参观",
+          "description": "We invite you to a personalized tour to experience our nurturing environment firsthand."
+        },
+        {
+          "title": "Student Playdate",
+          "subtitle": "学生游戏日",
+          "description": "A fun opportunity for your child to interact with our teachers and explore our program."
+        },
+        {
+          "title": "Secure Your Spot",
+          "subtitle": "确保名额",
+          "description": "A deposit secures your child's place, allowing us to prepare for their unique learning journey."
+        }
+      ]
+    },
+    "tiers": {
+      "title": "Our Growth Tiers",
+      "subtitle": "我们的成长阶梯",
+      "flexible": {
+        "title": "Flexible Options",
+        "subtitle": "灵活选择",
+        "description": "Flexible options to fit your family's needs. Choose between 2, 3, or 5 days of enrollment per week."
+      },
+      "extended": {
+        "title": "Extended Care",
+        "subtitle": "额外托管",
+        "description": "Little Panda Preschool offers both AM care and PM care for our students. We understand that many families have busy schedules and may need additional support beyond our regular school hours, so we're happy to be able to offer this service."
+      },
+      "am": {
+        "title": "AM Care",
+        "subtitle": "上午托管",
+        "time": "8:30 AM to 9:00 AM, M-F",
+        "price": "$220 per month"
+      },
+      "pm": {
+        "title": "PM Care",
+        "subtitle": "下午托管",
+        "time": "3:30 PM to 5:30 PM, M-F",
+        "price": "$650 per month"
+      },
+      "activities": {
+        "title": "PM Care Activities",
+        "subtitle": "下午托管活动",
+        "description": "The PM care program will offer various activities including dance, yoga , math circle, stem and gardening. These activities will be provided in accordance with the established curriculum."
+      }
+    },
+    "form": {
+      "title": "Little Panda Preschool Enrollment Inquiry",
+      "subtitle": "小熊猫幼儿园入学咨询",
+      "required": "* Indicates required field",
+      "parent_info": {
+        "title": "Parent/Guardian Information",
+        "subtitle": "家长/监护人信息",
+        "name": "Name *",
+        "name_chinese": "姓名 *",
+        "email": "Email *",
+        "email_chinese": "电子邮件 *",
+        "phone": "Phone *",
+        "phone_chinese": "电话 *"
+      },
+      "child_info": {
+        "title": "Child's Information",
+        "subtitle": "儿童信息",
+        "name": "Student Name 学生姓名 *",
+        "birthday": "Student Birthday (MM/DD/YYYY) 学生出生日期 (月/日/年） *",
+        "age_group": {
+          "title": "Age Group *",
+          "subtitle": "年龄段 *",
+          "infant": "Infant (0-18 mos)",
+          "infant_chinese": "婴儿 (0-18个月)",
+          "toddler": "Toddler (18 mos - 3 yrs)",
+          "toddler_chinese": "幼儿 (18个月-3岁)",
+          "preschool": "Preschool (3-5 yrs)",
+          "preschool_chinese": "学前班 (3-5岁)"
+        },
+        "location": {
+          "title": "Preferred Location *",
+          "subtitle": "首选地点 *",
+          "granada": "Granada Campus",
+          "granada_chinese": "格拉纳达校区",
+          "sf_state": "Children's Campus at SF State",
+          "sf_state_chinese": "旧金山州立大学儿童校区",
+          "ocean_ave": "Ocean Avenue Campus",
+          "ocean_ave_chinese": "海洋大道校区",
+          "coming_soon": "(Coming Soon)"
+        }
+      },
+      "enrollment": {
+        "title": "Enrollment Details",
+        "subtitle": "入学详情",
+        "start_date": {
+          "title": "Desired Start Date *",
+          "subtitle": "期望开始日期 *",
+          "asap": "As soon as possible",
+          "asap_chinese": "尽快",
+          "one_three": "In 1-3 months",
+          "one_three_chinese": "1-3个月内",
+          "three_six": "In 3-6 months",
+          "three_six_chinese": "3-6个月内",
+          "exploring": "Just exploring",
+          "exploring_chinese": "仅了解"
+        }
+      },
+      "submit": "Submit Inquiry",
+      "submit_chinese": "提交咨询"
+    }
+  },
+  "careers": {
+    "title": "Join Our Team of Kind Hearts",
+    "subtitle": "加入我们充满爱心的团队",
+    "description": "At Little Panda, we are more than just a school; we are a community. We are looking for passionate, dedicated educators who share our commitment to nurturing the next generation of brilliant minds. If you have a kind heart and a love for learning, we would love to hear from you.",
+    "positions": {
+      "title": "Open Positions",
+      "subtitle": "空缺职位"
+    },
+    "form": {
+      "title": "Apply Now",
+      "subtitle": "立即申请",
+      "name": "Full Name",
+      "name_chinese": "全名",
+      "email": "Email Address",
+      "email_chinese": "电子邮件地址",
+      "phone": "Phone Number",
+      "phone_chinese": "电话号码",
+      "position": "Position Applying For",
+      "position_chinese": "申请职位",
+      "resume": "Resume/CV",
+      "resume_chinese": "简历",
+      "cover_letter": "Cover Letter",
+      "cover_letter_chinese": "求职信",
+      "cover_letter_placeholder": "Tell us why you'd be a great fit for our team. / 告诉我们为什么您是这个职位的最佳人选。",
+      "submit": "Submit Application",
+      "submit_chinese": "提交申请"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "常见问题",
+    "expand": "Expand All",
+    "collapse": "Collapse All",
+    "faqs": [
+      {
+        "question": "Application Process",
+        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 1: Application and Tour</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>A non-refundable and non-transferable application fee of $100 must be paid to Little Panda via Paypal.</li><li>The school will then arrange a time with you for an individual in-person school tour after we receive your application fee.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 2: Waitlist</h3><p class=\"text-text-main mt-2\">Applications are accepted throughout the year. If spaces are not available at the time your child’s application is processed, they will be placed on the waitlist. You will receive a confirmation email upon receival to confirm the application and documents have been processed.</p><p class=\"text-text-main mt-2 font-bold\">***Admission is accepted throughout the year as soon as space becomes available***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Step 3: Acceptance and Deposit</h3><p class=\"text-text-main mt-2\">Once notified of acceptance, families must submit a one-month deposit to secure the child’s enrollment space, schedule a play date, complete all documents/forms in the enrollment package, and attend an orientation meeting. More specific details will be provided in the acceptance email.</p><p class=\"text-text-main mt-2\">Alternatively, you may confirm with the Little Panda Preschool to put your child on the waiting list.</p></div>"
+      },
+      {
+        "question": "How Are The Kids Grouped?",
+        "answer": "In each classroom, we have 12-14 students in a group. The students are grouped by age."
+      },
+      {
+        "question": "What is the Teacher to Student Ratio?",
+        "answer": "<ul><li>1 teacher for every 4 infants (3 months-18months)</li><li>1 teacher for every 5 young toddlers (18 months- 24 months)</li><li>1 teacher for every 6 older toddlers (2 years old -3 years old)</li><li>1 teacher for every 7 preschoolers (3 years old- 6 years old)</li></ul>"
+      },
+      {
+        "question": "Are You Offering On-site Visits or Virtual Only?",
+        "answer": "We offer both on-site touring and virtual touring."
+      },
+      {
+        "question": "What Ages Do You Accept?",
+        "answer": "<ul><li>Gorham campus: 3 months through TK (Preschool for all and TK qualified program)</li><li>Granada campus: 18 months through Kindergarten-entry</li></ul>"
+      },
+      {
+        "question": "How Flexible Are Drop-off and Pick-up Times?",
+        "answer": "Students will enter and leave the school in units of classroom groups. Each group has a fixed drop-off and pick-up time. Notify the group teacher one day prior if you will be early or late to pick-up or drop-off times."
+      },
+      {
+        "question": "Do you offer extended care?",
+        "answer": "<ul><li>AM care: 8:30-9:00AM additional $220/month</li><li>PM care: 3:30-5:30PM additional $650/month</li></ul>"
+      },
+      {
+        "question": "Staff Qualifications",
+        "answer": "All Little Panda Childcare Center teachers meet or exceed the California State Department of Education (CADE) licensing requirements. Every year, the teachers must complete a required number of continued training hours. All of the staff have experience working with young children in a supervised program. In addition, our staff members truly love and understand child development and our school’s project-based philosophy."
+      },
+      {
+        "question": "Confidentiality",
+        "answer": "Confidentiality plays a vital role in promoting respect for every individual and fostering a strong community. Little Panda Childcare Center takes confidentiality very seriously and makes every effort to protect each family’s privacy. Communications among staff and parents about children will be kept confidential at all times. Little Panda Childcare Center recommends that conversations about a child, their behavior, or a specific incident should be conducted in private, away from the child and other members of the Little Panda Childcare Center community. If a parent has a question or concern, we suggest that this parent contact the teacher via email or in person to arrange a time to discuss."
+      },
+      {
+        "question": "Are Meals Provided?",
+        "answer": "We provide a morning snack, Lunch, and an afternoon snack."
+      },
+      {
+        "question": "What if My Child Doesn't Know Any Mandarin?",
+        "answer": "Your child does not need to know any Mandarin prior to enrollment. We have balanced literacy to support your child in listening, speaking, reading, writing, and representing."
+      },
+      {
+        "question": "Does My Child Need To Be Potty Trained?",
+        "answer": "Students are not required to be potty trained, we have very successful toilet learning methods."
+      },
+      {
+        "question": "When is Nap Time?",
+        "answer": "Infants and toddlers can nap anytime they are tired. Older toddlers and preschoolers nap from 12:30- 03:00 PM."
+      },
+      {
+        "question": "How Often Are Field Trips and to Where?",
+        "answer": "We visit the Library once a week. Every academic year, we organize field trips for students to visit different places. For example, museums, SF Botanical Garden, Academy of Science, SF Zoo, Exploratorium, pumpkin patches, etc."
+      },
+      {
+        "question": "Can Students Enroll in the Middle of the Year?",
+        "answer": "Applications are accepted throughout the year. When new registration takes place, applications are taken on a first-come, first-served basis."
+      },
+      {
+        "question": "How Do You Handle Discipline?",
+        "answer": "Little Panda Childcare Center is committed to providing a safe and positive learning environment for all children. The school’s behavior policy encourages children to develop social skills that reflect many of Little Panda Childcare Center’s values, including self-control, respect for others, and high self-esteem.<p>Teachers model appropriate behavior and guide positive interactions among children and adults. Nurturing these social skills is a central component of Creative Curriculum®, and it helps children grow as successful, lifelong learners.</p>"
+      },
+      {
+        "question": "How Frequently Are Toys and Classrooms Sanitized?",
+        "answer": "<ul><li>Toys that cannot be cleaned and sanitized will not be used.</li><li>Toys that children have placed in their mouths or that have been contaminated by body secretions are set aside until they are cleaned.</li><li>Machine-washable cloth toys should only be used by one individual at a time or, should not be used at all.</li><li>Toys are not shared with other groups of infants or toddlers, unless they have been washed and sanitized first.</li><li>We have enough toys that they can be rotated through cleanings.</li><li>HEPA grade air filters and HVAC UV lights have been installed in every classroom.</li></ul>"
+      },
+      {
+        "question": "What is the Procedure if a Child is Sick?",
+        "answer": "Germs spread quickly in a preschool environment. All children and staff stay healthier when sick persons stay at home. Common sense must prevail in the case of colds, which can range from a mild case of sniffles to a full-blown sinus infection or deep cough.<p>We use the EMERGENCY FORM, LIC700 to contact parents or any other designated adult if your child develops symptoms of illness while in class. We will isolate your child in a comfortable, supervised place until he/she can be picked up.</p><p>If a child or family has any symptoms of Covid-19, parents need to inform the school immediately. The child will need to stay home from school until they receive a negative COVID-19 test result, or have quarantined for 14 days. We will follow the guidelines of SFPDHD to amend this protocol if needed.</p>"
+      }
+    ]
+  }
+}

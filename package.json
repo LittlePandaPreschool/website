@@ -25,5 +25,8 @@
 		"tailwindcss": "^3.4.9",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.7"
+	},
+	"dependencies": {
+		"svelte-i18n": "^4.0.1"
 	}
 }

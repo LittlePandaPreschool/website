@@ -78,6 +78,10 @@ The project is in the final stages of a comprehensive redesign. The immediate fo
     - Implemented a client-side JavaScript function to "polish" form field values before submission.
     - Added client-side validation for US phone number format.
     - Added a redirect to a "thank you" page after successful form submission.
+- **Internationalization:**
+    - Translated all language files to their corresponding languages.
+    - Ensured Chinese subtext is present in all language files.
+    - Fixed hardcoded text in the homepage form.
 
 ## Next Steps
 1.  **Update Memory Bank:** Ensure all documentation in the `memory-bank/` directory is up-to-date with the latest project status.

@@ -1,0 +1,331 @@
+{
+  "header": {
+    "home": "Home",
+    "admissions": "Pagpasok",
+    "faq": "FAQ",
+    "careers": "Karera",
+    "enroll": "Mag-enroll Ngayon"
+  },
+  "footer": {
+    "title": "Little Panda Preschool",
+    "subtitle": "小熊猫中文幼儿园",
+    "granada": "🏫 Granada Campus",
+    "sfsu": "🏫 Children's Campus sa SF State",
+    "ocean": "🏫 Ocean Avenue Campus",
+    "granada_address_1": "205 Granada Ave,",
+    "granada_address_2": "San Francisco, CA, 94112",
+    "sfsu_address_1": "1600 Holloway Ave,",
+    "sfsu_address_2": "San Francisco, CA 94132",
+    "ocean_address_1": "1946-1948 Ocean Avenue,",
+    "ocean_address_2": "San Francisco, CA, 94127"
+  },
+  "home": {
+    "hero": {
+      "title": "Unleash Potential.",
+      "title_zh": "释放潜能",
+      "subtitle": "Start Their Journey.",
+      "subtitle_zh": "从这里开始他们的旅程",
+      "cta": "Join Us",
+      "cta_zh": "加入我们"
+    },
+    "blueprint": {
+      "title": "Ang Aming Blueprint para sa Kahusayan",
+      "subtitle": "我们的卓越蓝图",
+      "description": "Nilikha namin ang isang holistic na diskarte sa maagang edukasyon na nag-aalaga sa bawat aspeto ng pag-unlad ng iyong anak, na naghahanda sa kanila na umunlad sa isang pandaigdigang komunidad.",
+      "description_zh": "我们设计了一套全方位的早期教育方法，旨在培养您孩子发展的每一个方面，为他们在全球化社区中茁壮成长做好准备。",
+      "items": [
+        {
+          "title": "Pag-aaral na Batay sa Pagtatanong",
+          "description": "Pinasisigla namin ang pag-usisa sa pamamagitan ng paggawa ng mga koneksyon sa totoong mundo, na hinihikayat ang mga mag-aaral na magtanong ng malalaking katanungan at tuklasin ang kanilang sariling mga sagot.",
+          "title_zh": "探究式学习",
+          "description_zh": "我们通过建立与现实世界的联系来激发孩子们的好奇心，鼓励他们提出伟大的问题并探索自己的答案。"
+        },
+        {
+          "title": "Paglulubog sa Mandarin",
+          "description": "Ang aming nakaka-engganyong kapaligiran ay nagbubukas ng isang mundo ng mga posibilidad, na nagtataguyod ng maagang pag-unlad ng wika at pag-unawa sa cross-cultural.",
+          "title_zh": "沉浸式中文环境",
+          "description_zh": "我们的沉浸式环境开启了一个充满可能性的世界，促进早期语言发展和跨文化理解。"
+        },
+        {
+          "title": "Mga Proyekto na Nakatuon sa Bata",
+          "description": "Ginagabayan namin ang mga mag-aaral sa pamamagitan ng malalim na pag-aaral ng mga paksa sa totoong mundo, na iniayon sa kanilang mga natatanging interes at kasanayan.",
+          "title_zh": "以儿童为中心的项目",
+          "description_zh": "我们引导学生深入研究现实世界的主题，这些主题根据他们独特的兴趣和技能量身定制。"
+        },
+        {
+          "title": "Mahahalagang Kasanayan sa Buhay",
+          "description": "Nililinang namin ang pagtuon, pagpipigil sa sarili, komunikasyon, at empatiya, na nagtatayo ng isang matibay na pundasyon para sa habambuhay na tagumpay.",
+          "title_zh": "基本生活技能",
+          "description_zh": "我们培养专注力、自我控制、沟通和同理心，为终身成功奠定坚实的基础。"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Isang Sulyap sa Aming Mundo",
+      "subtitle": "一睹我们的世界",
+      "description": "Kung saan nabubuhay ang pag-usisa at pagkamalikhain.",
+      "description_zh": "一个让好奇心与创造力绽放的地方。"
+    },
+    "campuses": {
+      "title": "Ang Aming mga Kampus",
+      "subtitle": "我们的校区",
+      "description": "Hanapin ang perpektong kapaligiran sa pag-aaral para sa iyong anak.",
+      "description_zh": "为您的孩子找到完美的学习环境。"
+    },
+    "form": {
+      "title": "Sumali sa Pamilyang Little Panda",
+      "subtitle": "加入小熊猫大家庭",
+      "description": "I-secure ang iyong puwesto sa aming priority waitlist.",
+      "description_zh": "立即锁定您的优先候补名额。",
+      "parentName": "Pangalan ng Magulang / 家长姓名",
+      "email": "Email Address / 电子邮件地址",
+      "phone": "Numero ng Telepono / 电话号码",
+      "childDob": "Petsa ng Kapanganakan ng Bata / 孩子的出生日期",
+      "message": "Ang iyong mensahe o mga katanungan... / 您的留言或问题...",
+      "submit": "Sumali sa Waitlist",
+      "submit_chinese": "加入候补名单",
+      "parentName_label": "Pangalan ng Magulang",
+      "email_label": "Email Address",
+      "phone_label": "Numero ng Telepono",
+      "childDob_label": "Petsa ng Kapanganakan ng Bata",
+      "message_label": "Mensahe",
+      "email_name": "Email Address"
+    }
+  },
+  "thank_you": {
+    "title": "Salamat!",
+    "message": "Natanggap na ang iyong isinumite.",
+    "return": "Bumalik sa Home"
+  },
+  "admissions": {
+    "title": "Pagpasok",
+    "subtitle": "招生",
+    "description": "Kami ay nalulugod na tanggapin ang mga bagong pamilya sa aming komunidad at simulan ang kahanga-hangang paglalakbay na ito nang sama-sama.",
+    "description_zh": "我们很高兴欢迎新家庭加入我们的社区，共同开始这段美好的旅程。",
+    "journey": {
+      "title": "Ang Iyong Paglalakbay sa Little Panda",
+      "subtitle": "您的小熊猫之旅",
+      "steps": [
+        {
+          "title": "Isumite ang Iyong Pagtatanong",
+          "subtitle": "提交咨询",
+          "description": "Punan ang form sa ibaba upang ipahayag ang iyong interes. Makikipag-ugnay kami sa ilang sandali upang kumpirmahin na natanggap namin ito."
+        },
+        {
+          "title": "Mag-iskedyul ng Paglilibot",
+          "subtitle": "安排参观",
+          "description": "Inaanyayahan ka namin sa isang personalized na paglilibot upang maranasan mismo ang aming mapag-arugang kapaligiran."
+        },
+        {
+          "title": "Playdate ng Mag-aaral",
+          "subtitle": "学生游戏日",
+          "description": "Isang masayang pagkakataon para sa iyong anak na makipag-ugnayan sa aming mga guro at tuklasin ang aming programa."
+        },
+        {
+          "title": "I-secure ang Iyong Puwesto",
+          "subtitle": "确保名额",
+          "description": "Ang isang deposito ay nagsisiguro sa lugar ng iyong anak, na nagpapahintulot sa amin na maghanda para sa kanilang natatanging paglalakbay sa pag-aaral."
+        }
+      ]
+    },
+    "tiers": {
+      "title": "Ang Aming mga Antas ng Paglago",
+      "subtitle": "我们的成长阶梯",
+      "flexible": {
+        "title": "Mga Flexible na Pagpipilian",
+        "subtitle": "灵活选择",
+        "description": "Mga nababaluktot na pagpipilian upang umangkop sa mga pangangailangan ng iyong pamilya. Pumili sa pagitan ng 2, 3, o 5 araw ng pagpapatala bawat linggo."
+      },
+      "extended": {
+        "title": "Pinalawak na Pangangalaga",
+        "subtitle": "额外托管",
+        "description": "Nag-aalok ang Little Panda Preschool ng parehong pangangalaga sa umaga at pangangalaga sa hapon para sa aming mga mag-aaral. Nauunawaan namin na maraming pamilya ang may abalang iskedyul at maaaring mangailangan ng karagdagang suporta sa labas ng aming regular na oras ng paaralan, kaya natutuwa kaming maiaalok ang serbisyong ito."
+      },
+      "am": {
+        "title": "Pangangalaga sa Umaga",
+        "subtitle": "上午托管",
+        "time": "8:30 AM hanggang 9:00 AM, M-F",
+        "price": "$220 bawat buwan"
+      },
+      "pm": {
+        "title": "Pangangalaga sa Hapon",
+        "subtitle": "下午托管",
+        "time": "3:30 PM hanggang 5:30 PM, M-F",
+        "price": "$650 bawat buwan"
+      },
+      "activities": {
+        "title": "Mga Aktibidad sa Pangangalaga sa Hapon",
+        "subtitle": "下午托管活动",
+        "description": "Ang programa sa pangangalaga sa hapon ay mag-aalok ng iba't ibang mga aktibidad kabilang ang sayaw, yoga, math circle, stem at paghahardin. Ang mga aktibidad na ito ay ibibigay alinsunod sa itinatag na kurikulum."
+      }
+    },
+    "form": {
+      "title": "Pagtatanong sa Pagpapatala sa Little Panda Preschool",
+      "subtitle": "小熊猫幼儿园入学咨询",
+      "required": "* Nagpapahiwatig ng kinakailangang field",
+      "parent_info": {
+        "title": "Impormasyon ng Magulang/Tagapangalaga",
+        "subtitle": "家长/监护人信息",
+        "name": "Pangalan *",
+        "name_chinese": "姓名 *",
+        "email": "Email *",
+        "email_chinese": "电子邮件 *",
+        "phone": "Telepono *",
+        "phone_chinese": "电话 *"
+      },
+      "child_info": {
+        "title": "Impormasyon ng Bata",
+        "subtitle": "儿童信息",
+        "name": "Pangalan ng Mag-aaral *",
+        "birthday": "Kaarawan ng Mag-aaral (MM/DD/YYYY) *",
+        "age_group": {
+          "title": "Pangkat ng Edad *",
+          "subtitle": "年龄段 *",
+          "infant": "Sanggol (0-18 buwan)",
+          "infant_chinese": "婴儿 (0-18个月)",
+          "toddler": "Bata (18 buwan - 3 taon)",
+          "toddler_chinese": "幼儿 (18个月-3岁)",
+          "preschool": "Preschool (3-5 taon)",
+          "preschool_chinese": "学前班 (3-5岁)"
+        },
+        "location": {
+          "title": "Ginustong Lokasyon *",
+          "subtitle": "首选地点 *",
+          "granada": "Granada Campus",
+          "granada_chinese": "格拉纳达校区",
+          "sf_state": "Children's Campus sa SF State",
+          "sf_state_chinese": "旧金山州立大学儿童校区",
+          "ocean_ave": "Ocean Avenue Campus",
+          "ocean_ave_chinese": "海洋大道校区",
+          "coming_soon": "(Malapit na)"
+        }
+      },
+      "enrollment": {
+        "title": "Mga Detalye ng Pagpapatala",
+        "subtitle": "入学详情",
+        "start_date": {
+          "title": "Ninanais na Petsa ng Pagsisimula *",
+          "subtitle": "期望开始日期 *",
+          "asap": "Sa lalong madaling panahon",
+          "asap_chinese": "尽快",
+          "one_three": "Sa loob ng 1-3 buwan",
+          "one_three_chinese": "1-3个月内",
+          "three_six": "Sa loob ng 3-6 na buwan",
+          "three_six_chinese": "3-6个月内",
+          "exploring": "Naghahanap lang",
+          "exploring_chinese": "仅了解"
+        }
+      },
+      "submit": "Isumite ang Pagtatanong",
+      "submit_chinese": "提交咨询"
+    }
+  },
+  "careers": {
+    "title": "Sumali sa Aming Koponan ng Mababait na Puso",
+    "subtitle": "加入我们充满爱心的团队",
+    "description": "Sa Little Panda, kami ay higit pa sa isang paaralan; kami ay isang komunidad. Naghahanap kami ng mga masigasig at dedikadong tagapagturo na kabahagi ng aming pangako sa pag-aalaga sa susunod na henerasyon ng mga napakatalino na isipan. Kung mayroon kang mabait na puso at pagmamahal sa pag-aaral, gusto naming marinig mula sa iyo.",
+    "positions": {
+      "title": "Mga Bukas na Posisyon",
+      "subtitle": "空缺职位"
+    },
+    "form": {
+      "title": "Mag-apply Ngayon",
+      "subtitle": "立即申请",
+      "name": "Buong Pangalan",
+      "name_chinese": "全名",
+      "email": "Email Address",
+      "email_chinese": "电子邮件地址",
+      "phone": "Numero ng Telepono",
+      "phone_chinese": "电话号码",
+      "position": "Posisyon na Ina-applyan",
+      "position_chinese": "申请职位",
+      "resume": "Resume/CV",
+      "resume_chinese": "简历",
+      "cover_letter": "Cover Letter",
+      "cover_letter_chinese": "求职信",
+      "cover_letter_placeholder": "Sabihin sa amin kung bakit ka magiging isang mahusay na akma para sa aming koponan. / 告诉我们为什么您是这个职位的最佳人选。",
+      "submit": "Isumite ang Aplikasyon",
+      "submit_chinese": "提交申请"
+    }
+  },
+  "faq": {
+    "title": "Mga Madalas Itanong",
+    "subtitle": "常见问题",
+    "expand": "Palawakin Lahat",
+    "collapse": "I-collapse Lahat",
+    "faqs": [
+      {
+        "question": "Proseso ng Aplikasyon",
+        "answer": "<div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Hakbang 1: Aplikasyon at Paglilibot</h3><ul class=\"list-disc list-inside text-text-main mt-2 space-y-2\"><li>Ang isang hindi maibabalik at hindi maililipat na bayad sa aplikasyon na $100 ay dapat bayaran sa Little Panda sa pamamagitan ng Paypal.</li><li>Pagkatapos ay aayusin ng paaralan ang isang oras sa iyo para sa isang indibidwal na personal na paglilibot sa paaralan pagkatapos naming matanggap ang iyong bayad sa aplikasyon.</li></ul></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Hakbang 2: Listahan ng Naghihintay</h3><p class=\"text-text-main mt-2\">Tumatanggap kami ng mga aplikasyon sa buong taon. Kung walang mga puwang na magagamit sa oras na maproseso ang aplikasyon ng iyong anak, ilalagay sila sa listahan ng naghihintay. Makakatanggap ka ng isang email ng kumpirmasyon sa pagtanggap upang kumpirmahin na naproseso na ang aplikasyon at mga dokumento.</p><p class=\"text-text-main mt-2 font-bold\">***Tumatanggap kami ng pagpasok sa buong taon sa sandaling maging available ang espasyo***</p></div><div class=\"mt-4\"><h3 class=\"text-xl font-bold text-text-main\">Hakbang 3: Pagtanggap at Deposito</h3><p class=\"text-text-main mt-2\">Kapag naabisuhan ng pagtanggap, dapat magsumite ang mga pamilya ng isang buwang deposito upang ma-secure ang espasyo sa pagpapatala ng bata, mag-iskedyul ng isang play date, kumpletuhin ang lahat ng mga dokumento/form sa enrollment package, at dumalo sa isang orientation meeting. Ang mas tiyak na mga detalye ay ibibigay sa email ng pagtanggap.</p><p class=\"text-text-main mt-2\">Bilang kahalili, maaari mong kumpirmahin sa Little Panda Preschool na ilagay ang iyong anak sa listahan ng naghihintay.</p></div>"
+      },
+      {
+        "question": "Paano Pinapangkat ang mga Bata?",
+        "answer": "Sa bawat silid-aralan, mayroon kaming 12-14 na mag-aaral sa isang grupo. Ang mga mag-aaral ay pinapangkat ayon sa edad."
+      },
+      {
+        "question": "Ano ang Ratio ng Guro sa Mag-aaral?",
+        "answer": "<ul><li>1 guro para sa bawat 4 na sanggol (3 buwan-18 buwan)</li><li>1 guro para sa bawat 5 batang paslit (18 buwan-24 na buwan)</li><li>1 guro para sa bawat 6 na mas matandang paslit (2 taong gulang-3 taong gulang)</li><li>1 guro para sa bawat 7 preschooler (3 taong gulang-6 taong gulang)</li></ul>"
+      },
+      {
+        "question": "Nag-aalok Ka Ba ng mga On-site na Pagbisita o Virtual Lamang?",
+        "answer": "Nag-aalok kami ng parehong on-site na paglilibot at virtual na paglilibot."
+      },
+      {
+        "question": "Anong mga Edad ang Tinatanggap Mo?",
+        "answer": "<ul><li>Gorham campus: 3 buwan hanggang TK (Preschool para sa lahat at TK qualified program)</li><li>Granada campus: 18 buwan hanggang sa pagpasok sa Kindergarten</li></ul>"
+      },
+      {
+        "question": "Gaano Ka-flexible ang mga Oras ng Paghahatid at Pagsundo?",
+        "answer": "Ang mga mag-aaral ay papasok at aalis ng paaralan sa mga yunit ng mga grupo sa silid-aralan. Ang bawat grupo ay may nakapirming oras ng paghahatid at pagsundo. Abisuhan ang guro ng grupo isang araw bago kung ikaw ay maaga o huli sa mga oras ng pagsundo o paghahatid."
+      },
+      {
+        "question": "Nag-aalok ka ba ng pinalawig na pangangalaga?",
+        "answer": "<ul><li>Pangangalaga sa umaga: 8:30-9:00 AM karagdagang $220/buwan</li><li>Pangangalaga sa hapon: 3:30-5:30 PM karagdagang $650/buwan</li></ul>"
+      },
+      {
+        "question": "Mga Kwalipikasyon ng Staff",
+        "answer": "Lahat ng mga guro ng Little Panda Childcare Center ay nakakatugon o lumalampas sa mga kinakailangan sa paglilisensya ng California State Department of Education (CADE). Bawat taon, dapat kumpletuhin ng mga guro ang isang kinakailangang bilang ng mga oras ng patuloy na pagsasanay. Lahat ng mga kawani ay may karanasan sa pagtatrabaho sa mga bata sa isang pinangangasiwaang programa. Bilang karagdagan, tunay na mahal at nauunawaan ng aming mga miyembro ng kawani ang pag-unlad ng bata at ang pilosopiya na nakabatay sa proyekto ng aming paaralan."
+      },
+      {
+        "question": "Pagiging kompidensiyal",
+        "answer": "Ang pagiging kompidensiyal ay gumaganap ng isang mahalagang papel sa pagtataguyod ng paggalang sa bawat indibidwal at pagpapaunlad ng isang matatag na komunidad. Sineseryoso ng Little Panda Childcare Center ang pagiging kompidensiyal at ginagawa ang lahat ng pagsisikap upang maprotektahan ang privacy ng bawat pamilya. Ang mga komunikasyon sa pagitan ng mga kawani at mga magulang tungkol sa mga bata ay pananatilihing kompidensiyal sa lahat ng oras. Inirerekomenda ng Little Panda Childcare Center na ang mga pag-uusap tungkol sa isang bata, kanilang pag-uugali, o isang partikular na insidente ay dapat isagawa nang pribado, malayo sa bata at iba pang mga miyembro ng komunidad ng Little Panda Childcare Center. Kung ang isang magulang ay may tanong o alalahanin, iminumungkahi namin na makipag-ugnayan ang magulang na ito sa guro sa pamamagitan ng email o nang personal upang mag-ayos ng oras upang talakayin."
+      },
+      {
+        "question": "Nagbibigay ba ng mga Pagkain?",
+        "answer": "Nagbibigay kami ng meryenda sa umaga, Tanghalian, at meryenda sa hapon."
+      },
+      {
+        "question": "Paano kung ang Aking Anak ay Walang Alam na Mandarin?",
+        "answer": "Hindi kailangang malaman ng iyong anak ang anumang Mandarin bago mag-enroll. Mayroon kaming balanseng literasiya upang suportahan ang iyong anak sa pakikinig, pagsasalita, pagbabasa, pagsusulat, at pagkatawan."
+      },
+      {
+        "question": "Kailangan bang Maging Potty Trained ang Aking Anak?",
+        "answer": "Hindi kinakailangan na ang mga mag-aaral ay maging potty trained, mayroon kaming napakatagumpay na mga pamamaraan sa pag-aaral sa banyo."
+      },
+      {
+        "question": "Kailan ang Oras ng Siesta?",
+        "answer": "Ang mga sanggol at paslit ay maaaring umidlip anumang oras na sila ay pagod. Ang mga mas matatandang paslit at preschooler ay umidlip mula 12:30-03:00 PM."
+      },
+      {
+        "question": "Gaano Kadalas ang mga Field Trip at Saan?",
+        "answer": "Binibisita namin ang Library isang beses sa isang linggo. Bawat taon ng akademiko, nag-oorganisa kami ng mga field trip para sa mga mag-aaral upang bisitahin ang iba't ibang lugar. Halimbawa, mga museo, SF Botanical Garden, Academy of Science, SF Zoo, Exploratorium, mga pumpkin patch, atbp."
+      },
+      {
+        "question": "Maaari bang Mag-enroll ang mga Mag-aaral sa Gitna ng Taon?",
+        "answer": "Tumatanggap kami ng mga aplikasyon sa buong taon. Kapag naganap ang bagong pagpaparehistro, ang mga aplikasyon ay kinukuha sa isang first-come, first-served na batayan."
+      },
+      {
+        "question": "Paano Mo Pinangangasiwaan ang Disiplina?",
+        "answer": "Ang Little Panda Childcare Center ay nakatuon sa pagbibigay ng isang ligtas at positibong kapaligiran sa pag-aaral para sa lahat ng mga bata. Ang patakaran sa pag-uugali ng paaralan ay naghihikayat sa mga bata na bumuo ng mga kasanayang panlipunan na sumasalamin sa marami sa mga halaga ng Little Panda Childcare Center, kabilang ang pagpipigil sa sarili, paggalang sa iba, at mataas na pagpapahalaga sa sarili.<p>Ang mga guro ay nagmomodelo ng angkop na pag-uugali at gumagabay sa mga positibong pakikipag-ugnayan sa pagitan ng mga bata at matatanda. Ang pag-aalaga sa mga kasanayang panlipunan na ito ay isang sentral na bahagi ng Creative Curriculum®, at tinutulungan nito ang mga bata na lumago bilang matagumpay, habambuhay na mga mag-aaral.</p>"
+      },
+      {
+        "question": "Gaano Kadalas Nililinis ang mga Laruang at Silid-aralan?",
+        "answer": "<ul><li>Hindi gagamitin ang mga laruan na hindi maaaring linisin at i-sanitize.</li><li>Ang mga laruan na inilagay ng mga bata sa kanilang bibig o na-kontaminado ng mga pagtatago ng katawan ay itinatabi hanggang sa malinis ang mga ito.</li><li>Ang mga laruan na tela na maaaring hugasan sa makina ay dapat lamang gamitin ng isang indibidwal sa isang pagkakataon o, hindi dapat gamitin sa lahat.</li><li>Ang mga laruan ay hindi ibinabahagi sa ibang mga grupo ng mga sanggol o paslit, maliban kung ang mga ito ay nahugasan at na-sanitize muna.</li><li>Mayroon kaming sapat na mga laruan na maaari silang i-rotate sa pamamagitan ng mga paglilinis.</li><li>Ang mga filter ng hangin na grado ng HEPA at mga ilaw ng HVAC UV ay na-install sa bawat silid-aralan.</li></ul>"
+      },
+      {
+        "question": "Ano ang Pamamaraan kung ang isang Bata ay May Sakit?",
+        "answer": "Mabilis na kumakalat ang mga mikrobyo sa isang kapaligiran ng preschool. Ang lahat ng mga bata at kawani ay nananatiling mas malusog kapag ang mga taong may sakit ay nananatili sa bahay. Dapat manaig ang sentido komun sa kaso ng mga sipon, na maaaring mula sa isang banayad na kaso ng sipon hanggang sa isang ganap na impeksyon sa sinus o malalim na ubo.<p>Ginagamit namin ang EMERGENCY FORM, LIC700 upang makipag-ugnay sa mga magulang o anumang iba pang itinalagang nasa hustong gulang kung ang iyong anak ay nagkakaroon ng mga sintomas ng sakit habang nasa klase. Ihihiwalay namin ang iyong anak sa isang komportable, pinangangasiwaang lugar hanggang sa siya ay masundo.</p><p>Kung ang isang bata o pamilya ay may anumang mga sintomas ng Covid-19, kailangang ipaalam agad ng mga magulang sa paaralan. Kailangang manatili sa bahay ang bata mula sa paaralan hanggang sa makatanggap sila ng isang negatibong resulta ng pagsusuri sa COVID-19, o na-quarantine sa loob ng 14 na araw. Susundin namin ang mga alituntunin ng SFPDHD upang baguhin ang protocol na ito kung kinakailangan.</p>"
+      }
+    ]
+  }
+}

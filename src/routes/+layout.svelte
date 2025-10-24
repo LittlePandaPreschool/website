@@ -1,4 +1,6 @@
 <script>
+  import '$lib/i18n';
+  import { waitLocale } from 'svelte-i18n';
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import "../app.css";
@@ -12,6 +14,8 @@ onMount(() => {
     document.head.appendChild(script);
   }
 });
+
+  const loading = waitLocale();
 </script>
 
 <svelte:head>
@@ -21,6 +25,9 @@ onMount(() => {
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </svelte:head>
 
+{#await loading}
+  <p>Loading...</p>
+{:then}
 <div class="bg-bg-main">
   <Header />
 
@@ -30,3 +37,4 @@ onMount(() => {
 
   <Footer />
 </div>
+{/await}

@@ -15,7 +15,7 @@
   <div class="toe toe-3"></div>
 </button>
 
-<style>
+<style lang="postcss">
   .panda-button {
     position: relative;
     width: 180px;
