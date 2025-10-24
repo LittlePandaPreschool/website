@@ -21,12 +21,9 @@
   },
   "home": {
     "hero": {
-      "title": "Unleash Potential.",
-      "title_zh": "释放潜能",
-      "subtitle": "Start Their Journey.",
-      "subtitle_zh": "从这里开始他们的旅程",
-      "cta": "Join Us",
-      "cta_zh": "加入我们"
+      "title": "Libera el Potencial.",
+      "subtitle": "Comienza Su Viaje.",
+      "cta": "Únete a Nosotros"
     },
     "blueprint": {
       "title": "Nuestro Plan para la Brillantez",
@@ -68,9 +65,89 @@
     },
     "campuses": {
       "title": "Nuestros Campus",
-      "subtitle": "我们的校区",
       "description": "Encuentre el entorno de aprendizaje perfecto para su hijo.",
-      "description_zh": "为您的孩子找到完美的学习环境。"
+      "request_tour": "Solicitar una Visita",
+      "enroll_now": "Inscribirse Ahora",
+      "granada": {
+        "name": "Campus de Granada",
+        "ages": "18 meses-6 años"
+      },
+      "sf_state": {
+        "name": "Campus Infantil en SF State",
+        "ages": "3 meses-6 años"
+      },
+      "ocean_ave": {
+        "name": "Campus de Ocean Avenue",
+        "ages": "3 meses-6 años"
+      }
+    },
+    "timeline": {
+      "title": "Un Día en Little Panda",
+      "events": [
+        {
+          "time": "9:00 - 9:30 AM",
+          "title": "Llegada y Reunión Matutina",
+          "icon": "fas fa-sun",
+          "iconColor": "text-yellow-400",
+          "dotColor": "bg-yellow-400"
+        },
+        {
+          "time": "9:30 - 10:00 AM",
+          "title": "Hora de la Merienda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "10:00 - 10:30 AM",
+          "title": "Proyecto",
+          "icon": "fas fa-paint-brush",
+          "iconColor": "text-green-400",
+          "dotColor": "bg-green-400"
+        },
+        {
+          "time": "10:30 - 11:30 AM",
+          "title": "Exploración al Aire Libre",
+          "icon": "fas fa-tree",
+          "iconColor": "text-blue-400",
+          "dotColor": "bg-blue-400"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "Almuerzo",
+          "icon": "fas fa-utensils",
+          "iconColor": "text-orange-400",
+          "dotColor": "bg-orange-400"
+        },
+        {
+          "time": "12:30 - 1:00 PM",
+          "title": "Hora del Cuento/Motricidad Fina/Juego Dramático",
+          "icon": "fas fa-book-open",
+          "iconColor": "text-indigo-400",
+          "dotColor": "bg-indigo-400"
+        },
+        {
+          "time": "1:00 - 2:30 PM",
+          "title": "Hora de la Siesta",
+          "icon": "fas fa-bed",
+          "iconColor": "text-purple-400",
+          "dotColor": "bg-purple-400"
+        },
+        {
+          "time": "2:30 - 3:00 PM",
+          "title": "Merienda",
+          "icon": "fas fa-cookie-bite",
+          "iconColor": "text-pink-400",
+          "dotColor": "bg-pink-400"
+        },
+        {
+          "time": "3:00 - 3:30 PM",
+          "title": "Salida",
+          "icon": "fas fa-flag-checkered",
+          "iconColor": "text-red-400",
+          "dotColor": "bg-red-400"
+        }
+      ]
     },
     "form": {
       "title": "Únase a la Familia Little Panda",
